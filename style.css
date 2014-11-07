@@ -1,0 +1,270 @@
+/*
+Theme Name: Bootstrap to WordPress
+Theme URI: http://wptreehouse.com/from-bootstrap-to-wordpress
+Author: Justin Vinge
+Author URI: http://justinvinge.com/
+Description: Theme to convert static Bootstrap site into dynamic WordPress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootstrap-to-wp
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+  padding: 0;
+  position: relative;
+  text-align: center;
+  margin: 160px 0 0 0;
+  width: 100%;
+  z-index: -1;
+  background: url(http://subtlepatterns.com/patterns/debut_light.png);
+}
+header {
+  background: rgb(44,48,52);
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+h1 {
+  font-family: 'bebas_neueregular', Arial, sans-serif;
+  font-size: 3.6em; /* CHANGED */
+  text-align: center;
+  color: rgb(44,48,52);
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif; /* CHANGED */
+  font-size: 1.2em; /* CHANGED */
+  font-weight: normal;
+  text-align: center;
+  color: rgb(44,48,52);
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif; /* CHANGED */
+  font-weight: normal;
+  font-size: .9em; /* CHANGED */
+  margin: 40px 0 40px 0;
+  color: rgba(44,48,52,.5);
+}
+h4 {
+  font-family: 'Open Sans', sans-serif; /* CHANGED */
+  text-transform: uppercase;
+  font-size: 1.8em; /* CHANGED */
+}
+p {
+  width: 60%;
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; /* CHANGED */
+  font-size: 1em; /* CHANGED */
+}
+.leftpara {
+  text-align: left;
+  float: left;
+}
+.rightpara {
+  text-align: right;
+  float: right;
+}
+.lefttitle {
+  float: left;
+  margin: 6% 0 0 0; /* CHANGED */
+  padding: 0;
+}
+.righttitle {
+  float: right;
+  margin: 6% 0 0 0; /* CHANGED */
+  padding: 0;
+}
+.name,
+.email {
+  padding: 10px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif; /* CHANGED */
+  font-size: 1em; /* CHANGED */
+  box-shadow: none;
+  border: 3px solid rgb(44,48,52);
+  border-radius: 13px;
+  min-width: 250px; /* CHANGED */
+  width: 25%;
+}
+.name {
+  margin: 0px 0 20px 0;
+}
+.email {
+  margin: 0px 0 30px 0;
+}
+input:active,
+input:focus {
+  border: 3px solid rgb(245,37,62);
+  box-shadow: none;
+}
+.sml_submitbtn {
+  color: white;
+  background: rgb(245,37,62);
+  font-family: 'bebas_neueregular', Arial, sans-serif;
+  font-size: 1.8em; /* CHANGED */
+  text-decoration: none;
+  border-radius: 13px;
+  padding: 10px 30px 5px 30px;
+  margin: 0;
+}
+.sml_email {
+  width:100%;
+}
+.sml_name {
+  width:100%;
+}
+.sml_submit {
+  width:100%;
+}
+.sml_subscribe {
+    margin: 0 auto;
+}
+.sml_emailinput {
+    margin: 0 0 20px;
+}
+.sml_nameinput {
+    margin: 0 0 30px;
+}
+.signup .sml_subscribe .sml_submit .btn {
+    background: none repeat scroll 0 0 #F5253E;
+    border: 3px solid #F5253E;  
+    border-radius: 13px;
+    color: #FFFFFF;
+    font-family: 'bebas_neueregular', Arial, sans-serif;
+    font-size: 1.8em;
+    margin: 0;
+    text-decoration: none;
+}
+.signup .sml_subscribe .sml_submit .btn:hover {
+    border: 3px solid #2C3034;
+}
+.signup .sml_subscribe .sml_submit .btn:active {  
+  color: #2C3034;
+}
+.overview {
+  border-top: 1px solid rgba(44,48,52,.2);
+  width: 80%;
+  margin: 0 auto;
+}
+.sectionwrapper {
+  width: 80%;
+  margin: 0px auto;
+  padding: 0 0 230px 0;
+}
+.lefticon {
+  float: left;
+  margin-right: 30px;
+  width: 30%;
+}
+.righticon {
+  float: right;
+  margin-left: 30px;
+  width: 30%;
+}
+.disptitle {
+  color: rgb(245,37,62);
+}
+.dealtitle {
+  color: rgb(242,205,28);
+}
+.strntitle {
+  color: rgb(54,199,70);
+}
+.newstitle {
+  color: rgb(44,48,52);
+}
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding: 15px 0 15px 0;
+  color: white;
+  font-size: 1em; /* CHANGED */
+  font-family: 'Open Sans', sans-serif; /* CHANGED */
+  font-weight: normal;
+  text-align: center;
+  background: rgb(44,48,52);
+}
+footer p {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+span {
+  font-size: .8em; /* CHANGED */
+  color: rgba(255,255,255,.3);
+}
+ /* ADDED EVERYTHING BELOW THIS */
+@media (max-width: 900px) {
+  p {
+    font-size: .9em;
+  }
+  .overview {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  p {
+    font-size: .85em;
+  }
+  .lefttitle {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .righttitle {
+    margin: 0;
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 474px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: .9em;
+  }
+  h3 {
+    font-size: .7em;
+    color: rgb(44,48,52);
+  }
+ .logo {
+    max-width: 150px;  
+} 
+ .lefticon {
+    width: 30%;
+    margin-right: 10px;
+  }
+  .righticon {
+    width: 30%;
+    margin-left: 10px;
+  }
+  .lefttitle {
+    font-size: 1em;
+  }
+  .righttitle {
+    font-size: 1em;
+  }
+  .overview {
+    width: 98%;
+  }
+  p {
+    width: 66%;
+  }
+}
