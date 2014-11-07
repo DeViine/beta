@@ -1,0 +1,130 @@
+
+
+/* Variables Start */
+$darkgray: #2c3034; /* Shark */
+$transparentgray: rgba(44,48,52,.7); /* Transparent Shark */
+$faintgray: rgba(255,255,255,.2); /* Faint Gray */
+$lightgray: rgba(150,150,150,1); /* Dusty Gray */
+$green: #4EF253; /* Screamin' Green */
+$lightgreen: #95F995; /* Mint Green */
+$yellow: #FCD31C; /* Candlelight */
+$red: #F7253E; /* Torch Red */
+
+$header-font: "Bebas Neue", 'Roboto Condensed', "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$main-font: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+/* Variables End */
+
+
+/* Body Start */
+@mixin mainbody() {
+		width: 82%;
+		height: 100%;
+		margin: 60px auto 0 200px;
+		padding: 0;
+		font-family: $main-font;
+		background: url('../img/debut_light.png') repeat white;
+			@media screen and (max-width:840px) {
+				margin: 40px 2% 0 2%;
+				width: 100%;
+			}
+	}	
+/* Body End */
+
+
+
+
+/* Section Start */
+@mixin section() {
+	background: none;
+	margin: 1%;
+	position: relative;
+	float: left;
+}
+@mixin topsection() {
+	background: none;
+	margin: 40px 1% 1% 1%;
+	position: relative;
+	float: left;
+		@media screen and (max-width:600px) {
+			margin: 70px 1% 1% 1%;
+		}	
+}
+@mixin sectionbody() {
+	padding: 3%;
+	margin: 0;
+}
+/* Section End */
+
+
+/* Header Bar Start */
+@mixin smallheaderbar() {
+	font-size: 24px;
+}
+@mixin headerbar() {
+	font-family: $header-font;
+	color: $darkgray;
+	font-size: 34px;
+	text-align: center;
+	border-bottom: 2px solid rgba(44,48,52,.05);
+	margin: 0;
+	padding: 0 0 2px 0;
+		@media screen and (max-width:830px) {
+			@include smallheaderbar();
+		}
+}
+
+/* Header Bar End */
+
+
+/* Footer Start */
+@mixin footer() {
+	background: $darkgray;
+	bottom: 0;
+	margin: 1% 1% 0 1%;
+	padding: 20px 0;
+	width: 94%;
+	position: relative;
+	float: left;
+		p {
+			text-align: center;
+			margin: 0 0;
+			color: white;
+			font-family: $main-font;
+			font-size: 13px;
+		}
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
+}
+/* Footer End */
+
+
+/* Up To Top Start */
+@mixin uptotop() {
+	width: 60px;
+	position: fixed;
+	right: -15px;
+	bottom: -20px;
+	-webkit-transition: all .4s linear;
+	-moz-transition: all .4s linear;
+	-ms-transition: all .4s linear;
+	-o-transition: all .4s linear;
+	transition: all .4s linear;
+		&:hover {
+			bottom: 10px;
+			-webkit-transition: all .3s linear;
+			-moz-transition: all .3s linear;
+			-ms-transition: all .3s linear;
+			-o-transition: all .3s linear;
+			transition: all .3s linear;
+		}
+	@media screen and (max-width:840px) {
+		display: none;
+	}
+}
+/* Up To Top Start */
+
+
+
+
+

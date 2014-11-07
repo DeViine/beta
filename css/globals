@@ -1,0 +1,296 @@
+
+
+/* Variables Start */
+$green: #4EF253;
+$lightgreen: #95F995;
+$darkgray: #2c3034;
+$orange: #ff6812;
+$lightblue: #00ccff;
+$yellow: #FDEA15;
+$red: #F7253E;
+$purple: #AE5BFC;
+
+$header-font:	"dense", Helvetica, Geneva, sans-serif;
+$main-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+/* Variables End */
+
+
+/* Body Start */
+@mixin mainbody() {
+		max-width: 1000px;
+		height: 100%;
+		margin: 30px auto 0 15%;
+		padding: 0;
+		background: url('../img/debut_light.png') repeat white;
+			@media screen and (max-width:840px) {
+				margin: 20px auto 0 15%;
+			}
+			@media screen and (max-width:830px) {
+				margin: 0 auto 0 4%;
+			}
+	}	
+/* Body End */
+
+
+/* Navigation Start */
+@mixin nav() {
+		position: fixed;
+		left: 0;
+		top: 0px;
+		width: 130px;
+		margin: 70px 0 1px 0;
+	#logo {
+		padding: 0;
+		width: 100%;
+		margin: 0 0 1px 0;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+	.nav {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		left: 0;
+			a {
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+				color: white;
+				font-size: 11px;
+				font-family: $main-font;
+				text-transform: uppercase;
+				padding: 10px 0 10px 10px;
+				margin: 1px 0;
+				width: 100%;
+				list-style: none;
+				display: inline-block;
+				position: relative;
+				left: 0;
+				background: $darkgray;
+				-webkit-transition: all .5s ease;
+				-moz-transition: all .5s ease;
+				-ms-transition: all .5s ease;
+				-o-transition: all .5s ease;
+				transition: all .5s ease;
+
+				&:hover {
+					color: #4EF253;
+					font-size: 11px;
+					padding: 10px 0 10px 30px;
+					width: 100%;
+					-webkit-transition: all .5s ease;
+					-moz-transition: all .5s ease;
+					-ms-transition: all .5s ease;
+					-o-transition: all .5s ease;
+					transition: all .5s ease;
+				}
+			}
+	}
+	#currentpage  {
+		color: $green;
+		border-left: 3px solid $green;
+	}
+	.mobilemenu {
+		position: relative;
+		width: 500px;
+		margin: 20px 35%;
+	}
+	.dropdown {
+		display: none;
+		padding: 10px 20px;
+		background: $darkgray;
+	}
+	.dropdown:hover {
+		background: $darkgray;
+	}
+	.dropdown img {
+		width: 4%;
+		margin: 0;
+	}
+	.f-dropdown li a {
+		font-family: $main-font;
+		font-size: 14px;
+	}
+	.typeform-share.button {
+		border-bottom-right-radius: none;
+		height: 50%;
+		line-height: 11px;
+		color: white;
+		font-size: 11px;
+		font-family: $main-font;
+		text-transform: uppercase;
+		padding: 10px 0 10px 10px;
+		margin: 1px 0;
+		width: 100%;
+		list-style: none;
+		display: inline-block;
+		position: relative;
+		left: 0;
+		background: $darkgray;
+		box-shadow: none;
+		border: none;
+		-webkit-box-shadow: none;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+			&:hover {
+				background: $darkgray;
+				padding: 0;
+				color: $green;
+				font-size: 11px;
+				padding: 10px 0 10px 30px;
+				-webkit-transition: all .5s ease;
+				-moz-transition: all .5s ease;
+				-ms-transition: all .5s ease;
+				-o-transition: all .5s ease;
+				transition: all .5s ease;
+			}
+	}
+	@media screen and (max-width:830px) {
+		position: relative;
+		top: 0px;
+		width: 100%;
+			#logo {
+				margin: 0 38%;
+				width: 21%;
+				min-width: 100px;
+			}
+			.mobilemenu {
+				margin: 20px 42%;
+			}
+			.nav {
+				display: none;
+			}
+			.dropdown {
+				display: inline;
+			}
+	}
+	@media screen and (max-width:830px) {
+		.mobilemenu {
+				margin: 20px 40%;
+		}
+	}
+	@media screen and (max-width:550px) {
+		#logo {
+			margin: 0 32%;
+		}
+		.mobilemenu {
+			margin: 20px 33%;
+		}
+	}
+}
+/* Navigation End */
+
+
+/* Page Title Start */
+@mixin pagetitle() {
+	position: absolute;
+	top: 0;
+	margin: 0 1%;
+	float: left;
+		h1 {
+			color: $darkgray;
+			font-family: $header-font;
+			font-size: 25px;
+		}
+	@media screen and (max-width:830px) {
+		top: 110px;
+	}
+}
+/* Page Title Start */
+
+
+/* Section Start */
+@mixin section() {
+	background: none;
+	margin: 1%;
+	position: relative;
+	float: left;
+}
+@mixin topsection() {
+	background: none;
+	margin: 40px 1% 1% 1%;
+	position: relative;
+	float: left;
+}
+@mixin sectionbody() {
+	padding: 3%;
+	margin: 0;
+}
+/* Section End */
+
+
+/* Header Bar Start */
+@mixin headerbar() {
+	background: $darkgray;
+	text-align: center;
+	font-family: $header-font;
+	text-transform: uppercase;
+	font-size: 23px;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 3px 0;
+}
+@mixin smallheaderbar() {
+	font-size: 17px;
+}
+/* Header Bar End */
+
+
+/* Footer Start */
+@mixin footer() {
+	border-radius: 2px;
+	background: #2c3034;
+	bottom: 0;
+	margin: 1%;
+	width: 25%;
+	position: relative;
+	float: left;
+		p {
+			text-align: center;
+			margin: 12.2% 0;
+			color: white;
+			font-family: Helvetica, Geneva, sans-serif;
+			font-size: 10px;
+			svg {
+				width: 100%;
+				height: 30%;
+			}
+		}
+	@media screen and (max-width:500px) {
+		width: 94%;
+	}
+}
+/* Footer End */
+
+
+/* Up To Top Start */
+@mixin uptotop() {
+	width: 60px;
+	position: fixed;
+	right: -15px;
+	bottom: -20px;
+	-webkit-transition: all .4s linear;
+	-moz-transition: all .4s linear;
+	-ms-transition: all .4s linear;
+	-o-transition: all .4s linear;
+	transition: all .4s linear;
+		&:hover {
+			bottom: 10px;
+			-webkit-transition: all .3s linear;
+			-moz-transition: all .3s linear;
+			-ms-transition: all .3s linear;
+			-o-transition: all .3s linear;
+			transition: all .3s linear;
+		}
+	@media screen and (max-width:830px) {
+		display: none;
+	}
+}
+/* Up To Top Start */
+
+
+
+
+

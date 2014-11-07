@@ -1,0 +1,27 @@
+.clear{	/* the clearfix class */
+    clear:both;
+}
+
+#slide{	/* the main container div */
+    width:890px;
+    margin:20px auto;
+}
+
+div.nomargin{	/* our special nomargin class */
+    margin-right:0px;
+}
+
+.pic{	/* divs that hold all the pictures in the gallery */
+    float:left;
+    margin:0 15px 15px 0;
+    border:5px solid white;
+    width:200px;
+    height:250px;
+}
+
+.pic a{	/* in every .pic container there is a hyperlink exactly the size of the container */
+    width:200px;
+    height:250px;
+    text-indent:-99999px;
+    display:block;	/* don't forget that widths and heights of hyperlinks are useless without display:block */
+}
