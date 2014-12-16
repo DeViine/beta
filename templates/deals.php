@@ -1,10 +1,10 @@
-<?php include ('header.php');?>
+<?php include ('../lib/classes/header.php');?>
 
       <section class="container deals">
         <h2 class="headerbar">Deals</h2>
         <div class="dealsbody">
 
-          <?php include ('../php/deals_script.php');?>
+          <?php include ('../lib/deals_script.php');?>
 
      
 
@@ -19,4 +19,4 @@
 
 
 
-<?php include ('footer.php');?>
+<?php include ('../lib/classes/footer.php');?>

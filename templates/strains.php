@@ -1,17 +1,17 @@
-<?php include ('header.php'); ?> 
+<?php include ('../lib/classes/header.php');?>
 
       <section class="container strains">
         <h2 class="headerbar">Strains</h2>
         <div class="strainsbody">
 
-<?php include ('../php/strains_script.php'); ?>
+          <?php include ('../lib/strains_script.php');?>
+
      
 
         </div>
       </section>
     
 
- 
 
 
 
@@ -19,11 +19,4 @@
 
 
 
-
-
-
-
-
-
-
-<?php include ('footer.php'); ?>
+<?php include ('../lib/classes/footer.php');?>
