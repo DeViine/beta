@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeViine | Lets Save Green</title>
-	<!--base href="http://www.devineonline.net//beta/" /> Sets the filepath of all pages to begin at this root-->
+	<base href="http://www.devineonline.net//beta/" /> <!--Sets the filepath of all pages to begin at this root-->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="src/css/foundation.css" media="screen" />
     <link rel="stylesheet" href="src/css/animate.min.css" />
