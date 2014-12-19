@@ -20,11 +20,11 @@
 	<script src="src/js/vendor/jquery.js"></script>
     <!--[if lte IE 9] Then this script is required for the donut graph>
     <script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
-        <![endif]-->    
+        <![endif]-->  
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>  
     <!-- RSVP -->
     <script src="src/js/vendor/rsvp.min.js"></script>
-    <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
     <!-- GeoFire -->
     <script src="src/js/vendor/geofire.min.js"></script>
     <!-- Custom JS -->
@@ -35,12 +35,14 @@
     <script src="src/js/vendor/modernizr.js"></script>
   </head>
   <body class="home">
+    <!-- Firebase ref -->
+    <p style="font-weight: bold;">GeoFire data for this example can be found <a id="firebaseRef" href="#" target="_blank">here</a></p>
+
+    <!-- Message log -->
+    <div id="log"></div>
     
     <div class="top"></div>
-     <!-- Firebase ref -->
-    <p style="font-weight: bold;">GeoFire data for this example can be found <a id="firebaseRef" href="#" target="_blank">here</a></p>
-    <!-- Message log -->
-    <div id="log"></div>    
+    
       <header>
         <a href="www/index.php"><img id="logo" src="img/deviine_logo.png"></a>
         <div class="search">

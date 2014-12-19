@@ -25,10 +25,12 @@
         <input id="rating5" type="radio" name="rating" value="5">
         <label for="rating5"><span>5</span></label>
         </div>
-        <a href="walkingraven.php">
+        <a href="www/walkingraven.php">
             <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
             <div class="distance">
-              <h4 class="number">9</h4> 
+              <h4 class="number">
+              <div id="walkingraven_key"><p></p></div>
+              </h4> 
               <h5 class="label">MILES<br>AWAY</h5>
             </div>
         </a>
