@@ -1,4 +1,4 @@
-<a href="#top" class="uptotop"><img src="img/rocketicon.png"></a>
+<a href="#top" class="uptotop"><img src="../img/rocketicon.png"></a>
         
         
 

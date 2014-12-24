@@ -4,35 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeViine | Lets Save Green</title>
-	<base href="http://www.devineonline.net/beta/" /> <!--Sets the filepath of all pages to begin at this root-->
+	<!--base target="_blank" href="~/localhost/~justin001vinge/beta/" > <!--Sets the filepath of all pages to begin at this root-->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="src/css/foundation.css" media="screen" />
-    <link rel="stylesheet" href="src/css/animate.min.css" />
-    <link rel="stylesheet" href="fonts/unitedstates/unitedstatesfont.css" media="screen" />
+    <link rel="stylesheet" href="../src/css/foundation.css" media="screen" />
+    <link rel="stylesheet" href="../src/css/animate.min.css" />
+    <link rel="stylesheet" href="../fonts/unitedstates/unitedstatesfont.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="fonts/dense/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="../fonts/dense/stylesheet.css" media="screen" />
         <!-- Styles CSS -->
-    <link rel="stylesheet" href="src/css/styles.css" media="screen" />
+    <link rel="stylesheet" href="../src/css/styles.css" media="screen" />
 
 	<!--Search link Node.js for in-site search indexing-->
-    <script type="text/javascript" src="src/js/search_node.js"></script>
+    <script type="text/javascript" src="../src/js/search_node.js"></script>
     <!--jQuery-->
-	<script src="src/js/vendor/jquery.js"></script>
+	<script src="../src/js/vendor/jquery.js"></script>
     <!--[if lte IE 9] Then this script is required for the donut graph>
     <script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
         <![endif]-->  
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>  
     <!-- RSVP -->
-    <script src="src/js/vendor/rsvp.min.js"></script>
+    <script src="../src/js/vendor/rsvp.min.js"></script>
     <!-- GeoFire -->
-    <script src="src/js/vendor/geofire.min.js"></script>
+    <script src="../src/js/vendor/geofire.min.js"></script>
     <!-- Custom JS -->
-    <script src="src/js/html5Geolocation.js" defer></script>
+    <script src="../src/js/html5Geolocation.js" defer></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="src/css/html5Geolocation.css">    
+    <link rel="stylesheet" href="../src/css/html5Geolocation.css">    
     <!--SLIDER JS-->
-    <script src="src/js/vendor/modernizr.js"></script>
+    <script src="../src/js/vendor/modernizr.js"></script>
   </head>
   <body class="home">
     <!-- Firebase ref -->
@@ -44,13 +44,13 @@
     <div class="top"></div>
     
       <header>
-        <a href="www/index.php"><img id="logo" src="img/deviine_logo.png"></a>
+        <a href="www/index.php"><img id="logo" src="../img/deviine_logo.png"></a>
         <div class="search">
-          <input type="search" placeholder="What are you looking for?"><a href="#"><img src="img/searchicon.png"></a>
+          <input type="search" placeholder="What are you looking for?"><a href="#"><img src="../img/searchicon.png"></a>
         </div>
         <div class="mobileheaderbuttons">
-          <a href="#"><img src="img/hamburger_button.png"></a>
-          <a href="#"><img src="img/search_button.png"></a>
+          <a href="#"><img src="../img/hamburger_button.png"></a>
+          <a href="#"><img src="../img/search_button.png"></a>
         </div>
       </header>
       <ul class="nav">

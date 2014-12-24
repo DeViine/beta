@@ -1,5 +1,5 @@
 <div class="cardwrapper">
-    <a href="www/walkingraven.php">
+    <a href="../www/walkingraven.php">
                 <img src="http://placehold.it/100x100" class="cardlogo">
                 <h1 class="dispensaryname"><?php echo file_get_contents ('../lib/dispensaries/dispensary1/dispensary_name'); ?></h1>
                 <h2 class="dispensaryaddress"><?php echo file_get_contents ('../lib/dispensaries/dispensary1/address'); ?></h2>
@@ -25,7 +25,7 @@
         <input id="rating5" type="radio" name="rating" value="5">
         <label for="rating5"><span>5</span></label>
         </div>
-        <a href="www/walkingraven.php">
+        <a href="../www/walkingraven.php">
             <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
             <div class="distance">
               <h4 class="number">

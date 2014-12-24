@@ -28,16 +28,16 @@
       <section id="slider">
          <ul class="slider" data-orbit>
             <li class="active">
-              <img src="img/slide1.png" alt="Find Recreational Cannabis Dispensaries In Your Area to Compare Menus and Prices!" />
+              <img src="../img/slide1.png" alt="Find Recreational Cannabis Dispensaries In Your Area to Compare Menus and Prices!" />
             </li>
             <li>
-              <img src="img/slide2.png" alt="Discover Cannabis Deals Around You!" />
+              <img src="../img/slide2.png" alt="Discover Cannabis Deals Around You!" />
             </li>
             <li>
-              <img src="img/slide3.png" alt="Browse Through Our Strain Database To Find The Perfect Strain For You!" />
+              <img src="../img/slide3.png" alt="Browse Through Our Strain Database To Find The Perfect Strain For You!" />
             </li>
             <li>
-              <img src="img/slide4.png" alt="Keep Informed With Our News and Blog Section!" />
+              <img src="../img/slide4.png" alt="Keep Informed With Our News and Blog Section!" />
             </li>
         </ul>
       </section>
