@@ -18,7 +18,7 @@ var options = {
 	
 	
 	//The percentage of the chart that we cut out of the middle.
-	percentageInnerCutout : 90,
+	percentageInnerCutout : 40,
 	
 	//Boolean - Whether we should animate the chart	
 	animation : true,

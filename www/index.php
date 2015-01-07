@@ -1,21 +1,20 @@
-<?php include(dirname(__FILE__) . "/../lib/classes/header.php"); ?>
-<!--HERE IS THE PAGE SELECTOR CODE, ALL PAGES ARE CARRIED HERE INTO THE INDEX PAGE ON CLICK OF THEIR LINK IN THE NAV. ALL ALLOWED PAGES MUST BE INCLUDED IN THE ARRAY-->    
-<?php
-	$page = $_GET['page'];
-	$pages = array('page1', 'page2', 'page3' , 'page4');
+<?php include_once("../lib/analyticstracking.php") ?>
+<?php include (dirname(__FILE__) . "/../lib/classes/header.php");
+//HERE IS THE PAGE SELECTOR CODE, ALL PAGES ARE CARRIED HERE INTO THE INDEX PAGE ON CLICK OF THEIR LINK IN THE NAV. ALL ALLOWED PAGES MUST BE INCLUDED IN THE ARRAY-->    
+	$page = $_GET['page'];	/* gets the variable $page */
 	if (!empty($page)) {
-		if(in_array($page,$pages)) {
-			$page .= '.php';
-			include($page);
-		}
-		else {
-		echo 'Page not found. Return to
-		<a href="index.php">index</a>';
-		}
-	}
+		include($page);
+	} 	/* if $page has a value, include it */
 	else {
 		include('page1.php');
+	} 	/* otherwise, include the default page */
+	
+	$url = '';
+	if (!empty($_GET['category'])) {
+		$url .= $_GET['category'] . '/';
 	}
-?>
-
-<?php include(dirname(__FILE__) . "/../lib/classes/footer.php"); ?>      
+	if (!empty($_GET['page'])) {
+		$url .= $_GET['page'] . '.php';
+	}
+	include $url;
+include (dirname(__FILE__) . "/../lib/classes/footer.php"); ?>      

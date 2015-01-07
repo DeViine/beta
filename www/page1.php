@@ -64,7 +64,7 @@ WILL NEED TO CALL IN OUTPUTS FROM SPECIAL CODE FOR THE CLASS="DISTANCE" -->
         <h2 class="featdispbar">Featured Dispensaries</h2>
         <div class="featureddispensariesbody">
 
-          <?php include ('../lib/dispensaries_script.php');?>
+          <?php include_once ('../lib/dispensaries_script.php');?>
           
         </div>
       </section>
@@ -85,7 +85,7 @@ USING SPECIAL CODE TO COUNT DOWN ON TIME LEFT BEFORE DEAL EXPIRATION -->
           <a href="html/deals.html"><h2 class="dailydealsbar">Daily Deals</h2></a>
           <div class="dailydeals">          
 			
-			<?php include ('../lib/deals_script.php');?>
+			<?php include_once ('../lib/deals_script.php');?>
             
           </div>
         </section>
@@ -96,7 +96,7 @@ USING SPECIAL CODE TO COUNT DOWN ON TIME LEFT BEFORE DEAL EXPIRATION -->
           <a href="html/deals.html"><h2 class="sotwbar">Strains of the Week</h2></a>
           <div class="sotwbody">
             
-            <?php include ('../lib/strains_script.php');?>
+            <?php include_once ('../lib/strains_script.php');?>
 
           </div>
         </section>

@@ -2,8 +2,11 @@
 date_default_timezone_set('America/Los_Angeles');
 
 ob_start();                      // start capturing output
-include('../lib/deals/deal1/end_date');   // execute the file
-   // execute the file
+  // in this var you will get the absolute file path of the current file
+  $current_file_path = dirname(__FILE__);
+  // with the next line we will include the 'somefile.php'
+  // which based in the upper directory to the current path
+  include(dirname(__FILE__) . 'end_date');   // execute the file
 $content = ob_get_contents();    // get the contents from the buffer
 ob_end_clean();   
 

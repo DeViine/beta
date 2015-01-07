@@ -3,11 +3,18 @@
         
 
           
-       
+<!--Doughnut graph js file--> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>      
+<script src="../src/js/doughnut.js"></script>
+<!--[if lte IE 9]>
+<script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
+<![endif]-->
 
+<!-- libs and dependencies -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 
-
-
+<!--Search link Node.js for in-site search indexing-->
+<script type="text/javascript" src="../src/js/search_node.js"></script>
 
           
 

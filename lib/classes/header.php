@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../src/css/styles.css" media="screen" />
 
 	<!--Search link Node.js for in-site search indexing-->
-    <script type="text/javascript" src="../src/js/search_node.js"></script>
+    <!--script type="text/javascript" src="../src/js/node.js"></script-->
     <!--jQuery-->
 	<script src="../src/js/vendor/jquery.js"></script>
     <!--[if lte IE 9] Then this script is required for the donut graph>
@@ -29,6 +29,7 @@
     <script src="../src/js/vendor/geofire.min.js"></script>
     <!-- Custom JS -->
     <script src="../src/js/html5Geolocation.js" defer></script>
+    <script src="../src/js/ratings.js" defer></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../src/css/html5Geolocation.css">    
     <!--SLIDER JS-->
@@ -36,27 +37,54 @@
   </head>
   <body class="home">
     <!-- Firebase ref -->
-    <p style="font-weight: bold;">GeoFire data for this example can be found <a id="firebaseRef" href="#" target="_blank">here</a></p>
+    <p style="font-weight: bold; display: none;">GeoFire data for this example can be found <a id="firebaseRef" href="#" target="_blank">here</a></p>
 
     <!-- Message log -->
     <div id="log"></div>
     
     <div class="top"></div>
     
-      <header>
-        <a href="www/index.php"><img id="logo" src="../img/deviine_logo.png"></a>
-        <div class="search">
-          <input type="search" placeholder="What are you looking for?"><a href="#"><img src="../img/searchicon.png"></a>
-        </div>
+<header>
+      
+<a href="index.php?page=page1.php"><img id="logo" src="../img/deviine_logo.png"></a>
+<div class="container">
+    <!-- turn this into a select to search multiple indexes -->
+    <input type="hidden" name="index" value="firebase" />
+    <!--Begin search section-->
+        <section class="search_container">
+            <form class="search" method="post" action="index.html" >
+            <input type="text" class="form-control" name="q" placeholder="Enter search term"/>
+                <button class="searchicon_btn" type="submit">
+                    <img class="searchicon_img" src="../img/searchicon.png">
+                </button>	 
+                <ul class="results" >
+                    <h2>Results <span id="total" class="zero">0</span></h2>
+                    <li><a href="index.html"><pre id="raw" class="pre-scrollable"></pre><br /><span>Description...</span></a></li>
+                </ul>
+            </form>
+        </section>
+    </div>
+</div>
+<!--End search section-->
+<!--<ul class="list-inline">
+<li><label><input type="radio" name="type" value="user" checked> users</label></li>
+<li><label><input type="radio" name="type" value="message"> messages</label></li>
+<li class="divider"></li>
+<li><label><input type="checkbox" name="words"> whole words</label></li>
+</ul>
+<p class="help-block">You may use * or ? for wild cards in your search.</p>
+</form>
+</div>
+<!--End Search Bar-->
         <div class="mobileheaderbuttons">
           <a href="#"><img src="../img/hamburger_button.png"></a>
           <a href="#"><img src="../img/search_button.png"></a>
         </div>
       </header>
       <ul class="nav">
-        <li class="dispensaries"><a href="templates/dispensaries.php" >Dispensaries</a></li>
-        <li class="deals"><a href="templates/deals.php">Deals</a></li>
-        <li class="strains"><a href="templates/strains.php">Strains</a></li>
+        <li class="dispensaries"><a href="index.php?page=page2.php">Dispensaries</a></li>
+        <li class="deals"><a href="index.php?page=page3.php">Deals</a></li>
+        <li class="strains"><a href="index.php?page=page4.php">Strains</a></li>
       </ul> 
 
 

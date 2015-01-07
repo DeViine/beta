@@ -1,4 +1,4 @@
-<a href="straininformation.php" class="cardwrapper">
+<a class="cardwrapper" href="index.php?category=../lib/deals/deal2&page=deal">
               <img src="http://placehold.it/100x100" class="cardlogo">
               <h1 class="dealtitle"><?php echo file_get_contents('../lib/deals/deal2/title');?></h1>
               

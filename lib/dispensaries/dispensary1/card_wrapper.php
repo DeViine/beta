@@ -1,9 +1,9 @@
 <div class="cardwrapper">
-    <a href="../www/walkingraven.php">
+	<a href="../www/<?php echo file_get_contents('../lib/dispensaries/dispensary1/dispensary_url');?>.php">
                 <img src="http://placehold.it/100x100" class="cardlogo">
                 <h1 class="dispensaryname"><?php echo file_get_contents ('../lib/dispensaries/dispensary1/dispensary_name'); ?></h1>
                 <h2 class="dispensaryaddress"><?php echo file_get_contents ('../lib/dispensaries/dispensary1/address'); ?></h2>
-    </a>
+    <!--Rating system begin-->
     <div class="rating">
         <div class="starRating">
             <div>
@@ -25,11 +25,11 @@
         <input id="rating5" type="radio" name="rating" value="5">
         <label for="rating5"><span>5</span></label>
         </div>
-        <a href="../www/walkingraven.php">
-            <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
+                <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
+                <!--Rating system end-->
             <div class="distance">
               <h4 class="number">
-              <div id="satori_key"></div>
+              <div id="cinder_key"></div>
               </h4> 
               <h5 class="label">MILES<br>AWAY</h5>
             </div>

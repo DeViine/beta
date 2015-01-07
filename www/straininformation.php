@@ -1,14 +1,13 @@
-<?php include ('../lib/classes/header.php'); ?>
+<?php include(dirname(__FILE__) . "/../lib/classes/header.php"); ?>
 
 <?php
-	$url = '';
-	if (!empty($_GET['category'])) {
-		$url .= $_GET['category'] . '/';
-	}
-	if (!empty($_GET['page'])) {
-		$url .= $_GET['page'] . '.php';
-	}
-	include ('../templates/ak47.html');
+	$page = $_GET['strain'];	/* gets the variable $page */
+	if (!empty($page)) {
+		include($page);
+	} 	/* if $page has a value, include it */
+	else {
+		include('strain1.php');
+	} 	/* otherwise, include the default page */
 ?>
 
-<?php include ('../lib/classes/footer.php'); ?>
+<?php include(dirname(__FILE__) . "/../lib/classes/footer.php"); ?>      

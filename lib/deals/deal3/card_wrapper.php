@@ -1,4 +1,4 @@
-<a href="html/dealinformation.html" class="cardwrapper">
+<a class="cardwrapper" href="index.php?category=../lib/deals/deal3&page=deal">
               <img src="http://placehold.it/100x100" class="cardlogo">
               <h1 class="dealtitle"><?php echo file_get_contents('../lib/deals/deal3/title');?></h1>
               

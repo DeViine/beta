@@ -1,24 +1,72 @@
-var Firebase = require('firebase');
-var ElasticClient = require('elasticsearchclient')
+/* example.js
+ *************************************/
+(function ($) {
+   "use strict";
 
-// initialize our ElasticSearch API
-var client = new ElasticClient({ host: 'localhost', port: 9200 });
+   /**====== SET ME =====**/
+   /**====== SET ME =====**/
+   /**====== SET ME =====**/
+   var URL = 'https://dazzling-inferno-1178.firebaseIO.com/querying';
 
-// listen for changes to Firebase data
-var fb = new Firebase('<INSTANCE>.firebaseio.com/widgets');
-fb.on('child_added',   createOrUpdateIndex);
-fb.on('child_changed', createOrUpdateIndex);
-fb.on('child_removed', removeIndex);
-
-function createOrUpdateIndex(snap) {
-   client.index(this.index, this.type, snap.val(), snap.key())
-     .on('data', function(data) { console.log('indexed ', snap.key()); })
-     .on('error', function(err) { /* handle errors */ });
-}
-
-function removeIndex(snap) {
-   client.deleteDocument(this.index, this.type, snap.key(), function(error, data) {
-      if( error ) console.error('failed to delete', snap.key(), error);
-      else console.log('deleted', snap.key());
+   // handle form submits
+   $('form').on('submit', function(e) {
+      e.preventDefault();
+      var $form = $(this);
+      var term = $form.find('[name="term"]').val();
+      var words = $form.find('[name="words"]').is(':checked');
+      if( term ) {
+         doSearch($form.find('[name="index"]').val(), $form.find('[name="type"]:checked').val(), buildQuery(term, words));
+      }
+      else {
+         $('#results').text('');
+      }
    });
-}
+
+   // display search results
+   function doSearch(index, type, query) {
+      var ref = new Firebase(URL+'/search');
+      var key = ref.child('request').push({ index: index, type: type, query: query }).name();
+      console.log('search', key, { index: index, type: type, query: query });
+      ref.child('response/'+key).on('value', showResults);
+   }
+
+   function showResults(snap) {
+      if( snap.val() === null ) { return; } // wait until we get data
+      var dat = snap.val();
+//      console.log('result', snap.name(), snap.val());
+      snap.ref().off('value', showResults);
+      snap.ref().remove();
+      var $pair = $('#results')
+         .text(JSON.stringify(dat, null, 2))
+         .add( $('#total').text(dat.total) )
+         .removeClass('error zero');
+      if( dat.error ) {
+         $pair.addClass('error');
+      }
+      else if( dat.total < 1 ) {
+         $pair.addClass('zero');
+      }
+   }
+
+   function buildQuery(term, words) {
+      // See this tut for more query options:
+      // http://okfnlabs.org/blog/2013/07/01/elasticsearch-query-tutorial.html#match-all--find-everything
+      return {
+         'query_string': { query: makeTerm(term, words) }
+      };
+   }
+
+   function makeTerm(term, matchWholeWords) {
+      if( !matchWholeWords ) {
+         if( !term.match(/^\*/) ) { term = '*'+term; }
+         if( !term.match(/\*$/) ) { term += '*'; }
+      }
+      return term;
+   }
+
+   // display raw data for reference
+   new Firebase(URL).on('value', setRawData);
+   function setRawData(snap) {
+      $('#raw').text(JSON.stringify(snap.val(), null, 2));
+   }
+})(jQuery);

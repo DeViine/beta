@@ -1,62 +1,70 @@
-  <div class="straininfo">
-        <h2 class="infobar">Information</h2>
-        <div class="infocontainer">
+<?php include (dirname(__FILE__) . "/../lib/classes/header.php"); ?>
+<div class="straininfo">
+<h2 class="infobar">Information</h2>
 
-          <div class="audinfo">
-            <img src="img/ak-47_logo.png" class="strainlogo">
+<div class="infocontainer">
+        <div class="audinfo">
+            <img src="../img/ak-47_logo.png" class="strainlogo">
             <h2><?php echo file_get_contents('../lib/strains/strain1/strain_name');?></h2>
-            
-<!--RATINGS SECTION WILL NEED TO BE REPLACED-->
-            <ul class="overallrating">
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconno.png"></li>
-              <h4>Rated 4/5 by 103 users</h4>
-            </ul>   
-            <a href="#" class="favbtn">FAVORITE</a>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
-<!--[if lte IE 9]>
-<script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
-	<![endif]-->
-
-<canvas id="myChart" width="120" height="120" data-value="<?php echo file_get_contents('../lib/strains/ak47/indica');?>"></canvas>
-<h3 class="makeup"><?php echo file_get_contents('../lib/strains/ak47/sativa');?>% Indica / <?php echo file_get_contents('../lib/strains/ak47/indica');?>% Sativa</h3>
-
-<script src="src/js/vendor/jquery.js"></script>
-<script src="src/js/doughnut.js"></script>
-          </div>
+        </div>    
+    <!--Rating system begin-->
+    <div class="rating">
+        <div class="starRating">
+            <div>
+                <div>
+                    <div>
+                        <div>
+                        <input id="rating1" type="radio" name="rating" value="1">
+                        <label for="rating1"><span>1</span></label>
+                        </div>
+                    <input id="rating2" type="radio" name="rating" value="2">
+                    <label for="rating2"><span>2</span></label>
+                    </div>
+                <input id="rating3" type="radio" name="rating" value="3">
+                <label for="rating3"><span>3</span></label>
+                </div>
+            <input id="rating4" type="radio" name="rating" value="4">
+            <label for="rating4"><span>4</span></label>
+            </div>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5"><span>5</span></label>
         </div>
-      </div>
+                <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
+                <!--Rating system end-->
+                <a href="#" class="favbtn">FAVORITE</a>
+                <canvas id="myChart" width="120" height="120" data-value="<?php echo file_get_contents('../lib/strains/ak47/indica');?>"></canvas>
+                <h3 class="makeup"><?php echo file_get_contents('../lib/strains/ak47/sativa');?>% Indica / <?php echo file_get_contents('../lib/strains/ak47/indica');?>% Sativa</h3>
+            </div>
+        </div>
+</div>
 
 <!--REPLACE WITH PHP INSERT SLIDESHOW-->
       <div class="images">
         <h2 class="imagesbar">Images</h2>
           <ul class="imagesbody" data-orbit>
             <li>
-              <a href="img/jedi_kush.jpg" class="dispimage">
-              <img src="img/jedi_kush.jpg" alt="slide 1" ></a>
+              <a href="../img/jedi_kush.jpg" class="dispimage">
+              <img src="../img/jedi_kush.jpg" alt="slide 1" ></a>
             </li>
             <li>
-              <a href="img/jedi_kush_jar.jpg" class="dispimage">
-              <img src="img/jedi_kush_jar.jpg" alt="slide 2" ></a>
+              <a href="../img/jedi_kush_jar.jpg" class="dispimage">
+              <img src="../img/jedi_kush_jar.jpg" alt="slide 2" ></a>
             </li>
             <li>
-              <a href="img/jedi_kush.jpg" class="dispimage">
-              <img src="img/jedi_kush.jpg" alt="slide 3" ></a>
+              <a href="../img/jedi_kush.jpg" class="dispimage">
+              <img src="../img/jedi_kush.jpg" alt="slide 3" ></a>
             </li>
             <li>
-              <a href="img/jedi_kush_jar.jpg" class="dispimage">
-              <img src="img/jedi_kush_jar.jpg" alt="slide 5" ></a>
+              <a href="../img/jedi_kush_jar.jpg" class="dispimage">
+              <img src="../img/jedi_kush_jar.jpg" alt="slide 5" ></a>
             </li>
             <li>
-              <a href="img/jedi_kush.jpg" class="dispimage">
-              <img src="img/jedi_kush.jpg" alt="slide 6" ></a>
+              <a href="../img/jedi_kush.jpg" class="dispimage">
+              <img src="../img/jedi_kush.jpg" alt="slide 6" ></a>
             </li>
             <li>
-              <a href="img/jedi_kush.jpg" class="dispimage">
-              <img src="img/jedi_kush.jpg" alt="slide 8" ></a>
+              <a href="../img/jedi_kush.jpg" class="dispimage">
+              <img src="../img/jedi_kush.jpg" alt="slide 8" ></a>
             </li>
 
           </ul>
@@ -136,3 +144,4 @@
           </ul>
         </div>
       </div>
+<?php include (dirname(__FILE__) . "/../lib/classes/footer.php"); ?>      

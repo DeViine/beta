@@ -1,5 +1,5 @@
 <div class="cardwrapper">
-    <a href="walkingraven.php">
+    <a href="<?php echo file_get_contents ('../lib/dispensaries/dispensary3/dispesary_url'); ?>">
                 <img src="http://placehold.it/100x100" class="cardlogo">
                 <h1 class="dispensaryname"><?php echo file_get_contents ('../lib/dispensaries/dispensary3/dispensary_name'); ?></h1>
                 <h2 class="dispensaryaddress"><?php echo file_get_contents ('../lib/dispensaries/dispensary3/address'); ?></h2>

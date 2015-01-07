@@ -4,12 +4,12 @@
     <div class="info">
         <h2 class="infobar">Information</h2>
         <div class="infocontainer">
-          <img src="img/walkingravenlogo.jpg" class="audlogo">
+          <img src="../img/walkingravenlogo.jpg" class="audlogo">
           <div class="audinfo">
             <h2>Walking Raven</h2>
             <a href="#" data-reveal-id="hoursmodal" class="hoursbtn">Hours</a>
-            <img src="img/closednow.png" alt="closed" class="openorclosed closed">
-            <img src="img/opennow.png" alt="open" class="openorclosed open">
+            <img src="../img/closednow.png" alt="closed" class="openorclosed closed">
+            <img src="../img/opennow.png" alt="open" class="openorclosed open">
             
             <h3>2001 South Broadway <br>Denver, CO, 80210</h3>
             <a href="#" data-reveal-id="mapmodal" class="map">Map &#10095;&#10095;</a>
@@ -57,18 +57,18 @@
 
             <ul class="overallrating">
           
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconyes.png"></li>
-              <li><img src="img/budiconno.png"></li>
+              <li><img src="../img/budiconyes.png"></li>
+              <li><img src="../img/budiconyes.png"></li>
+              <li><img src="../img/budiconyes.png"></li>
+              <li><img src="../img/budiconyes.png"></li>
+              <li><img src="../img/budiconno.png"></li>
               <h4>Rated 4/5 by 453 users</h4>
                 
             </ul>
             <div class="contactinfo">
-              <h4><a href="http://mmjdenver.net" target="_blank"><img src="img/webicon.png">mmjdenver.net</a></h4>
-              <h4><a href="mailto:klmanagers@gmail.com"><img src="img/emailicon.png">klmanagers@gmail.com</a></h4>
-              <h4><img src="img/phoneicon.png">303-565-3600</h4>
+              <h4><a href="http://mmjdenver.net" target="_blank"><img src="../img/webicon.png">mmjdenver.net</a></h4>
+              <h4><a href="mailto:klmanagers@gmail.com"><img src="../img/emailicon.png">klmanagers@gmail.com</a></h4>
+              <h4><img src="../img/phoneicon.png">303-565-3600</h4>
             </div>
           </div>
         </div>
@@ -80,56 +80,56 @@
         <h2 class="imagesbar">Images</h2>
           <ul class="imagesbody" data-orbit>
             <li>
-              <a href="img/dispimg1.jpg" class="dispimage">
-              <img src="img/dispimg1.jpg" alt="slide 1" ></a>
+              <a href="../img/dispimg1.jpg" class="dispimage">
+              <img src="../img/dispimg1.jpg" alt="slide 1" ></a>
             </li>
             <li>
-              <a href="img/dispimg2.jpg" class="dispimage">
-              <img src="img/dispimg2.jpg" alt="slide 2" ></a>
+              <a href="../img/dispimg2.jpg" class="dispimage">
+              <img src="../img/dispimg2.jpg" alt="slide 2" ></a>
             </li>
             <li>
-              <a href="img/dispimg3.jpeg" class="dispimage">
-              <img src="img/dispimg3.jpeg" alt="slide 3" ></a>
+              <a href="../img/dispimg3.jpeg" class="dispimage">
+              <img src="../img/dispimg3.jpeg" alt="slide 3" ></a>
             </li>
             <li>
-              <a href="img/dispimg1.jpg" class="dispimage">
-              <img src="img/dispimg1.jpg" alt="slide 4" ></a>
+              <a href="../img/dispimg1.jpg" class="dispimage">
+              <img src="../img/dispimg1.jpg" alt="slide 4" ></a>
             </li>
             <li>
-              <a href="img/dispimg2.jpg" class="dispimage">
-              <img src="img/dispimg2.jpg" alt="slide 5" ></a>
+              <a href="../img/dispimg2.jpg" class="dispimage">
+              <img src="../img/dispimg2.jpg" alt="slide 5" ></a>
             </li>
             <li>
-              <a href="img/dispimg3.jpeg" class="dispimage">
-              <img src="img/dispimg3.jpeg" alt="slide 6" ></a>
+              <a href="../img/dispimg3.jpeg" class="dispimage">
+              <img src="../img/dispimg3.jpeg" alt="slide 6" ></a>
             </li>
             <li>
-              <a href="img/dispimg1.jpg" class="dispimage">
-              <img src="img/dispimg1.jpg" alt="slide 6" ></a>
+              <a href="../img/dispimg1.jpg" class="dispimage">
+              <img src="../img/dispimg1.jpg" alt="slide 6" ></a>
             </li>
             <li>
-              <a href="img/dispimg2.jpg" class="dispimage">
-              <img src="img/dispimg2.jpg" alt="slide 7" ></a>
+              <a href="../img/dispimg2.jpg" class="dispimage">
+              <img src="../img/dispimg2.jpg" alt="slide 7" ></a>
             </li>
             <li>
-              <a href="img/dispimg3.jpeg" class="dispimage">
-              <img src="img/dispimg3.jpeg" alt="slide 8" ></a>
+              <a href="../img/dispimg3.jpeg" class="dispimage">
+              <img src="../img/dispimg3.jpeg" alt="slide 8" ></a>
             </li>
             <li>
-              <a href="img/dispimg1.jpg" class="dispimage">
-              <img src="img/dispimg1.jpg" alt="slide 9" ></a>
+              <a href="../img/dispimg1.jpg" class="dispimage">
+              <img src="../img/dispimg1.jpg" alt="slide 9" ></a>
             </li>
             <li>
-              <a href="img/dispimg2.jpg" class="dispimage">
-              <img src="img/dispimg2.jpg" alt="slide 10" ></a>
+              <a href="../img/dispimg2.jpg" class="dispimage">
+              <img src="../img/dispimg2.jpg" alt="slide 10" ></a>
             </li>
             <li>
-              <a href="img/dispimg3.jpeg" class="dispimage">
-              <img src="img/dispimg3.jpeg" alt="slide 11" ></a>
+              <a href="../img/dispimg3.jpeg" class="dispimage">
+              <img src="../img/dispimg3.jpeg" alt="slide 11" ></a>
             </li>
             <li>
-              <a href="img/dispimg1.jpg" class="dispimage">
-              <img src="img/dispimg1.jpg" alt="slide 12" ></a>
+              <a href="../img/dispimg1.jpg" class="dispimage">
+              <img src="../img/dispimg1.jpg" alt="slide 12" ></a>
             </li>
 
           </ul>
@@ -150,22 +150,22 @@
             </div>
           </div>
         <dl class="tabs" data-tab>
-          <dd class="active"><a href="#panel2-1"><img src="img/indicatab.png"></a></dd>
-          <dd><a href="#panel2-2"><img src="img/sativatab.png"></a></dd>
-          <dd><a href="#panel2-3"><img src="img/hybridtab.png"></a></dd>
-          <dd><a href="#panel2-4"><img src="img/prerolledtab.png"></a></dd>
-          <dd><a href="#panel2-5"><img src="img/ediblestab.png"></a></dd>
-          <dd><a href="#panel2-6"><img src="img/concentratetab.png"></a></dd>
-          <dd><a href="#panel2-7"><img src="img/tincturetab.png"></a></dd>
-          <dd><a href="#panel2-8"><img src="img/topicaltab.png"></a></dd>
-          <dd><a href="#panel2-9"><img src="img/othertab.png"></a></dd>
+          <dd class="active"><a href="#panel2-1"><img src="../img/indicatab.png"></a></dd>
+          <dd><a href="#panel2-2"><img src="../img/sativatab.png"></a></dd>
+          <dd><a href="#panel2-3"><img src="../img/hybridtab.png"></a></dd>
+          <dd><a href="#panel2-4"><img src="../img/prerolledtab.png"></a></dd>
+          <dd><a href="#panel2-5"><img src="../img/ediblestab.png"></a></dd>
+          <dd><a href="#panel2-6"><img src="../img/concentratetab.png"></a></dd>
+          <dd><a href="#panel2-7"><img src="../img/tincturetab.png"></a></dd>
+          <dd><a href="#panel2-8"><img src="../img/topicaltab.png"></a></dd>
+          <dd><a href="#panel2-9"><img src="../img/othertab.png"></a></dd>
         </dl>
           <div class="tabs-content">
 
             <div class="content active indica" id="panel2-1">
               <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">LA Kush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -193,7 +193,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">LA Kush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -221,7 +221,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">LA Kush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -249,7 +249,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">LA Kush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -277,7 +277,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Lavender</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -305,7 +305,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Skywalker OG Caviar</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -340,7 +340,7 @@
             <div class="content sativa" id="panel2-2">
                <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Pineapple Express</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -368,7 +368,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">OG Kush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -396,7 +396,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Pineapple Express</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -430,7 +430,7 @@
             <div class="content hybrid" id="panel2-3">
                  <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Orange Crush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -458,7 +458,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Washington Washout</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -486,7 +486,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">California Gold</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -520,7 +520,7 @@
             <div class="content preroll" id="panel2-4">
                 <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Double Diesel</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -548,7 +548,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Corleone Kush</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -576,7 +576,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Ultra Sonja</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -610,7 +610,7 @@
             <div class="content edible" id="panel2-5">
                  <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Mountain High Suckers: Lozenges</h1>
                   <h3>100mg</h3>
                   <table>
@@ -628,7 +628,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Sweet Mary Jane: Coconut Bliss</h1>
                   <h3>1500mg</h3>
                   <table>
@@ -646,7 +646,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Julie and Kate Baked Goods: Granola</h1>
                   <h3>100mg</h3>
                   <table>
@@ -670,7 +670,7 @@
             <div class="content concentrate" id="panel2-6">
                 <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Hash Oil: Purple-Krypto (High CBD)</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -692,7 +692,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Budder Hash: Ancient OG</h1>
                   <h2>Strain Makeup:</h2>
                   <h3>50% Indica - Strain Name</h3>
@@ -718,7 +718,7 @@
              <div class="content tincture" id="panel2-7">
                 <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Healthy Creations: Tincture</h1>
                   <table>
                     <tbody>
@@ -733,7 +733,7 @@
                   <p>Indica, Sativa or Hybrid Specific. Flavors Include: Natural, Citrus, Raspberry, Watermelon, Blackberry, Peach &amp; Pineaple</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Healthy Creations: Tincture</h1>
                   <table>
                     <tbody>
@@ -748,7 +748,7 @@
                   <p>Indica, Sativa or Hybrid Specific. Flavors Include: Natural, Citrus, Raspberry, Watermelon, Blackberry, Peach &amp; Pineaple</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Healthy Creations: Tincture</h1>
                   <table>
                     <tbody>
@@ -769,7 +769,7 @@
              <div class="content topical" id="panel2-8">
                 <ul id="menu">
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Apothecanna: Lip Buzz</h1>
                   <table>
                     <tbody>
@@ -786,7 +786,7 @@
                   quis nostrud exercitation ullamco.</p>
                 </li>
                 <li class="menuitem">
-                  <img src="img/mars.jpg" id="itemimg">
+                  <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Mary's Medicinals: THC-A Patch</h1>
                   <table>
                     <tbody>
