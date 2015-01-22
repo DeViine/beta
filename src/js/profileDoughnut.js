@@ -1,15 +1,19 @@
-var val = parseInt($("#myChart").attr("data-value"), 10);
-var negVal = 100 - val;
-
+var oneValProfile = parseInt($("#redprofile").attr("data-value"), 10);
+var twoValProfile = parseInt($("#yellowprofile").attr("data-value"), 10);
+var threeValProfile = 100 - (oneValProfile + twoValProfile);
 var data = [
   {
-    value: val,
-    color:"#2c3034"
+    value: oneValProfile,
+    color: "#f7253e"
   },
   {
-    value: negVal,
+    value: twoValProfile,
+    color: "#fcd31c"    
+  },
+  {
+    value: threeValProfile,
     color: "#4ef253"
-  }   
+  }    
 ];
 
 var options = {
@@ -39,15 +43,6 @@ var options = {
 	onAnimationComplete : null
 };
 
-
-
 //Get the context of the canvas element we want to select
-var ctx = document.getElementById("myChart").getContext("2d");
-var myNewChart = new Chart(ctx).Doughnut(data,options);
-
-
-
-
-
-
-
+var ctx = document.getElementById("profileChart").getContext("2d");
+var profileChart = new Chart(ctx).Doughnut(data,options);

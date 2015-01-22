@@ -29,7 +29,7 @@
             <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
             <div class="distance">
               <h4 class="number">
-              <div id="walkingraven_key"><p></p></div>
+              <div id="sativa_key"></div>
               </h4> 
               <h5 class="label">MILES<br>AWAY</h5>
             </div>

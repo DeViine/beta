@@ -1,15 +1,19 @@
-var val = parseInt($("#myChart").attr("data-value"), 10);
-var negVal = 100 - val;
-
+var oneValEffect = parseInt($("#redeffect").attr("data-value"), 10);
+var twoValEffect = parseInt($("#yelloweffect").attr("data-value"), 10);
+var threeValEffect = 100 - (oneValEffect + twoValEffect);
 var data = [
   {
-    value: val,
-    color:"#2c3034"
+    value: oneValEffect,
+    color: "#f7253e"
   },
   {
-    value: negVal,
+    value: twoValEffect,
+    color: "#fcd31c"    
+  },
+  {
+    value: threeValEffect,
     color: "#4ef253"
-  }   
+  }    
 ];
 
 var options = {
@@ -39,15 +43,6 @@ var options = {
 	onAnimationComplete : null
 };
 
-
-
 //Get the context of the canvas element we want to select
-var ctx = document.getElementById("myChart").getContext("2d");
-var myNewChart = new Chart(ctx).Doughnut(data,options);
-
-
-
-
-
-
-
+var ctx = document.getElementById("effectChart").getContext("2d");
+var effectChart = new Chart(ctx).Doughnut(data,options);

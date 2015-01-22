@@ -1,15 +1,19 @@
-var val = parseInt($("#myChart").attr("data-value"), 10);
-var negVal = 100 - val;
-
+var oneValNegative = parseInt($("#rednegative").attr("data-value"), 10);
+var twoValNegative = parseInt($("#yellownegative").attr("data-value"), 10);
+var threeValNegative = 100 - (oneValNegative + twoValNegative);
 var data = [
   {
-    value: val,
-    color:"#2c3034"
+    value: oneValNegative,
+    color: "#f7253e"
   },
   {
-    value: negVal,
+    value: twoValNegative,
+    color: "#fcd31c"    
+  },
+  {
+    value: threeValNegative,
     color: "#4ef253"
-  }   
+  }    
 ];
 
 var options = {
@@ -39,15 +43,6 @@ var options = {
 	onAnimationComplete : null
 };
 
-
-
 //Get the context of the canvas element we want to select
-var ctx = document.getElementById("myChart").getContext("2d");
-var myNewChart = new Chart(ctx).Doughnut(data,options);
-
-
-
-
-
-
-
+var ctx = document.getElementById("negativeChart").getContext("2d");
+var negativeChart = new Chart(ctx).Doughnut(data,options);

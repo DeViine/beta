@@ -1,43 +1,33 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeViine | Lets Save Green</title>
-	<!--base target="_blank" href="~/localhost/~justin001vinge/beta/" > <!--Sets the filepath of all pages to begin at this root-->
+    <!--base target="_blank" href="~/localhost/~justin001vinge/beta/"--> <!--Sets the filepath of all pages to begin at this root. No longer relevent.-->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="../src/css/foundation.css" media="screen" />
     <link rel="stylesheet" href="../src/css/animate.min.css" />
     <link rel="stylesheet" href="../fonts/unitedstates/unitedstatesfont.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../fonts/dense/stylesheet.css" media="screen" />
-        <!-- Styles CSS -->
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="../src/css/styles.css" media="screen" />
 
-	<!--Search link Node.js for in-site search indexing-->
-    <!--script type="text/javascript" src="../src/js/node.js"></script-->
+    <!--Search link Node.js for in-site search indexing-->
+    <!--script type="text/javascript" src="../src/js/search_node.js"></script-->
     <!--jQuery-->
-	<script src="../src/js/vendor/jquery.js"></script>
+    <script src="../src/js/vendor/jquery.js"></script>
     <!--[if lte IE 9] Then this script is required for the donut graph>
     <script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
-        <![endif]-->  
+    <![endif]-->  
     <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>  
-    <!-- RSVP -->
-    <script src="../src/js/vendor/rsvp.min.js"></script>
-    <!-- GeoFire -->
-    <script src="../src/js/vendor/geofire.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../src/js/html5Geolocation.js" defer></script>
-    <script src="../src/js/ratings.js" defer></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../src/css/html5Geolocation.css">    
-    <!--SLIDER JS-->
-    <script src="../src/js/vendor/modernizr.js"></script>
-  </head>
+    <script src='https://cdn.firebase.com/js/client/2.0.2/firebase.js'></script>  
+    <!--script src="../src/js/users.js"></script-->   
+    </head>
   <body class="home">
     <!-- Firebase ref -->
-    <p style="font-weight: bold; display: none;">GeoFire data for this example can be found <a id="firebaseRef" href="#" target="_blank">here</a></p>
+    <!--p style="font-weight: bold; ">GeoFire data for this example can be found <a id="firebaseRef" href="#" target="_blank">here</a></p-->
 
     <!-- Message log -->
     <div id="log"></div>
@@ -51,7 +41,7 @@
     <!-- turn this into a select to search multiple indexes -->
     <input type="hidden" name="index" value="firebase" />
     <!--Begin search section-->
-        <section class="search_container">
+        <!--section class="search_container">
             <form class="search" method="post" action="index.html" >
             <input type="text" class="form-control" name="q" placeholder="Enter search term"/>
                 <button class="searchicon_btn" type="submit">
@@ -63,7 +53,7 @@
                 </ul>
             </form>
         </section>
-    </div>
+    </div--><!--End search section-->
 </div>
 <!--End search section-->
 <!--<ul class="list-inline">
@@ -74,7 +64,7 @@
 </ul>
 <p class="help-block">You may use * or ? for wild cards in your search.</p>
 </form>
-</div>
+</div-->
 <!--End Search Bar-->
         <div class="mobileheaderbuttons">
           <a href="#"><img src="../img/hamburger_button.png"></a>

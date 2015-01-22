@@ -569,7 +569,7 @@ header {
         display: inline;
         float: left;
         position: relative; }
-      .featureddispensaries .featureddispensariesbody .cardwrapper .ratingtext {
+      .featureddispensaries .featureddispensariesbody .cardwrapper .ratingstext {
         font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
         font-weight: 400;
         font-size: .7em;
@@ -3516,4 +3516,22 @@ header {
 /*GeoLocation GeoFire styling (only styling for onload updates printed at top of page)*/
 #firebaseRef, #log {
 	display:none;
+}
+/*Doughnut css*/
+.propertysquare {
+  font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  height: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 20px;
+}
+#redprofile, #redeffect, #rednegative {
+  background-color: #f7253e;
+}
+#yellowprofile, #yelloweffect, #yellownegative {
+  background-color: #fcd31c;
+}
+#greenprofile, #greeneffect, #greennegative {
+  background-color: #4ef253;
 }

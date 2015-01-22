@@ -1,8 +1,14 @@
+        <?php
+        $dir = __DIR__;
+        $file = basename($dir); // $file is set to the folder name
+        ?>
 <div class="cardwrapper">
-	<a href="../www/<?php echo file_get_contents('../lib/dispensaries/dispensary1/dispensary_url');?>.php">
-                <img src="http://placehold.it/100x100" class="cardlogo">
-                <h1 class="dispensaryname"><?php echo file_get_contents ('../lib/dispensaries/dispensary1/dispensary_name'); ?></h1>
-                <h2 class="dispensaryaddress"><?php echo file_get_contents ('../lib/dispensaries/dispensary1/address'); ?></h2>
+	<?php $link_address = '../www/' . $file . '.php' ?>
+    <a href="<?php echo $link_address;?>">
+      <img src="http://placehold.it/100x100" class="cardlogo">
+      <h1 class="strainname"><?php echo basename('../lib/strains/' . $file);?></h1>
+      <h2 class="producer">PRODUCED BY<br><span><?php echo file_get_contents('../lib/strains/' . $file . '/producer_name');?></span></h2>
+<!--Rating system begin-->
     <div class="rating">
         <div class="starRating">
             <div>
@@ -24,12 +30,15 @@
         <input id="rating5" type="radio" name="rating" value="5">
         <label for="rating5"><span>5</span></label>
         </div>
-            <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
-            <div class="distance">
-              <h4 class="number">
-              <div id="satori_key"></div>
-              </h4> 
-              <h5 class="label">MILES<br>AWAY</h5>
+        <h3 class="ratingtext">Rated 4/5 by 103 users</h3>   
+<!--Rating system end-->
+            <div class="stats">
+                <div class="statleft">
+                    <h5 class="label"><?php echo file_get_contents('../lib/strains/' . $file . '/sativa');?>% INDICA</h5>
+                </div>
+                <div class="statright">
+                    <h5 class="label"><?php echo file_get_contents('../lib/strains/' . $file . '/indica');?>% SATIVA</h5>
+                </div>
             </div>
         </a>
     </div>

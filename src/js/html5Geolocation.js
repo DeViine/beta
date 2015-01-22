@@ -1,9 +1,8 @@
 (function() {
-  // Generate a Firebase location
-  var firebaseUrl = "https://dazzling-inferno-1178.firebaseIO.com/GeoLocation";
+  var firebaseUrl = "https://dazzling-inferno-1178.firebaseIO.com/GeoLocation";  // Generate a Firebase location
   var firebaseRef = new Firebase(firebaseUrl);
 
-  // Set the URL of the link element to be the Firebase URL
+  // Set the URL of the link element to be the Firebase URL *********NOT NECCESARY FOR ANYTHING BUT TESTING*********
   document.getElementById("firebaseRef").setAttribute("href", firebaseUrl);
 
   // Create a new GeoFire instance at the random Firebase location
