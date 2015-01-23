@@ -3,6 +3,7 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="rf6KXMtOIDZE558PolETgfr0nPJvYKOexogW6unsHfg" />
     <title>DeViine | Lets Save Green</title>
     <!--base target="_blank" href="~/localhost/~justin001vinge/beta/"--> <!--Sets the filepath of all pages to begin at this root. No longer relevent.-->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
