@@ -78,8 +78,6 @@
         <li class="strains"><a href="index.php?page=page4.php">Strains</a></li>
       </ul> 
 
-
-
     <div id="alertmodal" class="reveal-modal" data-reveal>
       <h1>This page contains content that is intended for adults only.</h1>
       <br><h4>You must be 21 years or older to continue.</h4>

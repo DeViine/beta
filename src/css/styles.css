@@ -569,15 +569,16 @@ header {
         display: inline;
         float: left;
         position: relative; }
-      .featureddispensaries .featureddispensariesbody .cardwrapper .ratingstext {
+      .ratingstext {
         font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
         font-weight: 400;
-        font-size: .7em;
         text-align: center;
         color: #2c3034;
         text-transform: uppercase;
         margin: 0;
         padding: 0; }
+      .ratingstext p {
+        float: left; }
       .featureddispensaries .featureddispensariesbody .cardwrapper .distance {
         width: 100%;
         margin: 5px auto 0 auto;
@@ -3534,4 +3535,59 @@ header {
 }
 #greenprofile, #greeneffect, #greennegative {
   background-color: #4ef253;
+}
+
+/*Error 404 Page css*/
+.leftside {
+  width: 45%;
+  margin: 0;
+  padding: 0 4%;
+  float: left;
+  height: 100%;
+}
+.leftside h1 {
+  font-family: bebas neue;
+  font-size: 80px;
+  line-height: 50px;
+  text-align: center;
+  color: rgb(44,48,52);
+  margin: 50px 0 0 0;
+  padding: 20% 0 0 0;
+  position: relative;
+}
+.leftside h2 {
+  font-family: open sans;
+  font-weight: lighter;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(44,48,52);
+  margin: 0;
+  padding: 0;
+}
+.leftside h3 {
+  font-family: open sans;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(44,48,52);
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+.leftside h3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(61,216,97);
+}
+.rightside {
+width: 45%;
+margin: 0;
+padding: 0;
+float: left;
+border-left: 1px solid rgba(0,0,0,.15);
+}
+.rightside img {
+  width: 500px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
