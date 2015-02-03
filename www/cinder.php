@@ -10,9 +10,7 @@
             <a href="#" data-reveal-id="hoursmodal" class="hoursbtn">Hours</a>
             <img src="../img/closednow.png" alt="closed" class="openorclosed closed">
             <img src="../img/opennow.png" alt="open" class="openorclosed open">
-
- <!-- file get contents for the address and an include for the open close modal. Or just jquery the open close. -->
-
+            
             <h3>2001 South Broadway <br>Denver, CO, 80210</h3>
             <a href="#" data-reveal-id="mapmodal" class="map">Map &#10095;&#10095;</a>
             <div id="mapmodal" class="reveal-modal medium" data-reveal>
@@ -56,7 +54,7 @@
                 </table>
               <a class="close-reveal-modal">&#215;</a>
             </div>
-<!-- Remove this example of the rating system and put in a firebase one -->
+
             <ul class="overallrating">
           
               <li><img src="../img/budiconyes.png"></li>
@@ -65,8 +63,7 @@
               <li><img src="../img/budiconyes.png"></li>
               <li><img src="../img/budiconno.png"></li>
               <h4>Rated 4/5 by 453 users</h4>
-<!-- php include file contents for this contact section -->    
-
+                
             </ul>
             <div class="contactinfo">
               <h4><a href="http://mmjdenver.net" target="_blank"><img src="../img/webicon.png">mmjdenver.net</a></h4>
@@ -77,7 +74,7 @@
         </div>
       </div>
 
-<!-- Create a slider.php to include here -->
+
 
       <div class="images">
         <h2 class="imagesbar">Images</h2>
@@ -141,12 +138,17 @@
 
 
     
-<!-- Begin the dispensary menu -->      
+      
          
       <div class="menu">
         <h2 class="menubar">Menu</h2>
         <div class="menubody">
-
+          <div class="menuoptions">
+            <div class="selectunits">Select Units:
+              <a class="unit">Grams</a>
+              <a class="unit active">Ounces</a>
+            </div>
+          </div>
         <dl class="tabs" data-tab>
           <dd class="active"><a href="#panel2-1"><img src="../img/indicatab.png"></a></dd>
           <dd><a href="#panel2-2"><img src="../img/sativatab.png"></a></dd>
@@ -162,22 +164,176 @@
 
             <div class="content active indica" id="panel2-1">
               <ul id="menu">
-<!--***************************************************** Start cutting here *****************-->                
-<?php
-
-$path = '../lib/menu/' . $name[0];
-$results = scandir($path);
-
-foreach ($results as $result) {
-    if ($result === '.' or $result === '..') continue;
-
-    if (is_dir($path . '/' . $result)) {
-        include ($path . '/' . $result . '/strain.html');
-        //code to use if directory
-    }
-}
-
-?>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">LA Kush</h1>
+                  <h2>Strain Makeup:</h2>
+                  <h3>50% Indica - Strain Name</h3>
+                  <h3>50% Sativa - Strain Name</h3>
+                  <table>
+                    <tbody>
+                      <tr class="units">
+                        <td>1/16 oz</td>
+                        <td>1/8 oz</td>
+                        <td>1/4 oz</td>
+                        <td>1/2 oz</td>
+                        <td>1 oz</td>
+                      </tr>
+                      <tr class="prices">
+                        <td>$16.50</td>
+                        <td>$58.50</td>
+                        <td>$105.50</td>
+                        <td>$195.50</td>
+                        <td>$400.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                </li>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">LA Kush</h1>
+                  <h2>Strain Makeup:</h2>
+                  <h3>50% Indica - Strain Name</h3>
+                  <h3>50% Sativa - Strain Name</h3>
+                  <table>
+                    <tbody>
+                      <tr class="units">
+                        <td>1/16 oz</td>
+                        <td>1/8 oz</td>
+                        <td>1/4 oz</td>
+                        <td>1/2 oz</td>
+                        <td>1 oz</td>
+                      </tr>
+                      <tr class="prices">
+                        <td>$16.50</td>
+                        <td>$58.50</td>
+                        <td>$105.50</td>
+                        <td>$195.50</td>
+                        <td>$400.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                </li>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">LA Kush</h1>
+                  <h2>Strain Makeup:</h2>
+                  <h3>50% Indica - Strain Name</h3>
+                  <h3>50% Sativa - Strain Name</h3>
+                  <table>
+                    <tbody>
+                      <tr class="units">
+                        <td>1/16 oz</td>
+                        <td>1/8 oz</td>
+                        <td>1/4 oz</td>
+                        <td>1/2 oz</td>
+                        <td>1 oz</td>
+                      </tr>
+                      <tr class="prices">
+                        <td>$16.50</td>
+                        <td>$58.50</td>
+                        <td>$105.50</td>
+                        <td>$195.50</td>
+                        <td>$400.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                </li>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">LA Kush</h1>
+                  <h2>Strain Makeup:</h2>
+                  <h3>50% Indica - Strain Name</h3>
+                  <h3>50% Sativa - Strain Name</h3>
+                  <table>
+                    <tbody>
+                      <tr class="units">
+                        <td>1/16 oz</td>
+                        <td>1/8 oz</td>
+                        <td>1/4 oz</td>
+                        <td>1/2 oz</td>
+                        <td>1 oz</td>
+                      </tr>
+                      <tr class="prices">
+                        <td>$16.50</td>
+                        <td>$58.50</td>
+                        <td>$105.50</td>
+                        <td>$195.50</td>
+                        <td>$400.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                </li>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Lavender</h1>
+                  <h2>Strain Makeup:</h2>
+                  <h3>50% Indica - Strain Name</h3>
+                  <h3>50% Sativa - Strain Name</h3>
+                  <table>
+                    <tbody>
+                      <tr class="units">
+                        <td>1/16 oz</td>
+                        <td>1/8 oz</td>
+                        <td>1/4 oz</td>
+                        <td>1/2 oz</td>
+                        <td>1 oz</td>
+                      </tr>
+                      <tr class="prices">
+                        <td>$16.50</td>
+                        <td>$58.50</td>
+                        <td>$105.50</td>
+                        <td>$195.50</td>
+                        <td>$400.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                </li>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Skywalker OG Caviar</h1>
+                  <h2>Strain Makeup:</h2>
+                  <h3>50% Indica - Strain Name</h3>
+                  <h3>50% Sativa - Strain Name</h3>
+                      <table>
+                    <tbody>
+                      <tr class="units">
+                        <td>1/16 oz</td>
+                        <td>1/8 oz</td>
+                        <td>1/4 oz</td>
+                        <td>1/2 oz</td>
+                        <td>1 oz</td>
+                      </tr>
+                      <tr class="prices">
+                        <td>$16.50</td>
+                        <td>$58.50</td>
+                        <td>$105.50</td>
+                        <td>$195.50</td>
+                        <td>$400.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                </li>
+              </ul>
+            </div>
 
             
 

@@ -1,46 +1,20 @@
-    <section id="howitworks">
-        <h1>Let's save green.</h1>
-        <h2>HOW IT WORKS</h2>
-        <div class="sectionwrapper">
-          <img class="lefticon" src="http://s7.postimg.org/ee4s7ph97/lrg_dispensary_icon.png">
-          <h4 class="lefttitle disptitle">Find dispensaries</h4>
-          <p class="leftpara">Find recreational cannabis dispensaries in your area. Explore up-to-date menus with prices for every dispensary listed on DeViine. Browse through user reviews, images, store locations, store hours and contact information to find the best dispensary for you.</p>
-        </div>
-        <div class="sectionwrapper">
-          <img class="righticon" src="http://s7.postimg.org/ilzkggior/lrg_deal_icon.png">
-          <h4 class="righttitle dealtitle">Discover deals</h4>
-          <p class="rightpara">Discover the best deals in your area. We work directly with businesses within the recreational cannabis industry to provide the best deals possible. Find deals on strains, edibles, concentrates, glassware, rolling papers and other accessories from businesses in your area.</p>
-        </div>
-        <div class="sectionwrapper">
-          <img class="lefticon" src="http://s7.postimg.org/rjkadtb4r/lrg_strain_icon.png">
-          <h4 class="lefttitle strntitle">Explore strains</h4>
-          <p class="leftpara">Explore through our ever-expanding strain database to find the perfect strain for you. All cannabis strains provide different highs, flavor profiles and effects. We work directly with licensed producers to provide the most comprehensive database possible.</p>
-        </div>
-        <div class="sectionwrapper">
-          <img class="righticon" src="http://s7.postimg.org/pnxi2nmaj/lrg_news_icon.png">
-          <h4 class="righttitle newstitle">Keep informed</h4>
-          <p class="rightpara">Keep informed on what’s going on in the recreational cannabis industry with our news section. We have the most passionate cannabis journalists writing articles to provide the most relevant news from around the country.</p>
-        </div>
-    </section>
-
-
-
-      <section id="slider">
-         <ul class="slider" data-orbit>
-            <li class="active">
-              <img src="../img/slide1.png" alt="Find Recreational Cannabis Dispensaries In Your Area to Compare Menus and Prices!" />
-            </li>
-            <li>
-              <img src="../img/slide2.png" alt="Discover Cannabis Deals Around You!" />
-            </li>
-            <li>
-              <img src="../img/slide3.png" alt="Browse Through Our Strain Database To Find The Perfect Strain For You!" />
-            </li>
-            <li>
-              <img src="../img/slide4.png" alt="Keep Informed With Our News and Blog Section!" />
-            </li>
-        </ul>
-      </section>
+<ul class="three_column">
+  <a href="#"><li>
+    <img src="http://i.imgur.com/0xqsnEO.png" alt="Dispensary Icon"/>
+    <h1 class="dispensariestitle">FIND DISPENSARIES</h1>
+    <p>Find recreational cannabis dispensaries in your area. Explore up-to-date menus with prices for every dispensary listed on DeViine. Browse through user reviews, images, store locations, store hours and contact information to find the best dispensary for you.</p>
+  </li></a>
+  <a href="#"><li>
+    <img src="http://i.imgur.com/818RACi.png" alt="Deal Icon"/>
+    <h1 class="dealstitle">DISCOVER DEALS</h1>
+    <p>Discover the best deals in your area. We work directly with businesses within the recreational cannabis industry to provide the best deals possible. Find deals on strains, edibles, concentrates, glassware, rolling papers and other accessories from businesses in your area.</p>
+  </li></a>
+  <a href="#"><li class="omega">
+    <img src="http://i.imgur.com/iC4LzsB.png" alt="Strain Icon"/>
+    <h1 class="strainstitle">EXPLORE STRAINS</h1>
+    <p>Explore through our ever-expanding strain database to find the perfect strain for you. All cannabis strains provide different highs, flavor profiles and effects. We work directly with licensed producers to provide the most comprehensive database possible.</p>
+  </li></a>
+</ul>
 <!-- end slide -->
 
 

@@ -1,0 +1,71 @@
+body {
+background: rgb(44,48,52);
+}
+div {
+  position: relative;
+  width: 75%;
+  margin: 150px auto;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 5px;
+}
+.logo {
+  width: 200px;
+  padding: 0px 40px;
+  background: rgb(44,48,52);
+  margin: -110px auto 0 auto;
+  position: relative;
+}
+h1 {
+  font-family: bebas neue;
+  font-weight: normal;
+  color: white;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+}
+.ageText, .betaCodeText {
+  font-family: open sans;
+  color: rgb(247,37,62);
+  font-weight: lighter;
+  margin-top: 0;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.bday, .betacode {
+  padding: 13px 20px 5px 20px;
+  margin: 5px 15px 40px 15px;
+  width: 120px;
+  color: rgba(44,48,52,.4);
+  text-align: center;
+  font-family: bebas neue;
+  font-size: 30px;
+  font-weight: bold;
+}
+.betacode &:focus, .bday &:focus {
+  color: rgb(44,48,52);
+}
+.betacode {
+  width: 300px;
+}
+#enter {
+  margin: 20px auto 80px auto;
+  background: rgb(247,37,62);
+  color: white;
+  font-family: bebas neue;
+  font-weight: normal;
+  font-size: 40px;
+  padding: 20px 30px 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+#enter &:hover {
+  cursor: pointer;
+}
+footer {
+  color: white;
+  font-family: open sans;
+  text-align: center;
+  margin-bottom: 30px;
+}

@@ -16,28 +16,32 @@
     </div>    
     <!--Rating system begin-->
     <div id="ak47_rating">
-      <div class="starRating">
+      <div class="starRating"><!--staRating div end-->
               <div>
                   <div>
                       <div>
                           <div>
-                          <input id="rating1" class="<?php echo file_get_contents('../lib/strains/' . $file . '/strain_name');?>" type="radio" name="rating" value="1">
+                          <input id="rating1" class="ak47" type="radio" name="rating" value="1">
                           <label for="rating1"><span>1</span></label>
                           </div>
-                      <input id="rating2" class="<?php echo file_get_contents('../lib/strains/' . $file . '/strain_name');?>" type="radio" name="rating" value="2">
+                      <input id="rating2" class="<?php echo ($file);?>" type="radio" name="rating" value="1">
                       <label for="rating2"><span>2</span></label>
                       </div>
-                  <input id="rating3" class="<?php echo file_get_contents('../lib/strains/' . $file . '/strain_name');?>" type="radio" name="rating" value="3">
+                  <input id="rating3" class="<?php echo ($file);?>" type="radio" name="rating" value="1">
                   <label for="rating3"><span>3</span></label>
                   </div>
-              <input id="rating4" class="<?php echo file_get_contents('../lib/strains/' . $file . '/strain_name');?>" type="radio" name="rating" value="4">
+              <input id="rating4" class="<?php echo ($file);?>" type="radio" name="rating" value="1">
               <label for="rating4"><span>4</span></label>
               </div>
-          <input id="rating5" class="<?php echo file_get_contents('../lib/strains/' . $file . '/strain_name');?>" type="radio" name="rating" value="5">
+          <input id="rating5" class="<?php echo ($file);?>" type="radio" name="rating" value="1">
           <label for="rating5"><span>5</span></label>
-      </div><!--starRating div end-->
-        <div class="ratingstext">Rated <p id="sativaRatings" class="ratingstext">/5 by <p id="sativaUsers" class="ratingstext"></p></p> Users</div>   
+      </div>                <!--starRating div end-->
+        <div class="ratingstext">
+          <p id="<?php echo ($file . 'Ratings');?>" class="ratingstext"></p><p id="<?php echo ($file . 'Users');?>" class="ratingstext"><p></div> 
+          <br><p>PRODUCED BY <?php echo file_get_contents('../lib/strains/' . $file . '/producer_name');?></p>
+          
         <!--Rating system end-->
+
         <!--<a href="#" class="favbtn">FAVORITE</a>-->
         <canvas id="myChart" width="120" height="120" data-value="<?php echo file_get_contents('../lib/strains/' . $file . '/indica');?>"></canvas>
         <h3 class="makeup"><?php echo file_get_contents('../lib/strains/' . $file . '/sativa');?>% Indica / <?php echo file_get_contents('../lib/strains/' . $file . '/indica');?>% Sativa</h3>

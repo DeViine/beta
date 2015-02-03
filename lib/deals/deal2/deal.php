@@ -3,9 +3,9 @@
         <div class="infocontainer">
 
           <div class="audinfo">
-            <h2>Offering $180 ounces of select strains</h2>
-            <h3>Wellspring Collective</h3>
-            <h4>2001 South Broadway <br>Denver, CO, 80210</h4>
+            <h2><?php echo file_get_contents('../lib/deals/deal1/title');?></h2>
+            <h3><?php echo file_get_contents('../lib/deals/deal1/business_name');?></h3>
+            <h4><?php echo file_get_contents('../lib/deals/deal1/address');?></h4>
             <a href="#" data-reveal-id="mapmodal" class="map">Map &#10095;&#10095;</a>
             <div id="mapmodal" class="reveal-modal medium" data-reveal>
                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=walking+raven+2001+South+Broadway+Denver,+CO,+80210&amp;aq=&amp;sll=39.68009,-104.987849&amp;sspn=0.006292,0.010128&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=39.68009,-104.987849&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=walking+raven+2001+South+Broadway+Denver,+CO,+80210&amp;aq=&amp;sll=39.68009,-104.987849&amp;sspn=0.006292,0.010128&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=39.68009,-104.987849&amp;spn=0.006295,0.006295&amp;t=m" style="text-align:left" target="_blank">Driving Directions</a> in a larger map</small>
@@ -22,9 +22,9 @@
             </ul>
 
             <div class="contactinfo">
-              <h4><a href="http://mmjdenver.net" target="_blank"><img src="../img/webicon.png">mmjdenver.net</a></h4>
-              <h4><a href="mailto:klmanagers@gmail.com"><img src="../img/emailicon.png">klmanagers@gmail.com</a></h4>
-              <h4><img src="../img/phoneicon.png">303-565-3600</h4>
+              <h4><a href="http://mmjdenver.net" target="_blank"><img src="../img/webicon.png"><?php echo file_get_contents('../lib/deals/deal1/website');?></a></h4>
+              <h4><a href="mailto:klmanagers@gmail.com"><img src="../img/emailicon.png"><?php echo file_get_contents('../lib/deals/deal1/email_address');?></a></h4>
+              <h4><img src="../img/phoneicon.png"><?php echo file_get_contents('../lib/deals/deal1/phone');?></h4>
             </div>
 
           </div>
@@ -50,8 +50,8 @@
         <h2 class="detailsbar">Details</h2>
         <div class="detailsbody">
           <div class="buttonwrapper">
-            <h2>12 Days Left</h2>
-            <h3>Expires 10/27/14</h3>
+            <h2><?php include ('../lib/deals/deal1/days_left.php');?> Days Left</h2>
+            <h3>Expires <?php echo file_get_contents('../lib/deals/deal1/end_date');?></h3>
             <button>Get Deal</button>
           </div>
           <h3>The Deal</h3>

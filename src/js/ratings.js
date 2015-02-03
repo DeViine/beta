@@ -22,8 +22,10 @@
 				numRatings = ratingsData.numRatings;
 				cumulativeRating = ratingsData.cumulativeRating;
 				averageRating = numRatings / cumulativeRating;
-				$('#sativaUsers').html(cumulativeRating);
-				$('#sativaRatings').html(averageRating.toFixed());
+				$( '#' + itemId + 'Users').html("/5 BY " + cumulativeRating + " USERS");
+				$('#' + itemId + 'Ratings').html("RATED " + averageRating.toFixed());
+				//ratings system needs to be adjusted to output to whichever strain / dispensary that rated it
+				//currently is only outputting the rating to one page's rating (ak47.php)
 			}
 
 		});

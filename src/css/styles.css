@@ -337,110 +337,51 @@ header {
       height: 450px; } }
 
 /* Alert End */
-#howitworks {
-  display: none; }
-  #howitworks h1 {
-    color: #2c3034;
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3em;
-    margin: 80px 0 0 0;
-    padding: 0;
-    text-align: center; }
-  #howitworks h2 {
-    color: #2c3034;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 0 0 40px;
-    padding: 0;
-    text-align: center; }
-  #howitworks h4 {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 1.4em;
-    font-weight: 700;
-    text-transform: uppercase; }
-    @media screen and (max-width: 500px) {
-      #howitworks h4 {
-        font-size: 1.6em; } }
-  #howitworks p {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: .9em;
-    margin: 5px 0 0;
-    padding: 0;
-    width: 60%; }
-    @media screen and (max-width: 500px) {
-      #howitworks p {
-        width: 100%;
-        font-size: 1em; } }
-  #howitworks .leftpara {
-    float: left;
-    text-align: left; }
-    @media screen and (max-width: 500px) {
-      #howitworks .leftpara {
-        text-align: center;
-        float: none; } }
-  #howitworks .rightpara {
-    float: right;
-    text-align: right; }
-    @media screen and (max-width: 500px) {
-      #howitworks .rightpara {
-        text-align: center;
-        float: none; } }
-  #howitworks .lefttitle {
-    float: left;
-    margin: 0;
-    padding: 0; }
-    @media screen and (max-width: 500px) {
-      #howitworks .lefttitle {
-        text-align: center;
-        float: none;
-        margin-top: 15px; } }
-  #howitworks .righttitle {
-    float: right;
-    margin: 0;
-    padding: 0; }
-    @media screen and (max-width: 500px) {
-      #howitworks .righttitle {
-        text-align: center;
-        float: none;
-        margin-top: 15px; } }
-  #howitworks .sectionwrapper {
-    margin: 0 auto;
-    padding: 0 0 230px;
-    width: 80%;
-    text-align: center; }
-    @media screen and (max-width: 500px) {
-      #howitworks .sectionwrapper {
-        padding: 0 0 50px 0; } }
-  #howitworks .lefticon {
-    float: left;
-    margin-right: 30px;
-    width: 30%; }
-    @media screen and (max-width: 500px) {
-      #howitworks .lefticon {
-        width: 80%;
-        float: none;
-        margin: 0 auto; } }
-  #howitworks .righticon {
-    float: right;
-    margin-left: 30px;
-    width: 30%; }
-    @media screen and (max-width: 500px) {
-      #howitworks .righticon {
-        width: 80%;
-        float: none;
-        margin: 0 auto; } }
-  #howitworks .disptitle {
-    color: #F5253E; }
-  #howitworks .dealtitle {
-    color: #F2CD1C; }
-  #howitworks .strntitle {
-    color: #36C746; }
-  #howitworks .newstitle {
-    color: #2c3034; }
-  @media screen and (max-width: 840px) {
-    #howitworks {
-      display: inline; } }
+.three_column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.three_column a {
+  margin: 0;
+  padding: 0;
+}
+.three_column li {
+  text-align: center;
+  display: inline-block;
+  width: 29%;
+  margin: 0;
+  padding: 2%;
+  border-right: 1px solid rgba(0,0,0,.15);
+}
+.three_column img {
+  width: 50%;
+}
+.dealstitle h1, .dispensariestitle h1, .strainstitle h1 {
+  font-family: bebas neue;
+  font-size: 40px;
+  color: rgb(44,48,52);
+}
+.dispensariestitle {
+  color: rgb(247,37,62);
+}
+.dealstitle {
+  color: rgb(252,211,28);
+}
+.strainstitle {
+  color: rgb(61,216,97);
+}
+.three_column p {
+  font-family: open sans;
+  font-size: 14px;
+  color: rgb(44,48,52);
+}
+.three_column p &:hover {
+  background: rgba(0,0,0,.02);
+}
+.omega {
+border-right: none;
+}
 
 /* Slider Start */
 #slider {
@@ -569,16 +510,6 @@ header {
         display: inline;
         float: left;
         position: relative; }
-      .ratingstext {
-        font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-        font-weight: 400;
-        text-align: center;
-        color: #2c3034;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 0; }
-      .ratingstext p {
-        float: left; }
       .featureddispensaries .featureddispensariesbody .cardwrapper .distance {
         width: 100%;
         margin: 5px auto 0 auto;
@@ -3329,6 +3260,42 @@ header {
   background : url('../../img/budicons.png') repeat-x 0 -60px;
   margin : 0px 0px 0px 0px;
 }
+/* Rating output to buds - yellow, green and red*/
+.ratingwrap {
+  margin: 40px 15px 0 15px;
+}
+.progress {
+  width: 220px;
+  height: 50px;
+}
+.progress-wrap {
+  background: rgb(50,50,50);
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+.progress-bar {
+  background: rgb(255,255,255);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.progress-wrap .green {
+background: rgb(61,216,97);
+}
+.progress-wrap .yellow {
+  background: rgb(252,211,28);
+}
+.progress-wrap .red {
+  background: rgb(247,37,62);
+}
+.budbox {
+  width: 250px;
+  padding: 0;
+  margin-top: -80px;
+  position: absolute;
+  z-index: 5;
+}
 /* End Rating System Styling */
 
 /* Begin the Doughnut Graph Styling */
@@ -3356,6 +3323,20 @@ header {
 
 @media (max-width: 767px) {
    #fork_on_github { display: none }
+}
+.ratingstext {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: #2c3034;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; 
+}
+.ratingstext p {
+  float: left;
+  line-height: 1em; 
+  margin:0;
 }
 /*Begin styling for the search bar*/
 .form-control {
@@ -3536,3 +3517,4 @@ header {
 #greenprofile, #greeneffect, #greennegative {
   background-color: #4ef253;
 }
+/* Validation and Information Pages */

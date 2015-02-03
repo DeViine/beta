@@ -8,6 +8,9 @@ if (!empty($_GET['category'])) {
 if (!empty($_GET['page'])) {
         $url .= $_GET['page'];
 }
+else {
+		include('page1.php');
+}
 include $url;
 
 include (dirname(__FILE__) . "/../lib/classes/footer.php"); ?>

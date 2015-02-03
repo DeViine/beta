@@ -29,6 +29,8 @@ radius: 9000 //kilometers
 });
 var onKeyEnteredRegistration = geoQuery.on("key_entered", function(key, location, distanceInKm) {
 var distanceInMiles = distanceInKm * 0.621;
+
+// Append the number of miles to the html
 $("<div />").addClass("added").text(distanceInMiles.toFixed()).appendTo("#" + key);
 });
 

@@ -1,20 +1,20 @@
 	<a href="#top" class="uptotop"><img src="../img/rocketicon.png"></a>
                   
-	<!--Doughnut graph js file--> 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>      
-	<script src="../src/js/doughnut.js"></script>
-	<script src="../src/js/profileDoughnut.js"></script>
+        <!--Doughnut graph js file--> 
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>      
+        <script src="../src/js/doughnut.js"></script>
+        <script src="../src/js/profileDoughnut.js"></script>
     <script src="../src/js/effectDoughnut.js"></script>
     <script src="../src/js/negativeDoughnut.js"></script>
-	<!--[if lte IE 9]>
-	<script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
-	<![endif]-->
+        <!--[if lte IE 9]>
+        <script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
+        <![endif]-->
 
-	<!-- libs and dependencies -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <!-- libs and dependencies -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 
-	<!--Search link Node.js for in-site search indexing-->
-	<!--script type="text/javascript" src="../src/js/search_node.js"></script-->
+        <!--Search link Node.js for in-site search indexing-->
+        <!--script type="text/javascript" src="../src/js/search_node.js"></script-->
 
           
 
@@ -46,6 +46,7 @@
     <script src="../src/js/vendor/disqus.js" defer></script>
     <!-- Ratings JS -->
     <script src="../src/js/ratings.js" defer></script>
+
 
 
     
