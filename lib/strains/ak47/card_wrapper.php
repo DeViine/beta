@@ -8,20 +8,15 @@
         <img src="http://placehold.it/100x100" class="cardlogo">
         <h1 class="strainname"><?php echo file_get_contents('../lib/strains/' . $file . '/strain_name');?></h1>
         <h2 class="producer">PRODUCED BY<br><span><?php echo file_get_contents('../lib/strains/' . $file . '/producer_name');?></span></h2>
-            <div class="rating">    <!-- Begin rating system output -->
-                <!-- Here should be the ratings system buds -->
-                <!-- Change the below data attribute for the rating -->
-                <div class="ratingwrap">
-
-<!--THERE MUST BE A ($file-data-progress-percent).html WHICH PLACES A SNAPSHOT OF THE AVERAGE RATING INTO THE "" BELOW-->
-
-                  <div class="progress-wrap green progress" <?php echo ($file . '-data-progress-percent');?>="">
-                    <div class="progress-bar progress"></div>
-                  </div>
-                </div>
-                <img src="http://deviine.com/deviine/beta/img/BudBox.png" class="budbox">
-                <h3 id="sativaRatings" class="ratingstext"></h3><h3 id="sativaUsers" class="ratingstext"><h3>
-            </div>                  <!-- End of Rating output -->  
+        <div class="rating">
+            <!-- Change the below data attribute for the rating -->
+            <div class="ratingwrap">
+              <div class="progress-wrap green progress" data-progress-percent="3.5">
+                <div class="progress-bar progress"></div>
+              </div>
+            </div>
+        </div><!--End of the rating div-->
+<img src="http://deviine.com/deviine/beta/img/BudBox.png" class="budbox">
         <div class="stats">
             <div class="statleft">
                 <h5 class="label"><?php echo file_get_contents('../lib/strains/' . $file . '/sativa');?>% INDICA</h5>

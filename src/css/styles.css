@@ -59,22 +59,127 @@ body {
 /* Up To Top End */
 /* Footer Start */
 footer {
-  background: #2c3034;
-  bottom: 0;
+  background: rgb(44,48,52);
+  height: 340px;
+  width: 100%;
   margin: 1% 1% 0 1%;
   padding: 20px 0;
-  width: 94%;
+  padding: 25px;
   position: relative;
-  float: left; }
-  footer p {
-    text-align: center;
-    margin: 0 0;
-    color: white;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 13px; }
-  @media screen and (max-width: 600px) {
-    footer {
-      display: none; } }
+  float: left;
+  bottom: 0;
+}
+.footerheader {
+  font-size: 16px;
+  font-family: open sans;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  color: rgb(61,216,97);
+  margin: 0;
+  padding: 0;
+}
+.footersubheader {
+  font-size: 12px;
+  font-family: open sans;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,.3);
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.leftside,
+.rightside {
+  width: 46%;
+  height: 100%;
+  margin: 0;
+  padding: 0 25px 0 0;
+  float: left;
+}
+.leftside {
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.rightside {
+  padding-left: 25px;
+}
+.leftside ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.seperator {
+  display: inline;
+  color: rgba(255,255,255,.3);
+  padding-right: 10px;
+}
+.leftside ul li {
+  display: inline;
+}
+.leftside ul li a {
+  color: white;
+}
+.leftside ul li a:hover {
+  color: rgb(61,216,97);
+}
+.leftside ul a {
+  text-decoration: none;
+  font-family: open sans;
+  font-weight: lighter;
+  font-size: 12px;
+  padding-right: 10px;
+}
+.leftside input, .rightside input,
+.rightside textarea, .leftside textarea {
+  background: rgba(255,255,255,.1);
+  color: white;
+  height: 40px;
+  width: 60%;
+  font-family: open sans;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 10px;
+  border: none;
+  float: left;
+}
+.leftside textarea {
+  padding-top: 10px;
+}
+footer #feedback {
+  height: 110px;
+  width: 100%;
+}
+.leftside #signup,
+ .rightside #sendfeedback {
+  background: rgb(61,216,97);
+  cursor: pointer;
+  font-family: bebas neue;
+  font-size: 30px;
+  line-height: 47px;
+  width: 20%;
+  margin: 10px 0 0 0;
+  padding: 0;
+  float: left;
+}
+.leftside #signup {
+  width: 150px;
+}
+.rightside #sendfeedback {
+  width: 225px;
+}
+.leftside #signup:hover,
+.rightside #sendfeedback:hover {
+  color: rgb(44,48,52);
+}
+footer .logo {
+  width: 100px;
+  float: left;
+  clear: left;
+}
+footer .address {
+  padding: 10px 0 10px 30px;
+  margin: 18px 0 0 30px;
+  border-left: 1px solid rgba(255,255,255,.1);
+}
 
 /* Footer End */
 /*---------------------------Globals End------------------------------*/
@@ -3265,12 +3370,12 @@ border-right: none;
   margin: 40px 15px 0 15px;
 }
 .progress {
-  width: 220px;
+  width: 190px;
   height: 50px;
 }
 .progress-wrap {
   background: rgb(50,50,50);
-  margin: 20px 0;
+  margin: 25px 0;
   overflow: hidden;
   position: relative;
 }
@@ -3290,7 +3395,7 @@ background: rgb(61,216,97);
   background: rgb(247,37,62);
 }
 .budbox {
-  width: 250px;
+  width: 205px;
   padding: 0;
   margin-top: -80px;
   position: absolute;

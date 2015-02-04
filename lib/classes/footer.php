@@ -10,9 +10,6 @@
         <script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
         <![endif]-->
 
-        <!-- libs and dependencies -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-
         <!--Search link Node.js for in-site search indexing-->
         <!--script type="text/javascript" src="../src/js/search_node.js"></script-->
 
@@ -22,15 +19,41 @@
 
 
 
-      <footer>
-        <p>All Rights Reserved. 2014. DeViine.</p>
-      </footer>
+<footer>
+  <div class="leftside">
+    <h1 class="footerheader">QUICKLINKS</h1>
+    <ul>
+      <li><a href="">Dispensaries</a></li>
+      <li class="seperator">-</li>
+      <li><a href="">Deals</a></li>
+      <li class="seperator">-</li>
+      <li><a href="">Strains</a></li>
+      <li class="seperator">-</li>
+      <li><a href="">FAQ</a></li>
+      <li class="seperator">-</li>
+      <li><a href="">Terms of Use</a></li>
+      <li class="seperator">-</li>
+      <li><a href="">Privacy Policy</a></li>
+    </ul>
+    <br>
+    <h1 class="footerheader">SIGN UP FOR OUR NEWSLETTER</h1>
+    <h2 class="footersubheader">Enter your email address to receive website updates, exclusive deals and strain information delivered straight to your inbox.</h2>
+    <input type="text" placeholder="Email Address" id="input newsletter"/>
+    <input type="submit" value="Sign Up" id="signup"/>
+    <img src="http://162.243.153.215/deviine/beta/img/deviine_logo.png" class="logo">
+    <h2 class="footersubheader address">©2015 DeViine LLC<br>28 W. 3rd Avenue, Suite B-1<br>Spokane, WA 99201</h2>
+  </div>
+  <div class="rightside">
+    <h1 class="footerheader">HOW CAN WE IMPROVE YOUR EXPERIENCE?</h1>
+    <h2 class="footersubheader">This may sound crazy, but we actually listen to your feedback. Let us know how we can make DeViine better for you.</h2>
+    <textarea type="text" placeholder="We would love to hear your suggestions, ideas and feedback." id="feedback"></textarea>
+    <input type="submit" value="Send Feedback" id="sendfeedback"/>
+  </div>
+</footer>
     
 
     <!--SLIDER JS-->
     <script src="../src/js/vendor/modernizr.js"></script>
-    <!--JQUERY-->
-    <script src="src/js/vendor/jquery.js"></script>
     <!--MENU-->
     <script src="src/js/foundation.min.js"></script>
     <!--NO OBSERVABLE USE JS-->
@@ -44,9 +67,6 @@
     <script src="../src/js/html5Geolocation.js" defer></script>
     <!-- Disqus JS -->
     <script src="../src/js/vendor/disqus.js" defer></script>
-    <!-- Ratings JS -->
-    <script src="../src/js/ratings.js" defer></script>
-
 
 
     

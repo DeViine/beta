@@ -9,9 +9,7 @@
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="../src/css/foundation.css" media="screen" />
     <link rel="stylesheet" href="../src/css/animate.min.css" />
-    <link rel="stylesheet" href="../fonts/unitedstates/unitedstatesfont.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../fonts/dense/stylesheet.css" media="screen" />
     <!-- Styles CSS -->
     <link rel="stylesheet" href="../src/css/styles.css" media="screen" />
 
@@ -34,7 +32,10 @@
     <div id="log"></div>
     
     <div class="top"></div>
-    
+    <!-- Ratings JS -->
+    <script src="../src/js/ratings.js" defer></script>
+    <script src="../src/js/rating_output.js" defer></script>
+
 <header>
       
 <a href="index.php?page=page1.php"><img id="logo" src="../img/deviine_logo.png"></a>

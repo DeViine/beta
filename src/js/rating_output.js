@@ -1,5 +1,5 @@
 // on page load...
-    $document.ready function(moveProgressBar() {
+    moveProgressBar();
     // on browser resize...
     $(window).resize(function() {
         moveProgressBar();
@@ -19,4 +19,3 @@
             left: progressTotal
         }, animationLength);
     }
-    });
