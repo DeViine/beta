@@ -31,9 +31,9 @@
       <li class="seperator">-</li>
       <li><a href="">FAQ</a></li>
       <li class="seperator">-</li>
-      <li><a href="">Terms of Use</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
       <li class="seperator">-</li>
-      <li><a href="">Privacy Policy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
     </ul>
     <br>
     <h1 class="footerheader">SIGN UP FOR OUR NEWSLETTER</h1>
