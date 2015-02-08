@@ -31,7 +31,7 @@
       <li class="seperator">-</li>
       <li><a href="">FAQ</a></li>
       <li class="seperator">-</li>
-      <li><a href="">Terms of Use</a></li>
+      <li><a href="../../www/terms.php">Terms of Use</a></li>
       <li class="seperator">-</li>
       <li><a href="">Privacy Policy</a></li>
     </ul>
