@@ -4,7 +4,7 @@
     $(window).resize(function() {
         moveProgressBar();
     });
-
+    // THIS SCRIPT NEEDS TO BE UPDATED TO PULL THE RATING FROM FIREBASE FOR THE CORRESPONDING STRAIN OR DISPENSARY
     // SIGNATURE PROGRESS
     function moveProgressBar() {
       console.log("moveProgressBar");

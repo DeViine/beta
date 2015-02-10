@@ -336,7 +336,7 @@ header {
     margin: 0 0 5px 0;
     transition: .3s ease; }
     .nav li a {
-      color: #c8c8c8;
+      color: #2c3034;
       font-size: 28px;
       font-family: bebas neue;
       text-transform: uppercase;
@@ -358,12 +358,12 @@ header {
   .nav .deals.activenav a {
     color: #fcd31c; }
   .nav .strains {
-    border-left: 3px solid #4ef253; }
+    border-left: 3px solid rgb(61,216,97); }
     .nav .strains a:hover {
-      color: #4ef253;
+      color: rgb(61,216,97);
       transition: .2s ease; }
   .nav .strains.activenav a {
-    color: #4ef253; }
+    color: rgb(61,216,97); }
   .nav .news {
     border-left: 3px solid #2c3034; }
     .nav .news a:hover {
@@ -387,7 +387,7 @@ header {
   #alertmodal.reveal-modal h1 {
     margin-top: 50px;
     font-size: 40px;
-    color: #4ef253;
+    color: rgb(61,216,97);
     line-height: 45px;
     text-align: center; }
     @media screen and (max-width: 830px) {
@@ -420,7 +420,7 @@ header {
     padding: 3% 0;
     margin: 0 1%;
     border-radius: 5px;
-    background: #4ef253;
+    background: rgb(61,216,97);
     color: #2c3034; }
     @media screen and (max-width: 630px) {
       #alertmodal.reveal-modal .over21 {
@@ -783,7 +783,7 @@ border-right: none;
       margin: 2.6%;
       padding: 2.6%;
       border-radius: 30px;
-      border: 3px solid #4ef253;
+      border: 3px solid rgb(61,216,97);
       position: relative;
       display: inline-block; }
     #sotw .sotwbody .cardlogo {
@@ -798,7 +798,7 @@ border-right: none;
       font-size: 1.4em;
       text-align: center;
       line-height: 1em;
-      color: #4ef253;
+      color: rgb(61,216,97);
       margin: 0;
       padding: 0; }
     #sotw .sotwbody .producer {
@@ -1115,7 +1115,7 @@ border-right: none;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
-    border-bottom: 2px solid rgba(44, 48, 52, 0.05);
+    border-bottom: 2px solid rgba(150, 150, 150, 0.25);
     margin: 0;
     padding: 0 0 2px 0; }
     @media screen and (max-width: 830px) {
@@ -1123,46 +1123,41 @@ border-right: none;
         font-size: 24px; } }
   .info .openorclosed {
     position: absolute;
-    top: 174px;
-    left: 25px;
+    top: 220px;
+    left: 10px;
     width: 21%; }
   .info .open {
     display: none; }
   .info .infocontainer {
-    padding: 1% 3% 2% 3%;
-    height: 247px;
+    padding: 0;
     float: left;
     width: 100%;
-    margin: 0; }
+    margin-top: 20px; }
     .info .infocontainer .audinfo {
-      border-left: 2px solid #2c3034;
+      border-left: 2px solid rgba(150, 150, 150, 0.25);
       padding: 0 1% 0 3%;
       float: left;
       width: 70%; }
       .info .infocontainer .audinfo h2 {
         font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 30px;
-        color: red; }
+        color: #2c3034; }
       .info .infocontainer .audinfo h3 {
         font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 400;
         margin: 0 0 10px 0;
         padding: 0;
-        color: #2c3034;
+        color: rgba(150, 150, 150, 0.75);
         float: left; }
       .info .infocontainer .audinfo .map {
-        text-align: center;
-        width: 54px;
-        font-size: 11px;
-        color: white;
-        background: #2c3034;
-        padding: 8px;
-        margin: 2% 0 0 2%;
-        border-radius: 5px;
-        float: left; }
-        .info .infocontainer .audinfo .map:hover {
-          color: #fcd31c; }
+        text-align: right;
+        font-size: 12px;
+        font-weight: 600;
+        color: #2c3034;
+        float: right;
+        margin-top: 15px;
+        text-transform: uppercase; }
       .info .infocontainer .audinfo .overallrating {
         margin: 20px 0 0 0;
         list-style: none;
@@ -1233,114 +1228,51 @@ border-right: none;
 
 /* Information End */
 /* Images Start */
-.images {
+.images img {
   background: none;
   margin: 40px 1% 1% 1%;
   position: relative;
   float: left;
-  width: 37%;
-  position: relative; }
-  @media screen and (max-width: 600px) {
-    .images {
-      margin: 70px 1% 1% 1%; } }
-  .images .imagesbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #2c3034;
-    font-size: 34px;
-    text-align: center;
-    border-bottom: 2px solid rgba(44, 48, 52, 0.05);
-    margin: 0;
-    padding: 0 0 2px 0; }
-    @media screen and (max-width: 830px) {
-      .images .imagesbar {
-        font-size: 24px; } }
-  .images .orbit-timer,
-  .images .orbit-slide-number {
-    display: none; }
-  .images .orbit-prev,
-  .images .orbit-next {
-    background: rgba(44, 48, 52, 0.7); }
-  .images .orbit-prev {
-    border-radius: 0 15px 15px 0; }
-    .images .orbit-prev span {
-      border-right-color: #f7253e; }
-  .images .orbit-next {
-    border-radius: 15px 0 0 15px; }
-    .images .orbit-next span {
-      border-left-color: #f7253e; }
-  .images .orbit-bullets-container {
-    margin: 0 auto;
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-    width: 100%; }
-  .images .orbit-bullets {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    z-index: 4;
-    cursor: pointer;
-    background: rgba(44, 48, 52, 0.7); }
-    .images .orbit-bullets li {
-      background: none;
-      border: 2px solid #f7253e; }
-      .images .orbit-bullets li.active {
-        background: white;
-        border: 2px solid white; }
-      .images .orbit-bullets li:hover {
-        border: 2px solid white; }
-  .images .imagesbody {
-    padding: 3%;
-    margin: 0;
-    list-style: none;
-    padding: 0; }
-    .images .imagesbody li {
-      display: inline; }
-    .images .imagesbody img {
-      margin: 0;
-      width: 100%; }
-  @media screen and (max-width: 740px) {
-    .images {
-      background: none;
-      margin: 1%;
-      position: relative;
-      float: left; }
-      .images .imagesbody {
-        height: 100%; } }
-  @media screen and (max-width: 600px) {
-    .images {
-      margin: 3% 5% 0 5%;
-      width: 90%; } }
+  width: 100%; }
 
-/* Images End */
-.hoursbtn {
-  border-radius: 3px;
-  padding: 10px 15px;
-  color: #fcd31c;
-  background: #2c3034;
-  margin: 0px 20px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 14px; }
-  .hoursbtn:hover {
-    color: #4ef253; }
-  @media screen and (max-width: 600px) {
-    .hoursbtn {
-      font-size: 9px;
-      padding: 2px 10px;
-      margin: 0; } }
-
-#hoursmodal table {
-  background: none;
-  margin: 0 auto;
-  border: none; }
-  #hoursmodal table tr {
-    background: none; }
-    #hoursmodal table tr td {
-      color: #2c3034;
-      font-weight: bold;
-      font-size: 13px;
-      padding: 5px 10px; }
+/* Dispensary hours styling */
+#dispensary_hours {
+  clear: right;
+  float: right; 
+}
+#dispensary_hours .headerbar {
+  font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2c3034;
+  font-size: 34px;
+  text-align: center;
+  border-bottom: 2px solid rgba(150, 150, 150, 0.25);
+  margin: 0;
+  padding: 0 0 2px 0; 
+}
+#dispensary_hours table {
+  background: rgb(44,48,52);
+  margin-top: 20px;
+  width: 450px;
+}
+#dispensary_hours table tr {
+  height: 40px;
+  color: white;
+}
+#dispensary_hours table tr.active {
+  color: rgb(61,216,97);
+}
+#dispensary_hours table tr td {
+  font-family: bebas neue;
+  font-size: 30px;
+  padding: 10px 20px 4px 20px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+#dispensary_hours table tr td span {
+  font-size: 20px;
+}
+#dispensary_hours table tr td:nth-child(2) {
+  text-align: right;
+}
 
 /* Menu Start */
 .menu {
@@ -1348,151 +1280,166 @@ border-right: none;
   margin: 1%;
   position: relative;
   float: left;
-  width: 55%;
+  width: 40%;
   clear: left; }
   .menu .menubar {
     font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
-    border-bottom: 2px solid rgba(44, 48, 52, 0.05);
+    border-bottom: 2px solid rgba(150, 150, 150, 0.25);
     margin: 0;
     padding: 0 0 2px 0; }
     @media screen and (max-width: 830px) {
       .menu .menubar {
         font-size: 24px; } }
-  .menu .menubody .menuoptions {
-    width: 100%;
-    height: 40px;
-    margin-top: 1px;
-    background: #2c3034; }
-    .menu .menubody .menuoptions .selectunits {
-      border: none;
-      font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      font-weight: normal;
-      color: #969696;
+  .menu .menubody {
+    margin-top: 20px; }
+    .menu .menubody .menuoptions {
       width: 100%;
-      height: 30px;
-      padding: 2.4% 0 0 1%;
-      margin: 0 4% 0 0;
-      border-radius: 3px;
-      float: left;
-      text-align: center; }
-      .menu .menubody .menuoptions .selectunits a {
-        background: #969696;
-        display: inline;
-        width: 25%;
-        height: 30px;
-        padding: 1% 3%;
-        border-radius: 3px;
+      height: 40px;
+      margin-top: 1px;
+      background: #2c3034; }
+      .menu .menubody .menuoptions .selectunits {
+        border: none;
         font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
         font-size: 13px;
-        color: white;
-        position: relative; }
-        .menu .menubody .menuoptions .selectunits a:hover {
-          background: #f7253e; }
-        @media screen and (max-width: 600px) {
-          .menu .menubody .menuoptions .selectunits a {
-            font-size: 11px; } }
-      .menu .menubody .menuoptions .selectunits .active {
-        background: #f7253e; }
-  .menu .menubody .tabs {
-    width: 100%; }
-    .menu .menubody .tabs dd {
-      width: 11.11%;
-      height: 100%;
-      padding: 0;
-      border-left: 1px solid white;
-      border-right: 1px solid white;
-      opacity: .4; }
-      .menu .menubody .tabs dd a {
-        padding: 0;
-        background: none; }
-      .menu .menubody .tabs dd.active {
-        z-index: +50;
-        border: 2px solid #2c3034;
-        opacity: 1;
-        top: 0; }
-  .menu .menubody .tabs-content {
-    border: 2px solid #2c3034;
-    background: #2c3034; }
-    .menu .menubody .tabs-content .content #menu {
-      width: 91%; }
-      .menu .menubody .tabs-content .content #menu .menuitem {
-        list-style: none;
-        height: 100%;
+        font-weight: normal;
+        color: rgba(150, 150, 150, 0.5);
         width: 100%;
-        margin: 2% 1% 4% 1%;
-        padding: 0;
-        border: 2px solid #f7253e;
-        border-radius: 5px;
-        background: url("../../img/debut_light.png") repeat white; }
-        @media screen and (max-width: 600px) {
-          .menu .menubody .tabs-content .content #menu .menuitem {
-            width: 95%; } }
-        .menu .menubody .tabs-content .content #menu .menuitem .itemname {
+        height: 30px;
+        padding: 2.4% 0 0 1%;
+        margin: 0 4% 0 0;
+        border-radius: 3px;
+        float: left;
+        text-align: center; }
+        .menu .menubody .menuoptions .selectunits a {
+          background: rgba(150, 150, 150, 0.5);
+          display: inline;
+          width: 25%;
+          height: 30px;
+          padding: 1% 3%;
+          border-radius: 3px;
           font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-          font-size: 20px;
-          font-weight: 300;
-          padding: 2% 0 0 0; }
-        .menu .menubody .tabs-content .content #menu .menuitem #itemimg {
-          padding: 2%;
-          float: left;
-          width: 30%; }
-        .menu .menubody .tabs-content .content #menu .menuitem h2 {
-          padding: 0 0 .7% 0;
-          font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          line-height: 12px;
-          font-weight: 500;
-          margin: 0; }
-        .menu .menubody .tabs-content .content #menu .menuitem h3 {
-          margin: 0 0 0 10px;
-          font-size: 16px;
-          font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+          font-size: 13px;
+          color: white;
+          position: relative; }
+          .menu .menubody .menuoptions .selectunits a:hover {
+            background: #f7253e; }
           @media screen and (max-width: 600px) {
-            .menu .menubody .tabs-content .content #menu .menuitem h3 {
-              font-size: 12px; } }
-        .menu .menubody .tabs-content .content #menu .menuitem p {
-          clear: left;
-          font-size: 12px;
-          font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-          line-height: 14px;
-          padding: 0 2%; }
-        .menu .menubody .tabs-content .content #menu .menuitem table {
-          margin: 1% auto 2% auto;
-          border: none;
+            .menu .menubody .menuoptions .selectunits a {
+              font-size: 11px; } }
+        .menu .menubody .menuoptions .selectunits .active {
+          background: #f7253e; }
+    .menu .menubody .tabs {
+      height: 79px;
+      width: 100%; }
+      .menu .menubody .tabs dd {
+        width: 16.17%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        opacity: .4; }
+        .menu .menubody .tabs dd a {
+          padding: 0;
           background: none; }
-          .menu .menubody .tabs-content .content #menu .menuitem table tbody tr td {
-            font-size: 18px;
+        .menu .menubody .tabs dd.active {
+          background: #2c3034;
+          z-index: +50;
+          border: 2px solid #2c3034;
+          opacity: 1;
+          top: 0; }
+    .menu .menubody .tabs-content {
+      border: 2px solid #2c3034;
+      background: #2c3034;
+      margin-top: 1px; }
+      .menu .menubody .tabs-content .content #menu {
+        padding: 20px;
+        width: 91%; }
+        .menu .menubody .tabs-content .content #menu .menuitem {
+          list-style: none;
+          width: 90%;
+          margin: 2% 1% 4% 1%;
+          padding: 4% 4% 10% 4%;
+          border-radius: 15px;
+          position: relative;
+          background: url("../img/debut_light.png") repeat white; }
+          @media screen and (max-width: 600px) {
+            .menu .menubody .tabs-content .content #menu .menuitem {
+              width: 95%; } }
+          .menu .menubody .tabs-content .content #menu .menuitem .itemname {
+            font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.5em;
+            line-height: 32px;
+            font-weight: 300;
+            width: 100%;
+            padding: 0;
+            margin: -2px 0 5px 0;
+            color: #2c3034; }
+          .menu .menubody .tabs-content .content #menu .menuitem #itemimg {
+            padding: 0 4% 0 0;
+            float: left;
+            width: 30%; }
+          .menu .menubody .tabs-content .content #menu .menuitem h2 {
+            padding: 2% 0;
             font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-            text-align: center; }
-          .menu .menubody .tabs-content .content #menu .menuitem table tbody .prices {
-            width: 100%; }
-            .menu .menubody .tabs-content .content #menu .menuitem table tbody .prices td {
-              padding: 5px 7px;
-              border: 2px solid #f7253e;
-              border-radius: 5px;
-              font-size: 15px;
-              -webkit-transition: .3s; }
-              @media screen and (max-width: 600px) {
-                .menu .menubody .tabs-content .content #menu .menuitem table tbody .prices td {
-                  font-size: 11px; } }
-          .menu .menubody .tabs-content .content #menu .menuitem table tbody .units {
-            width: 100%; }
-            .menu .menubody .tabs-content .content #menu .menuitem table tbody .units td {
-              padding: 3px 7px;
-              color: #f7253e;
-              font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-              font-size: 13px;
-              font-weight: normal; }
-              @media screen and (max-width: 600px) {
-                .menu .menubody .tabs-content .content #menu .menuitem table tbody .units td {
-                  font-size: 11px; } }
-    @media screen and (max-width: 600px) {
-      .menu .menubody .tabs-content {
-        margin-bottom: 0; } }
+            font-size: .85em;
+            line-height: 20px;
+            font-weight: 600;
+            width: 37%;
+            margin: 0 0 0 30%;
+            color: #f7253e;
+            border-top: 2px solid rgba(150, 150, 150, 0.25);
+            border-bottom: 2px solid rgba(150, 150, 150, 0.25); }
+          .menu .menubody .tabs-content .content #menu .menuitem h3 {
+            margin: 0 0 0 10px;
+            font-size: 16px;
+            font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+            @media screen and (max-width: 600px) {
+              .menu .menubody .tabs-content .content #menu .menuitem h3 {
+                font-size: 12px; } }
+          .menu .menubody .tabs-content .content #menu .menuitem .strainmakeup {
+            position: absolute;
+            top: 4%;
+            right: 4%;
+            width: 140px;
+            height: 140px;
+            border-radius: 100px;
+            background: #f7253e; }
+          .menu .menubody .tabs-content .content #menu .menuitem p {
+            clear: left;
+            font-size: .85em;
+            font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            line-height: 1.2em;
+            width: 100%;
+            padding: 0;
+            color: #2c3034; }
+          .menu .menubody .tabs-content .content #menu .menuitem .pricing {
+            list-style: none;
+            font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-top: -5px;
+            border-top: 2px solid rgba(150, 150, 150, 0.25); }
+            .menu .menubody .tabs-content .content #menu .menuitem .pricing li {
+              display: inline;
+              width: 18%;
+              padding: .5%;
+              text-align: center;
+              float: left;
+              font-size: 1.3em;
+              font-weight: 600; }
+              .menu .menubody .tabs-content .content #menu .menuitem .pricing li span {
+                font-size: .6em;
+                font-weight: 400; }
+            .menu .menubody .tabs-content .content #menu .menuitem .pricing .price {
+              border-right: 2px solid rgba(150, 150, 150, 0.25); }
+      @media screen and (max-width: 600px) {
+        .menu .menubody .tabs-content {
+          margin-bottom: 0; } }
   @media screen and (max-width: 830px) {
     .menu {
       width: 94%; } }
@@ -1514,14 +1461,15 @@ border-right: none;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
-    border-bottom: 2px solid rgba(44, 48, 52, 0.05);
+    border-bottom: 2px solid rgba(150, 150, 150, 0.25);
     margin: 0;
     padding: 0 0 2px 0; }
     @media screen and (max-width: 830px) {
       .currentdeals .headerbar {
         font-size: 24px; } }
   .currentdeals .currentdealsbody {
-    padding: 3% 20%;
+    margin-top: 20px;
+    padding: 0 20% 3% 20%;
     position: relative; }
     @media screen and (max-width: 600px) {
       .currentdeals .currentdealsbody {
@@ -1530,7 +1478,7 @@ border-right: none;
       width: 95%;
       height: 365px;
       background: white;
-      margin: 1.3%;
+      margin: 0 1.3% 1.3% 1.3%;
       padding: 5.2%;
       border-radius: 30px;
       border: 3px solid #fcd31c;
@@ -1558,11 +1506,11 @@ border-right: none;
       font-size: .8em;
       line-height: 1.2em;
       text-align: center;
-      color: #969696;
+      color: rgba(150, 150, 150, 0.5);
       margin: 5px 0 5px 0;
       padding: 5px 0;
-      border-top: 1px solid #969696;
-      border-bottom: 1px solid #969696; }
+      border-top: 2px solid rgba(150, 150, 150, 0.25);
+      border-bottom: 2px solid rgba(150, 150, 150, 0.25); }
     .currentdeals .currentdealsbody span {
       color: #2c3034;
       font-weight: 600;
@@ -1571,10 +1519,11 @@ border-right: none;
       width: 100%;
       position: relative;
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-top: 3px; }
     .currentdeals .currentdealsbody .statleft,
     .currentdeals .currentdealsbody .statright {
-      height: 32px;
+      height: 25px;
       float: left;
       margin: 0 auto;
       padding: 0;
@@ -1582,12 +1531,12 @@ border-right: none;
     .currentdeals .currentdealsbody .statleft {
       padding-right: 5px; }
     .currentdeals .currentdealsbody .statright {
-      border-left: 1px solid #969696;
+      border-left: 2px solid rgba(150, 150, 150, 0.25);
       padding-left: 8px; }
     .currentdeals .currentdealsbody .number {
       font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-weight: bold;
-      font-size: 2.1em;
+      font-size: 1.7em;
       line-height: 1em;
       text-align: center;
       color: #fcd31c;
@@ -1597,7 +1546,7 @@ border-right: none;
     .currentdeals .currentdealsbody .label {
       font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-weight: bold;
-      font-size: .8em;
+      font-size: .6em;
       line-height: 1.15em;
       text-align: left;
       color: #2c3034;
@@ -1626,7 +1575,7 @@ border-right: none;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
-    border-bottom: 2px solid rgba(44, 48, 52, 0.05);
+    border-bottom: 2px solid rgba(150, 150, 150, 0.25);
     margin: 0;
     padding: 0 0 2px 0; }
     @media screen and (max-width: 830px) {
@@ -1665,7 +1614,7 @@ border-right: none;
         height: 26px;
         cursor: pointer; }
       .reviews .reviewsbody .rating .star5 {
-        fill: #969696; }
+        fill: rgba(150, 150, 150, 0.5); }
   @media screen and (max-width: 830px) {
     .reviews {
       width: 94%; } }
@@ -2175,7 +2124,7 @@ border-right: none;
   margin: 1.3%;
   padding: 1.3%;
   border-radius: 30px;
-  border: 3px solid #4ef253;
+  border: 3px solid rgb(61,216,97);
   position: relative;
   display: inline-block; }
 .strainsbody .cardlogo {
@@ -2190,7 +2139,7 @@ border-right: none;
   font-size: 1.4em;
   text-align: center;
   line-height: 1em;
-  color: #4ef253;
+  color: rgb(61,216,97);
   margin: 0;
   padding: 0; }
 .strainsbody .producer {
@@ -2546,7 +2495,7 @@ border-right: none;
       .profile .profilebody ul .yellowsquare {
         background: #fcd31c; }
       .profile .profilebody ul .greensquare {
-        background: #4ef253; }
+        background: rgb(61,216,97); }
       .profile .profilebody ul li {
         text-align: center;
         display: block;
@@ -2598,7 +2547,7 @@ border-right: none;
       .effects .effectsbody ul .yellowsquare {
         background: #fcd31c; }
       .effects .effectsbody ul .greensquare {
-        background: #4ef253; }
+        background: rgb(61,216,97); }
       .effects .effectsbody ul li {
         text-align: center;
         display: block;
@@ -2649,7 +2598,7 @@ border-right: none;
       .negatives .negativesbody ul .yellowsquare {
         background: #fcd31c; }
       .negatives .negativesbody ul .greensquare {
-        background: #4ef253; }
+        background: rgb(61,216,97); }
       .negatives .negativesbody ul li {
         text-align: center;
         display: block;
@@ -2724,7 +2673,7 @@ border-right: none;
       margin: 1.3%;
       padding: 1.3%;
       border-radius: 30px;
-      border: 3px solid #4ef253;
+      border: 3px solid rgb(61,216,97);
       position: relative;
       display: inline-block; }
     #otherstrains .dailystrains .cardlogo {
@@ -2739,7 +2688,7 @@ border-right: none;
       font-size: 1.4em;
       text-align: center;
       line-height: 1em;
-      color: #4ef253;
+      color: rgb(61,216,97);
       margin: 0;
       padding: 0; }
     #otherstrains .dailystrains .producer {
@@ -2910,7 +2859,7 @@ border-right: none;
     border-bottom: 2px solid rgba(44, 48, 52, 0.05);
     margin: 0;
     padding: 0 0 2px 0;
-    color: #4ef253;
+    color: rgb(61,216,97);
     border-top-right-radius: 3px;
     border-top-left-radius: 3px; }
     @media screen and (max-width: 830px) {
@@ -3028,7 +2977,7 @@ border-right: none;
       line-height: 16px;
       padding: 3% 0 0 0; }
     #mainstory .mainstory .snreadmore {
-      background: #4ef253;
+      background: rgb(61,216,97);
       padding: 2px 10px;
       text-align: right; }
     #mainstory .mainstory .snreadmore a {
@@ -3367,17 +3316,16 @@ border-right: none;
 }
 /* Rating output to buds - yellow, green and red*/
 .ratingwrap {
-  margin: 40px 15px 0 15px;
+  margin: 0px 15px 0 15px;
 }
 .progress {
   width: 190px;
   height: 50px;
 }
 .progress-wrap {
-  background: rgb(50,50,50);
-  margin: 25px 0;
+  margin: 0;
   overflow: hidden;
-  position: relative;
+  position: absolute;
 }
 .progress-bar {
   background: rgb(255,255,255);
@@ -3385,20 +3333,20 @@ border-right: none;
   position: absolute;
   top: 0;
 }
-.progress-wrap .green {
+.green {
 background: rgb(61,216,97);
 }
-.progress-wrap .yellow {
-  background: rgb(252,211,28);
+.yellow {
+  background-color: rgb(252,211,28);
 }
-.progress-wrap .red {
-  background: rgb(247,37,62);
+.red {
+  background-color: rgb(247,37,62);
 }
 .budbox {
   width: 205px;
   padding: 0;
-  margin-top: -80px;
-  position: absolute;
+  margin: 0px;
+  position: relative;
   z-index: 5;
 }
 /* End Rating System Styling */
@@ -3449,7 +3397,9 @@ background: rgb(61,216,97);
     font-size: 13px;
     color: #555860;
 }
-
+.rating {
+  height: 70px;
+}
 .search {
     position: relative;
     margin: 0 auto;
@@ -3620,6 +3570,188 @@ background: rgb(61,216,97);
   background-color: #fcd31c;
 }
 #greenprofile, #greeneffect, #greennegative {
-  background-color: #4ef253;
+  background-color: rgb(61,216,97);
 }
 /* Validation and Information Pages */
+
+/* ------------------------------- Menu styling from foundation -------------------------- */
+.tabs {
+  *zoom: 1;
+  margin-bottom: 0 !important; }
+  .tabs:before, .tabs:after {
+    content: " ";
+    display: table; }
+  .tabs:after {
+    clear: both; }
+  .tabs dd {
+    position: relative;
+    margin-bottom: 0 !important;
+    top: 1px;
+    float: left; }
+    .tabs dd > a {
+      display: block;
+      background: #efefef;
+      color: #222222;
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1.0625rem;
+      padding-left: 2rem;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-size: 1rem; }
+      .tabs dd > a:hover {
+        background: #e1e1e1; }
+      .tabs dd > a img {
+        width: 100%; }
+    .tabs dd.active a {
+      background: white; }
+  .tabs.radius dd:first-child a {
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
+  .tabs.radius dd:last-child a {
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .tabs.vertical dd {
+    position: inherit;
+    float: none;
+    display: block;
+    top: auto; }
+
+.tabs-content {
+  *zoom: 1;
+  margin-bottom: 1.5rem; }
+  .tabs-content:before, .tabs-content:after {
+    content: " ";
+    display: table; }
+  .tabs-content:after {
+    clear: both; }
+  .tabs-content > .content {
+    display: none;
+    float: left;
+    padding: 0.9375rem 0; }
+    .tabs-content > .content.active {
+      display: block; }
+    .tabs-content > .content.contained {
+      padding: 0.9375rem; }
+  .tabs-content.vertical {
+    display: block; }
+    .tabs-content.vertical > .content {
+      padding: 0 0.9375rem; }
+
+@media only screen and (min-width: 40.063em) {
+  .tabs.vertical {
+    width: 20%;
+    float: left;
+    margin-bottom: 1.25rem; }
+
+  .tabs-content.vertical {
+    width: 80%;
+    float: left;
+    margin-left: -1px; } }
+/* End .tabs */
+
+/* Begin reveal modal */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 98;
+  display: none;
+  top: 0;
+  left: 0; }
+
+.reveal-modal {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  left: 50%;
+  z-index: 99;
+  height: auto;
+  margin-left: -40%;
+  width: 80%;
+  background-color: white;
+  padding: 1.25rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 6.25rem; }
+  .reveal-modal .column,
+  .reveal-modal .columns {
+    min-width: 0; }
+  .reveal-modal > :first-child {
+    margin-top: 0; }
+  .reveal-modal > :last-child {
+    margin-bottom: 0; }
+  .reveal-modal .close-reveal-modal {
+    font-size: 1.375rem;
+    line-height: 1;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.6875rem;
+    color: #aaaaaa;
+    font-weight: bold;
+    cursor: pointer; }
+    /*End reveal modal*/
+
+    /* Begin read more */
+    .archive {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.entry {
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0;
+  padding: 0px 0px 2em 0px;
+  background: #FFF;
+  font-family: "Open Sans", sans-serif;
+}
+
+.entry-title,
+.entry-title a {
+  margin-top: 0;
+  font-family: Oswald, sans-serif;
+  color: #333;
+  text-decoration: none;
+}
+
+.entry-title a:hover {
+  color: #555;
+}
+.entry-content {
+  -webkit-transition: all 600ms easeOutBack;
+  transition:         all 600ms easeOutBack;
+}
+.more-link {
+  color: #f7253e;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.more-link:after {
+  content: "\2193";
+  margin-left: 8px;
+  font-size: .8em;
+}
+
+.more-link.open:after {
+  content: "\2191";
+}
+/*End read more*/

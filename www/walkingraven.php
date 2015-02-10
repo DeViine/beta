@@ -7,56 +7,14 @@
           <img src="../img/walkingravenlogo.jpg" class="audlogo">
           <div class="audinfo">
             <h2>Walking Raven</h2>
-            <a href="#" data-reveal-id="hoursmodal" class="hoursbtn">Hours</a>
-            <img src="../img/closednow.png" alt="closed" class="openorclosed closed">
-            <img src="../img/opennow.png" alt="open" class="openorclosed open">
-
- <!-- file get contents for the address and an include for the open close modal. Or just jquery the open close. -->
-
+            
             <h3>2001 South Broadway <br>Denver, CO, 80210</h3>
-            <a href="#" data-reveal-id="mapmodal" class="map">Map &#10095;&#10095;</a>
+            <a href="#" data-reveal-id="mapmodal" class="map">VIEW ON MAP &#10095;</a>
             <div id="mapmodal" class="reveal-modal medium" data-reveal>
                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=walking+raven+2001+South+Broadway+Denver,+CO,+80210&amp;aq=&amp;sll=39.68009,-104.987849&amp;sspn=0.006292,0.010128&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=39.68009,-104.987849&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=walking+raven+2001+South+Broadway+Denver,+CO,+80210&amp;aq=&amp;sll=39.68009,-104.987849&amp;sspn=0.006292,0.010128&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=39.68009,-104.987849&amp;spn=0.006295,0.006295&amp;t=m" style="text-align:left" target="_blank">Driving Directions</a> in a larger map</small>
               <a class="close-reveal-modal">&#215;</a>
             </div>
 
-            
-            <div id="hoursmodal" class="reveal-modal" data-reveal>
-              <table>
-                    <tbody>
-                      <tr>
-                        <td class="monday">Monday</td>
-                        <td class="mondayhours"><span class="mondayopen" title="8">8:00am</span>-<span class="mondayclose" title="17">5:00pm</span></td>
-                      </tr>
-                      <tr>
-                        <td class="tuesday">Tuesday</td>
-                        <td class="tuesdayhours"><span class="tuesdayopen" title="8">8:00am</span>-<span class="tuesdayclose" title="17">5:00pm</span></td>
-                      </tr>
-                      <tr>
-                        <td class="wednesday">Wednesday</td>
-                        <td class="wednesdayhours"><span class="wednesdayopen" title="8">8:00am</span>-<span class="wednesdayclose" title="17">5:00pm</span></td>
-                      </tr>
-                      <tr>
-                        <td class="thursday">Thursday</td>
-                        <td class="thursdayhours"><span class="thursdayopen" title="8">8:00am</span>-<span class="thursdayclose" title="17">5:00pm</span></td>
-                      </tr>
-                      <tr>
-                        <td class="friday">Friday</td>
-                        <td class="fridayhours"><span class="fridayopen" title="10">10:00am</span>-<span class="fridayclose" title="15">3:00pm</span></td>
-                      </tr>
-                      <tr>
-                        <td class="saturday">Saturday</td>
-                        <td class="saturdayhours"><span class="saturdayopen" title="12">12:00pm</span>-<span class="saturdayclose" title="19">7:00pm</span></td>
-                      </tr>
-                      <tr>
-                        <td class="sunday">Sunday</td>
-                        <td class="sundayhours"><span class="sundayopen" title="10">10:00am</span>-<span class="sundayclose" title="15">3:00pm</span></td>
-                      </tr>
-                    </tbody>
-                </table>
-              <a class="close-reveal-modal">&#215;</a>
-            </div>
-<!-- Remove this example of the rating system and put in a firebase one -->
             <ul class="overallrating">
           
               <li><img src="../img/budiconyes.png"></li>
@@ -65,8 +23,7 @@
               <li><img src="../img/budiconyes.png"></li>
               <li><img src="../img/budiconno.png"></li>
               <h4>Rated 4/5 by 453 users</h4>
-<!-- php include file contents for this contact section -->    
-
+                
             </ul>
             <div class="contactinfo">
               <h4><a href="http://mmjdenver.net" target="_blank"><img src="../img/webicon.png">mmjdenver.net</a></h4>
@@ -77,107 +34,189 @@
         </div>
       </div>
 
-<!-- Create a slider.php to include here -->
+
 
       <div class="images">
-        <h2 class="imagesbar">Images</h2>
-          <ul class="imagesbody" data-orbit>
-            <li>
-              <a href="../img/dispimg1.jpg" class="dispimage">
-              <img src="../img/dispimg1.jpg" alt="slide 1" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg2.jpg" class="dispimage">
-              <img src="../img/dispimg2.jpg" alt="slide 2" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg3.jpeg" class="dispimage">
-              <img src="../img/dispimg3.jpeg" alt="slide 3" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg1.jpg" class="dispimage">
-              <img src="../img/dispimg1.jpg" alt="slide 4" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg2.jpg" class="dispimage">
-              <img src="../img/dispimg2.jpg" alt="slide 5" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg3.jpeg" class="dispimage">
-              <img src="../img/dispimg3.jpeg" alt="slide 6" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg1.jpg" class="dispimage">
-              <img src="../img/dispimg1.jpg" alt="slide 6" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg2.jpg" class="dispimage">
-              <img src="../img/dispimg2.jpg" alt="slide 7" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg3.jpeg" class="dispimage">
-              <img src="../img/dispimg3.jpeg" alt="slide 8" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg1.jpg" class="dispimage">
-              <img src="../img/dispimg1.jpg" alt="slide 9" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg2.jpg" class="dispimage">
-              <img src="../img/dispimg2.jpg" alt="slide 10" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg3.jpeg" class="dispimage">
-              <img src="../img/dispimg3.jpeg" alt="slide 11" ></a>
-            </li>
-            <li>
-              <a href="../img/dispimg1.jpg" class="dispimage">
-              <img src="../img/dispimg1.jpg" alt="slide 12" ></a>
-            </li>
-
-          </ul>
+        <img src="../img/dispimg1.jpg" >
       </div>
 
+      <div class="currentdeals">
+        <h2 class="headerbar">Current Deals</h2>
+        <div class="currentdealsbody">
+ 
+          <a href="../html/dealinformation.html" class="cardwrapper">
+            <img src="http://placehold.it/183x183" class="cardlogo">
+            <h1 class="dealtitle">DEAL TITLE WRAPPING ONTO THE SECOND LINE</h1>
+            <h2 class="dealaddress"><span>BUSINESS NAME</span><br>Address Line 1<br>City, State Zipcode</h2>
+            <div class="stats">
+              <div class="statleft">
+                <h4 class="number">9</h4> 
+                <h5 class="label">MILES<br>AWAY</h5>
+              </div>
+              <div class="statright">
+                <h4 class="number">6</h4> 
+                <h5 class="label">DAYS<br>LEFT</h5>
+              </div>
+            </div>
+          </a>
 
+        </div>
+      </div>
 
+<div id="dispensary_hours">
+<h2 class="headerbar">Hours</h2>
+<table>
+  <tr id="0">
+    <td>SUNDAY</td>
+    <td>12:00 <span>AM</span> - 6:00 <span>PM</span></td>
+  </tr>
+  <tr id="1">
+    <td>MONDAY</td>
+    <td>10:00 <span>AM</span> - 9:00 <span>PM</span></td>
+  </tr>
+  <tr id="2">
+    <td>TUESDAY</td>
+    <td>10:00 <span>AM</span> - 9:00 <span>PM</span></td>
+  </tr>
+  <tr id="3">
+    <td>WEDNESDAY</td>
+    <td>10:00 <span>AM</span> - 9:00 <span>PM</span></td>
+  </tr>
+  <tr id="4">
+    <td>THURSDAY</td>
+    <td>10:00 <span>AM</span> - 9:00 <span>PM</span></td>
+  </tr>
+  <tr id="5">
+    <td>FRIDAY</td>
+    <td>10:00 <span>AM</span> - 9:00 <span>PM</span></td>
+  </tr>
+  <tr id="6">
+    <td>SATURDAY</td>
+    <td>8:00 <span>AM</span> - 8:00 <span>PM</span></td>
+  </tr>
+</table>
+</div>
     
 <!-- Begin the dispensary menu -->      
          
       <div class="menu">
         <h2 class="menubar">Menu</h2>
         <div class="menubody">
-
         <dl class="tabs" data-tab>
           <dd class="active"><a href="#panel2-1"><img src="../img/indicatab.png"></a></dd>
           <dd><a href="#panel2-2"><img src="../img/sativatab.png"></a></dd>
           <dd><a href="#panel2-3"><img src="../img/hybridtab.png"></a></dd>
           <dd><a href="#panel2-4"><img src="../img/prerolledtab.png"></a></dd>
           <dd><a href="#panel2-5"><img src="../img/ediblestab.png"></a></dd>
-          <dd><a href="#panel2-6"><img src="../img/concentratetab.png"></a></dd>
-          <dd><a href="#panel2-7"><img src="../img/tincturetab.png"></a></dd>
-          <dd><a href="#panel2-8"><img src="../img/topicaltab.png"></a></dd>
-          <dd><a href="#panel2-9"><img src="../img/othertab.png"></a></dd>
+          <dd><a href="#panel2-6"><img src="../img/othertab.png"></a></dd>
         </dl>
           <div class="tabs-content">
 
             <div class="content active indica" id="panel2-1">
               <ul id="menu">
-<!--***************************************************** Start cutting here *****************-->                
-<?php
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Bubba Kush</h1>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <div class="archive">
+                    <div id="content">
+                      <div class="post type-post status-publish format-standard hentry category-uncategorized entry">
+                          <div class="entry-content">
+                            <p>Bubba Kush is a sweet, earthy indica strain with genetics traced back to the Hindu Kush landrace strains. Since finding its way to U.S. shores, the lineage of this nearly pure indica strain becomes more foggy. As the name states this strain has</p>
+                          </div><!-- end .entry-content -->
+                        </div><!-- end .entry -->
+                      </div><!-- end #content -->
+                    </div><!-- end .archive -->
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
+                </li>
 
-$path = '../lib/menu/' . $name[0];
-$results = scandir($path);
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Skywalker OG</h1>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <p>Skywalker OG is a potent indica dominant hybrid strain that may just take you to a galaxy far, far away. No Sith genetics here—this plant is a cross between Skywalker and OG Kush and has the strong aroma characteristic to kush strains that includes... <a href="#">Read More</a></p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
+                </li>
 
-foreach ($results as $result) {
-    if ($result === '.' or $result === '..') continue;
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Super Lemon Haze</h1>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <p>A hybrid of Lemon Skunk and Super Silver Haze and two time Cannabis Cup winner from Greenhouse Seeds. Super Lemon Haze is a kief-caked multi-colored wonder. As the name states this strain has... <a href="#">Read More</a></p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
+                </li>
 
-    if (is_dir($path . '/' . $result)) {
-        include ($path . '/' . $result . '/strain.html');
-        //code to use if directory
-    }
-}
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Blackberry</h1>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <p>Blackberry is a popular strain known for its balance of an active sativa buzz and the high yields of plants due to its indica side. It was bred in 2009 by Dutch company Nirvana Seeds as a cross between a Black Domina clone from the U.S and their own... <a href="#">Read More</a></p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
+                </li>
 
-?>
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Lavender</h1>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
+                </li>
+
+                <li class="menuitem">
+                  <img src="../img/mars.jpg" id="itemimg">
+                  <h1 class="itemname">Skywalker OG Caviar</h1>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
 
             
 
@@ -186,86 +225,51 @@ foreach ($results as $result) {
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Pineapple Express</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                      <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">OG Kush</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Pineapple Express</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                      <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -276,86 +280,52 @@ foreach ($results as $result) {
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Orange Crush</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                      <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Washington Washout</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">California Gold</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                      <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -366,86 +336,49 @@ foreach ($results as $result) {
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Double Diesel</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                      <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Corleone Kush</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco.</p>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Ultra Sonja</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                      <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/16 oz</td>
-                        <td>1/8 oz</td>
-                        <td>1/4 oz</td>
-                        <td>1/2 oz</td>
-                        <td>1 oz</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                        <td>$58.50</td>
-                        <td>$105.50</td>
-                        <td>$195.50</td>
-                        <td>$400.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -457,55 +390,48 @@ foreach ($results as $result) {
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Mountain High Suckers: Lozenges</h1>
                   <h3>100mg</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$16.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Sweet Mary Jane: Coconut Bliss</h1>
                   <h3>1500mg</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$54.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Julie and Kate Baked Goods: Granola</h1>
                   <h3>100mg</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$15.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -516,44 +442,35 @@ foreach ($results as $result) {
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Hash Oil: Purple-Krypto (High CBD)</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/2 Gram</td>
-                        <td>1 Gram</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$15.00</td>
-                        <td>$26.25</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Budder Hash: Ancient OG</h1>
-                  <h2>Strain Makeup:</h2>
-                  <h3>50% Indica - Strain Name</h3>
-                  <h3>50% Sativa - Strain Name</h3>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>1/2 Gram</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$30.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h2>12.04% THC Total
+                  <br><.01% CBD Total</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -564,47 +481,40 @@ foreach ($results as $result) {
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Healthy Creations: Tincture</h1>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$17.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Indica, Sativa or Hybrid Specific. Flavors Include: Natural, Citrus, Raspberry, Watermelon, Blackberry, Peach &amp; Pineaple</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Healthy Creations: Tincture</h1>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$17.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Indica, Sativa or Hybrid Specific. Flavors Include: Natural, Citrus, Raspberry, Watermelon, Blackberry, Peach &amp; Pineaple</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Healthy Creations: Tincture</h1>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$17.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Indica, Sativa or Hybrid Specific. Flavors Include: Natural, Citrus, Raspberry, Watermelon, Blackberry, Peach &amp; Pineaple</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -615,36 +525,31 @@ foreach ($results as $result) {
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Apothecanna: Lip Buzz</h1>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$9.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
+
                 <li class="menuitem">
                   <img src="../img/mars.jpg" id="itemimg">
                   <h1 class="itemname">Mary's Medicinals: THC-A Patch</h1>
-                  <table>
-                    <tbody>
-                      <tr class="units">
-                        <td>Per Unit</td>
-                      </tr>
-                      <tr class="prices">
-                        <td>$30.15</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco.</p>
+                  <ul class="pricing">
+                    <li class="price"><span>$</span>20<span>/g</span></li>
+                    <li class="price"><span>$</span>35<span>/2g</span></li>
+                    <li class="price"><span>$</span>65<span>/4g</span></li>
+                    <li class="price"><span>$</span>140<span>/10g</span></li>
+                    <li class="pricelast"><span>$</span>340<span>/1oz</span></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -659,24 +564,6 @@ foreach ($results as $result) {
           </div>
         </div>
       </div>
-
-
-
-
-
-      <div class="currentdeals">
-        <h2 class="headerbar">Current Deals</h2>
-        <div class="currentdealsbody">
- 
-          <?php include "../deals/walkingraven/card_wrapper.php"?>
-
-        </div>
-      </div>
-
-
-
-
-
  
       <div class="reviews">
         <h2 class="reviewsbar">Reviews</h2>

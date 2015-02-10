@@ -15,8 +15,11 @@
                 <div class="progress-bar progress"></div>
               </div>
             </div>
+            <img src="http://deviine.com/deviine/beta/img/BudBoxWHITE.png" class="budbox">
+            <div class="ratingstext">
+                <p id="<?php echo ($dir . 'Ratings');?>" class="ratingstext"></p><p id="<?php echo ($dir . 'Users');?>" class="ratingstext"><p>
+            </div> 
         </div><!--End of the rating div-->
-<img src="http://deviine.com/deviine/beta/img/BudBox.png" class="budbox">
         <div class="stats">
             <div class="statleft">
                 <h5 class="label"><?php echo file_get_contents('../lib/strains/' . $file . '/sativa');?>% INDICA</h5>

@@ -7,7 +7,7 @@
     <title>DeViine | Lets Save Green</title>
     <!--base target="_blank" href="~/localhost/~justin001vinge/beta/"--> <!--Sets the filepath of all pages to begin at this root. No longer relevent.-->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="../src/css/foundation.css" media="screen" />
+    <!--link rel="stylesheet" href="../src/css/foundation.css" media="screen" /-->
     <link rel="stylesheet" href="../src/css/animate.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
     <!-- Styles CSS -->
@@ -16,7 +16,7 @@
     <!--Search link Node.js for in-site search indexing-->
     <!--script type="text/javascript" src="../src/js/search_node.js"></script-->
     <!--jQuery-->
-    <script src="../src/js/vendor/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <!--[if lte IE 9] Then this script is required for the donut graph>
     <script src="http:////cdn.jsdelivr.net/excanvas/r3/excanvas.js"></script>
     <![endif]-->  
@@ -35,6 +35,8 @@
     <!-- Ratings JS -->
     <script src="../src/js/ratings.js" defer></script>
     <script src="../src/js/rating_output.js" defer></script>
+    <script src="../src/js/dispensary_hours.js"></script>
+    <script src="../src/js/read_more.js"></script>
 
 <header>
       
@@ -78,7 +80,7 @@
         <li class="deals"><a href="index.php?page=page3.php">Deals</a></li>
         <li class="strains"><a href="index.php?page=page4.php">Strains</a></li>
       </ul> 
-
+<!--
     <div id="alertmodal" class="reveal-modal" data-reveal>
       <h1>This page contains content that is intended for adults only.</h1>
       <br><h4>You must be 21 years or older to continue.</h4>
@@ -88,4 +90,4 @@
       </div>
       <br><h6>DISCLAIMER: Please be aware that possessing, using, distributing & selling marijuana are all federal crimes and the articles, pages, links, or any other information on this site are NOT intended to assist you in violating federal law nor will they in any way assist you in complying with federal law. The information on this site is intended as a public resource to stay informed as the legalization process of marijuana continues.<h6>
     </div>   
-    
+-->

@@ -15,13 +15,13 @@
       </h2>
     </div>    
     <!--Rating system begin-->
-    <div id="ak47_rating">
+    <div id="<?php echo $file . '_rating';?>">
       <div class="starRating"><!--staRating div end-->
               <div>
                   <div>
                       <div>
                           <div>
-                          <input id="rating1" class="ak47" type="radio" name="rating" value="1">
+                          <input id="rating1" class="<?php echo ($file);?>" type="radio" name="rating" value="1">
                           <label for="rating1"><span>1</span></label>
                           </div>
                       <input id="rating2" class="<?php echo ($file);?>" type="radio" name="rating" value="1">
@@ -37,7 +37,7 @@
           <label for="rating5"><span>5</span></label>
       </div>                <!--starRating div end-->
         <div class="ratingstext">
-          <p id="<?php echo ($file . 'Ratings');?>" class="ratingstext"></p><p id="<?php echo ($file . 'Users');?>" class="ratingstext"><p></div> 
+          <p id="<?php echo ('Ratings');?>" class="ratingstext"></p><p id="<?php echo ('Users');?>" class="ratingstext"><p></div> 
           <br><p>PRODUCED BY <?php echo file_get_contents('../lib/strains/' . $file . '/producer_name');?></p>
           
         <!--Rating system end-->

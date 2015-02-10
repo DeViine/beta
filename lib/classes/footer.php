@@ -1,9 +1,9 @@
 	<a href="#top" class="uptotop"><img src="../img/rocketicon.png"></a>
                   
-        <!--Doughnut graph js file--> 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>      
-        <script src="../src/js/doughnut.js"></script>
-        <script src="../src/js/profileDoughnut.js"></script>
+    <!--Doughnut graph js file--> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>      
+    <script src="../src/js/doughnut.js"></script>
+    <script src="../src/js/profileDoughnut.js"></script>
     <script src="../src/js/effectDoughnut.js"></script>
     <script src="../src/js/negativeDoughnut.js"></script>
         <!--[if lte IE 9]>
@@ -23,11 +23,11 @@
   <div class="leftside">
     <h1 class="footerheader">QUICKLINKS</h1>
     <ul>
-      <li><a href="">Dispensaries</a></li>
+      <li><a href="index.php?page=page2.php">Dispensaries</a></li>
       <li class="seperator">-</li>
-      <li><a href="">Deals</a></li>
+      <li><a href="index.php?page=page3.php">Deals</a></li>
       <li class="seperator">-</li>
-      <li><a href="">Strains</a></li>
+      <li><a href="index.php?page=page4.php">Strains</a></li>
       <li class="seperator">-</li>
       <li><a href="">FAQ</a></li>
       <li class="seperator">-</li>
@@ -55,10 +55,9 @@
     <!--SLIDER JS-->
     <script src="../src/js/vendor/modernizr.js"></script>
     <!--MENU-->
-    <script src="src/js/foundation.min.js"></script>
-    <!--NO OBSERVABLE USE JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>    
-    <script src="src/js/scripts.js"></script>
+    <script src="../src/js/foundation.min.js"></script>
+    <!-- for compiling all scripts later -->   
+    <script src="../src/js/scripts.js"></script>
     <!-- RSVP For Geofire-->
     <script src="../src/js/vendor/rsvp.min.js"></script>
     <!-- GeoFire -->
