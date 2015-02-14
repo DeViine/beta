@@ -19,6 +19,10 @@
 /* Up To Top Start */
 /* Up To Top Start */
 /*---------------------------Globals Start------------------------------*/
+@font-face { 
+  font-family: "Bebas Neue"; 
+  src: url(http://deviine.com/deviine/beta/fonts/bebas_neue/BebasNeue.ttf); 
+} 
 /* Body Start */
 body {
   width: 82%;

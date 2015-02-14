@@ -1,3 +1,5 @@
+//in a populateFields function
+	//create a snapshot of the data inside of a key based on the chosen dispensary and then populate the menu based on type and menu item
 //in a menuItemSet function
 	//listen for form submit
 	//take form field inputs and set them to the firebase json document 
@@ -10,7 +12,11 @@
 (function() {
 	var menuRef = new Firebase('https://dazzling-inferno-1178.firebaseIO.com/menu');  // Generate a Firebase location
 	$('#menu_submit').submit(function menuItemSet(complete){
-			//complete.preventDefault();
+			$('form').submit(function(event) {
+			  menuRef.push({
+			    "newDispensary": $('.unavailablelabel').val(), //problem: same class for multiple fields 
+			  });
+			complete.preventDefault();
 				/* Insert all validations here as if else checks */
 			
 			/* IF the value of option is new THEN invoke function 'firebasePush' ELSE invoke function 'firebaseSet' */
