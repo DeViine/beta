@@ -33,10 +33,10 @@
     
     <div class="top"></div>
     <!-- Ratings JS -->
-    <script src="../src/js/ratings.js" defer></script>
-    <script src="../src/js/rating_output.js" defer></script>
-    <script src="../src/js/dispensary_hours.js"></script>
-    <script src="../src/js/read_more.js"></script>
+    <script src="../src/js/ratings.js" type="text/javascript" defer></script>
+    <script src="../src/js/rating_output.js" type="text/javascript" defer></script>
+    <script src="../src/js/dispensary_hours.js" type="text/javascript"></script>
+    <script src="../src/js/read_more.js" type="text/javascript"></script>
 
 <header>
       
