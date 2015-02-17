@@ -4,9 +4,9 @@
 
 // @author dsiddy Disable the submit button initially.
 
-(function() {
+$(document).ready (function() {
      $('#enter').attr('disabled', 'disabled');
-})();
+
 function dob_check()
 {
     var month = document.getElementById('month').value;
@@ -58,7 +58,8 @@ function validateForm() {
 $('.bday').change(dob_check);
 $('.bday').change(validateForm);
 
-$('.betacode').change(code_check);
-$('.betacode').change(validateForm);
+$('.betacode').keyup(code_check);
+$('.betacode').keyup(validateForm);
 })();
+});
 //on submit == page exit
