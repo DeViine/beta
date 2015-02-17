@@ -20,7 +20,7 @@
 /* Up To Top Start */
 /*---------------------------Globals Start------------------------------*/
 @font-face { 
-  font-family: "Bebas Neue"; 
+  font-family: "bebas_neue"; 
   src: url(http://deviine.com/deviine/beta/fonts/bebas_neue/BebasNeue.ttf); 
 } 
 /* Body Start */
@@ -156,7 +156,7 @@ footer #feedback {
  .rightside #sendfeedback {
   background: rgb(61,216,97);
   cursor: pointer;
-  font-family: bebas neue;
+  font-family: bebas_neue;
   font-size: 30px;
   line-height: 47px;
   width: 20%;
@@ -342,7 +342,7 @@ header {
     .nav li a {
       color: #2c3034;
       font-size: 28px;
-      font-family: bebas neue;
+      font-family: bebas_neue;
       text-transform: uppercase;
       text-decoration: none;
       padding: 0;
@@ -467,7 +467,7 @@ header {
   width: 50%;
 }
 .dealstitle h1, .dispensariestitle h1, .strainstitle h1 {
-  font-family: bebas neue;
+  font-family: bebas_neue;
   font-size: 40px;
   color: rgb(44,48,52);
 }
@@ -555,7 +555,7 @@ border-right: none;
   float: left;
   width: 46%; }
   .featureddispensaries .featdispbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -586,7 +586,7 @@ border-right: none;
         border-radius: 15px;
         float: left; }
       .featureddispensaries .featureddispensariesbody .cardwrapper .dispensaryname {
-        font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 1.4em;
         text-align: center;
         color: #f7253e;
@@ -664,7 +664,7 @@ border-right: none;
   float: left;
   width: 46%; }
   #dailydeals .dailydealsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -695,7 +695,7 @@ border-right: none;
       border-radius: 15px;
       float: left; }
     #dailydeals .dailydeals .dealtitle {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       line-height: 1em;
       text-align: center;
@@ -767,7 +767,7 @@ border-right: none;
   float: left;
   width: 46%; }
   #sotw .sotwbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -798,7 +798,7 @@ border-right: none;
       border-radius: 15px;
       float: left; }
     #sotw .sotwbody .strainname {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       text-align: center;
       line-height: 1em;
@@ -883,7 +883,7 @@ border-right: none;
   float: left;
   width: 46%; }
   #voting .votingbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -911,7 +911,7 @@ border-right: none;
   float: left;
   width: 94%; }
   #wiyb .wiybbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -943,7 +943,7 @@ border-right: none;
   float: left;
   width: 94%; }
   #sponsor .sponsorbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -985,7 +985,7 @@ border-right: none;
     .container {
       margin: 70px 1% 1% 1%; } }
   .container .headerbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1025,7 +1025,7 @@ border-right: none;
     border-radius: 15px;
     float: left; }
   .dispensariesbody .cardwrapper .dispensaryname {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.4em;
     line-height: 1em;
     text-align: center;
@@ -1115,7 +1115,7 @@ border-right: none;
     .info {
       margin: 70px 1% 1% 1%; } }
   .info .infobar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1143,7 +1143,7 @@ border-right: none;
       float: left;
       width: 70%; }
       .info .infocontainer .audinfo h2 {
-        font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 30px;
         color: #2c3034; }
       .info .infocontainer .audinfo h3 {
@@ -1245,7 +1245,7 @@ border-right: none;
   float: right; 
 }
 #dispensary_hours .headerbar {
-  font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3034;
   font-size: 34px;
   text-align: center;
@@ -1266,7 +1266,7 @@ border-right: none;
   color: rgb(61,216,97);
 }
 #dispensary_hours table tr td {
-  font-family: bebas neue;
+  font-family: bebas_neue;
   font-size: 30px;
   padding: 10px 20px 4px 20px;
   border-bottom: 1px solid rgba(255,255,255,.1);
@@ -1287,7 +1287,7 @@ border-right: none;
   width: 40%;
   clear: left; }
   .menu .menubar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1374,7 +1374,7 @@ border-right: none;
             .menu .menubody .tabs-content .content #menu .menuitem {
               width: 95%; } }
           .menu .menubody .tabs-content .content #menu .menuitem .itemname {
-            font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 1.5em;
             line-height: 32px;
             font-weight: 300;
@@ -1461,7 +1461,7 @@ border-right: none;
   float: left;
   width: 37%; }
   .currentdeals .headerbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1497,7 +1497,7 @@ border-right: none;
       border-radius: 15px;
       float: left; }
     .currentdeals .currentdealsbody .dealtitle {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       line-height: 1em;
       text-align: center;
@@ -1575,7 +1575,7 @@ border-right: none;
   float: left;
   width: 37%; }
   .reviews .reviewsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1663,7 +1663,7 @@ border-right: none;
   border-radius: 15px;
   float: left; }
 .dealsbody .dealtitle {
-  font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   line-height: 1em;
   text-align: center;
@@ -1743,7 +1743,7 @@ border-right: none;
     .dealinfo {
       margin: 70px 1% 1% 1%; } }
   .dealinfo .infobar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1763,7 +1763,7 @@ border-right: none;
       float: left;
       width: 100%; }
       .dealinfo .infocontainer .audinfo h2 {
-        font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 30px;
         color: #2c3034; }
       .dealinfo .infocontainer .audinfo h3 {
@@ -1870,7 +1870,7 @@ border-right: none;
     .images {
       margin: 70px 1% 1% 1%; } }
   .images .imagesbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1911,7 +1911,7 @@ border-right: none;
   float: left;
   width: 55%; }
   .details .detailsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -1958,7 +1958,7 @@ border-right: none;
         margin: 10px auto;
         padding: 15px 20px 10px 20px;
         border-radius: 10px;
-        font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: white;
         font-size: 30px;
         -webkit-transition: none;
@@ -1990,7 +1990,7 @@ border-right: none;
   float: left;
   width: 37%; }
   .reviews .reviewsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2017,7 +2017,7 @@ border-right: none;
   float: left;
   width: 94%; }
   #otherdeals .dailydealsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2050,7 +2050,7 @@ border-right: none;
       border-radius: 15px;
       float: left; }
     #otherdeals .dailydeals .dealtitle {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       line-height: 1em;
       text-align: center;
@@ -2139,7 +2139,7 @@ border-right: none;
   border-radius: 15px;
   float: left; }
 .strainsbody .strainname {
-  font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   text-align: center;
   line-height: 1em;
@@ -2230,7 +2230,7 @@ border-right: none;
     .straininfo {
       margin: 70px 1% 1% 1%; } }
   .straininfo .infobar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2253,7 +2253,7 @@ border-right: none;
       .straininfo .infocontainer .audinfo .strainlogo {
         width: 25%; }
       .straininfo .infocontainer .audinfo h2 {
-        font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 30px;
         font-weight: bold;
         color: #2c3034;
@@ -2290,7 +2290,7 @@ border-right: none;
       .straininfo .infocontainer .audinfo .favbtn {
         background: #f7253e;
         color: white;
-        font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 25px;
         padding: 10px 20px 7px 20px;
         border-radius: 8px; }
@@ -2323,7 +2323,7 @@ border-right: none;
     .images {
       margin: 70px 1% 1% 1%; } }
   .images .imagesbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2470,7 +2470,7 @@ border-right: none;
   float: left;
   width: 17%; }
   .profile .profilebar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2522,7 +2522,7 @@ border-right: none;
   float: left;
   width: 17%; }
   .effects .effectsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2573,7 +2573,7 @@ border-right: none;
   float: left;
   width: 17%; }
   .negatives .negativesbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2626,7 +2626,7 @@ border-right: none;
   float: right;
   margin-right: 5%; }
   .reviews .reviewsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2656,7 +2656,7 @@ border-right: none;
   float: left;
   width: 94%; }
   #otherstrains .dailystrainsbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2688,7 +2688,7 @@ border-right: none;
       border-radius: 15px;
       float: left; }
     #otherstrains .dailystrains .strainname {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       text-align: center;
       line-height: 1em;
@@ -2778,7 +2778,7 @@ border-right: none;
     #newswrapper {
       margin: 70px 1% 1% 1%; } }
   #newswrapper .headerbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2809,7 +2809,7 @@ border-right: none;
     #newswrapper #statenews .caption,
     #newswrapper #federalnews .caption,
     #newswrapper #generalnews .caption {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       background: rgba(44, 48, 52, 0.8);
       color: white;
@@ -2856,7 +2856,7 @@ border-right: none;
         width: 80%;
         margin: 2% 10%; } }
   #newswrapper .snbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2870,7 +2870,7 @@ border-right: none;
       #newswrapper .snbar {
         font-size: 24px; } }
   #newswrapper .fnbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2884,7 +2884,7 @@ border-right: none;
       #newswrapper .fnbar {
         font-size: 24px; } }
   #newswrapper .gnbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2934,7 +2934,7 @@ border-right: none;
     #mainstory {
       margin: 70px 1% 1% 1%; } }
   #mainstory .mainstorybar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -2957,7 +2957,7 @@ border-right: none;
       width: 100%;
       margin-top: 2px; }
     #mainstory .mainstory .newstitle {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       font-size: 55px;
       font-weight: bold;
@@ -2972,7 +2972,7 @@ border-right: none;
       margin: .5% 0 0 0; }
     #mainstory .mainstory .newssection {
       font-size: 25px;
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 26px;
       color: #2c3034; }
     #mainstory .mainstory .newsbody {
@@ -3027,7 +3027,7 @@ border-right: none;
     #mainstoryfeaturednews {
       margin: 70px 1% 1% 1%; } }
   #mainstoryfeaturednews .featuredbar {
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2c3034;
     font-size: 34px;
     text-align: center;
@@ -3045,7 +3045,7 @@ border-right: none;
       position: relative;
       display: table; }
     #mainstoryfeaturednews .featurednews .caption {
-      font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.4em;
       background: rgba(44, 48, 52, 0.8);
       color: white;
@@ -3560,7 +3560,7 @@ background: rgb(61,216,97);
 }
 /*Doughnut css*/
 .propertysquare {
-  font-family: "Bebas Neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "bebas_neue", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   height: 20px;
   margin-bottom: 20px;

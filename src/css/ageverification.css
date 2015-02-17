@@ -1,7 +1,11 @@
 @font-face { 
   font-family: "bebas neue"; 
   src: url(http://deviine.com/deviine/beta/fonts/bebas_neue/BebasNeue.ttf); 
-} 
+}
+@font-face {
+font-family: "open sans"
+src: url(http://fonts.googleapis.com/css?family=Open+Sans); 
+}
 body {
 background: rgb(44,48,52);
 }
