@@ -2,10 +2,8 @@
   font-family: "bebas neue"; 
   src: url(http://deviine.com/deviine/beta/fonts/bebas_neue/BebasNeue.ttf); 
 }
-@font-face {
-font-family: "open sans";
-src: url(http://fonts.googleapis.com/css?family=Open+Sans); 
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
 background: rgb(44,48,52);
 }
@@ -33,7 +31,7 @@ h1 {
   margin: 20px 0 10px 0;
 }
 h2 {
-  font-family: open sans;
+  font-family: font-family: 'Open Sans', sans-serif;
   color: rgb(247,37,62);
   font-weight: lighter;
   margin-top: 0;
@@ -96,7 +94,7 @@ h2 {
   }
 footer {
   color: white;
-  font-family: open sans;
+  font-family: font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
