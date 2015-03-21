@@ -13,7 +13,7 @@
             </div>                  <!-- End of Rating output -->  
                 <div class="distance"><!-- Begin distance output -->
                     <h4 class="number">
-                        <div id=<?php $dir . "_key" ?>></div>
+                        <div id=<?php $file . "_key" ?>></div>
                     </h4> 
                     <h5 class="label">MILES<br>AWAY</h5>
                 </div>              <!-- End distance output -->

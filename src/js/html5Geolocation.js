@@ -3,14 +3,14 @@
   var firebaseRef = new Firebase(firebaseUrl);
 
   // Set the URL of the link element to be the Firebase URL *********NOT NECCESARY FOR ANYTHING BUT TESTING*********
-  document.getElementById("firebaseRef").setAttribute("href", firebaseUrl);
+  $("#firebaseRef").setAttribute("href", firebaseUrl);
 
   // Create a new GeoFire instance at the random Firebase location
   var geoFire = new GeoFire(firebaseRef);
-  
+
   /* Uses the HTML5 geolocation API to get the current user's location */
   var getLocation = function() {
-    if (typeof navigator !== "undefined" && typeof navigator.geolocation !== "undefined") {
+    if(typeof navigator !== "undefined" && typeof navigator.geolocation !== "undefined") {
       log("Asking user to get their location");
       navigator.geolocation.getCurrentPosition(geolocationCallback, errorHandler);
     } else {
@@ -19,20 +19,20 @@
   };
 
   /* Callback method from the geolocation API which receives the current user's location */
-	var geolocationCallback = function(location) {
-	var latitude = location.coords.latitude;
-	var longitude = location.coords.longitude;
-	
-var geoQuery = geoFire.query({
-center: [latitude, longitude],
-radius: 9000 //kilometers
-});
-var onKeyEnteredRegistration = geoQuery.on("key_entered", function(key, location, distanceInKm) {
-var distanceInMiles = distanceInKm * 0.621;
+  var geolocationCallback = function(location) {
+    var latitude = location.coords.latitude;
+    var longitude = location.coords.longitude;
+
+    var geoQuery = geoFire.query({
+      center: [latitude, longitude],
+      radius: 9000 //kilometers
+    });
+    var onKeyEnteredRegistration = geoQuery.on("key_entered", function(key, location, distanceInKm) {
+      var distanceInMiles = distanceInKm * 0.621;
 
 // Append the number of miles to the html
-$("<div />").addClass("added").text(distanceInMiles.toFixed()).appendTo("#" + key);
-});
+      $("<div />").addClass("added").text(distanceInMiles.toFixed()).appendTo("#" + key);
+    });
 
     log("Retrieved user's location: [" + latitude + ", " + longitude + "]");
 
@@ -53,11 +53,11 @@ $("<div />").addClass("added").text(distanceInMiles.toFixed()).appendTo("#" + ke
 
   /* Handles any errors from trying to get the user's current location */
   var errorHandler = function(error) {
-    if (error.code == 1) {
+    if(error.code == 1) {
       log("Error: PERMISSION_DENIED: User denied access to their location");
-    } else if (error.code === 2) {
+    } else if(error.code === 2) {
       log("Error: POSITION_UNAVAILABLE: Network is down or positioning satellites cannot be reached");
-    } else if (error.code === 3) {
+    } else if(error.code === 3) {
       log("Error: TIMEOUT: Calculating the user's location too took long");
     } else {
       log("Unexpected error code")
@@ -66,45 +66,45 @@ $("<div />").addClass("added").text(distanceInMiles.toFixed()).appendTo("#" + ke
 
   // Get the current user's location
   getLocation();
-//SETS THE LOCATIONS OF ALL OF THE DISPENSARIES IN KEYS
-geoFire.set({
-  "sativa_key": [47.685331, -117.262793],
-  "satori_key": [47.741859, -117.412180],
-  "cinder_key": [47.721611, -117.411764],
-  "walkingraven_key": [39.680100, -104.987798]
-}).then(function() {
-  console.log("Provided keys have been added to GeoFire");
-}, function(error) {
-  console.log("Error: " + error);
-});
+//SETS THE LOCATIONS OF ALL OF THE DISPENSARIES IN KEYS ******THIS PART WILL COME OUT AND BE REPLACED BY THE OPERATIONS OF THE BACKEND********
+  geoFire.set({
+    "sativa_key": [47.685331, -117.262793],
+    "satori_key": [47.741859, -117.412180],
+    "cinder_key": [47.721611, -117.411764],
+    "walkingraven_key": [39.680100, -104.987798]
+  }).then(function() {
+    console.log("Provided keys have been added to GeoFire");
+  }, function(error) {
+    console.log("Error: " + error);
+  });
 // this IS the number of miles between USER and DISPENSARY
-var selectedKey = document.getElementById("sativa_key").value;
+  var selectedKey = document.getElementById("sativa_key").value;
 
-geoFire.get(selectedKey).then(function(location) {
-  if (location === null) {
-    console.log("Provided key is not in GeoFire");
-  }
-  else {
-    console.log("Provided key has a location of " + location);
-  }
-}, function(error) {
-  console.log("Error: " + error);
-});
+  geoFire.get(selectedKey).then(function(location) {
+    if(location === null) {
+      console.log("Provided key is not in GeoFire");
+    }
+    else {
+      console.log("Provided key has a location of " + location);
+    }
+  }, function(error) {
+    console.log("Error: " + error);
+  });
 
-  
+
   /*************/
   /*  HELPERS  */
   /*************/
   /* Returns a random string of the inputted length */
   function generateRandomString(length) {
-      var text = "";
-      var validChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var text = "";
+    var validChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-      for(var i = 0; i < length; i++) {
-          text += validChars.charAt(Math.floor(Math.random() * validChars.length));
-      }
+    for(var i = 0; i < length; i++) {
+      text += validChars.charAt(Math.floor(Math.random() * validChars.length));
+    }
 
-      return text;
+    return text;
   }
 
   /* Logs to the page instead of the console */
@@ -114,4 +114,4 @@ geoFire.get(selectedKey).then(function(location) {
     childDiv.appendChild(textNode);
     document.getElementById("log").appendChild(childDiv);
   }
-})();
+});

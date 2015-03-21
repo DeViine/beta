@@ -16,7 +16,7 @@ if ($interval->format('%a') >= 2) {
 	echo $interval->format('%a');
 	echo '<h5 class="label">DAYS<br>LEFT</h5>';
 
-} elseif ($interval->format('%a') <= 1) {
+} else {
 	echo "Expires at Closing";
 }
 ?>

@@ -1,45 +1,49 @@
 body {
-  background: #2c3034;
-  padding-top: 5%; }
-  body div {
+  background: rgb(44,48,52);
+  padding-top: 5%;
+  div {
     position: relative;
     width: 80%;
     margin: 20px 10% 20px 10%;
     padding: 40px 0;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255,255,255,.15);
     border-radius: 5px;
-    float: left; }
-    body div .logo {
+    float: left;
+    .logo {
       width: 200px;
       padding: 0px 40px;
-      background: #2c3034;
+      background: rgb(44,48,52);
       margin: -140px auto 0 auto;
-      position: relative; }
-    body div h1 {
+      position: relative;
+    }
+    h1 {
       font-family: bebas neue;
       font-weight: normal;
       color: white;
       font-size: 35px;
       text-transform: uppercase;
-      margin: 10px 0; }
-    body div h2 {
+      margin: 10px 0;
+    }
+    h2 {
       font-family: open sans;
-      color: #f7253e;
+      color: rgb(247,37,62);
       font-weight: lighter;
       margin-top: 0;
       letter-spacing: 1.5px;
       font-size: 16px;
-      text-transform: uppercase; }
-    body div h4 {
+      text-transform: uppercase;
+    }
+    h4 {
       font-family: bebas neue;
       font-size: 28px;
       font-weight: normal;
       text-align: right;
       color: #fcd31c;
       margin: 10px 0 0 0;
-      padding: 0; }
-    body div h5 {
+      padding: 0;
+    }
+    h5 {
       font-family: open sans;
       text-transform: uppercase;
       font-size: 15px;
@@ -47,47 +51,51 @@ body {
       font-weight: normal;
       text-align: right;
       margin: 0;
-      padding: 0; }
-    body div p {
+      padding: 0;
+    }
+    p {
       font-family: open sans;
       color: white;
       font-size: 16px;
-      padding-bottom: 20px; }
-    body div .socialicon {
-      margin: 30px 5px; }
-      body div .socialicon img {
+      padding-bottom: 20px;
+    }
+    .socialicon {
+      margin: 30px 5px;
+      img {
         margin: 10px 0;
         background: white;
         border-radius: 5px;
-        border: 3px solid rgba(255, 255, 255, 0.15); }
-        body div .socialicon img:hover {
+        border: 3px solid rgba(255,255,255,.15);
+        &:hover {
           border-color: #fcd31c;
-          background: #fcd31c; }
-    body div .month,
-    body div .day,
-    body div .year,
-    body div .betacode,
-    body div .email {
+          background: #fcd31c;
+        }
+      }
+    }
+    .month,
+    .day,
+    .year,
+    .betacode,
+    .email {
       padding: 13px 20px 5px 20px;
       margin: 5px 15px 10px 15px;
       width: 50px;
-      color: rgba(44, 48, 52, 0.4);
+      color: rgba(44,48,52,.4);
       text-align: center;
       font-family: bebas neue;
       font-size: 30px;
-      font-weight: bold; }
-      body div .month:focus,
-      body div .day:focus,
-      body div .year:focus,
-      body div .betacode:focus,
-      body div .email:focus {
-        color: #2c3034; }
-    body div .betacode,
-    body div .email {
-      width: 300px; }
-    body div .button {
+      font-weight: bold;
+      &:focus {
+        color: rgb(44,48,52);
+      }
+    }
+    .betacode,
+    .email {
+      width: 300px;
+    }
+    .button {
       margin: 20px auto 0 auto;
-      background: #f7253e;
+      background: rgb(247,37,62);
       color: white;
       font-family: bebas neue;
       font-weight: normal;
@@ -95,18 +103,21 @@ body {
       font-size: 40px;
       padding: 20px 30px 10px 30px;
       border: none;
-      border-radius: 5px; }
-      body div .button:hover {
-        background: #3dd861;
-        cursor: pointer; }
-    body div .betabtn {
-      background: #fcd31c; }
-    body div .testimonials {
+      border-radius: 5px;
+      &:hover {
+        background: rgb(61,216,97);
+        cursor: pointer;
+      }
+    }
+    .betabtn {
+      background: #fcd31c;
+    }
+    .testimonials {
       width: 100%;
       float: left;
       list-style: none;
-      margin: 0; }
-      body div .testimonials .testimonial {
+      margin: 0;
+      .testimonial {
         border: 1px solid #fcd31c;
         border-radius: 5px;
         font-family: open sans;
@@ -117,23 +128,28 @@ body {
         margin: 0 3%;
         color: white;
         float: left;
-        position: relative; }
-        body div .testimonials .testimonial span {
+        position: relative;
+        span {
           margin-top: 10px;
           width: 100%;
           float: left;
-          clear: both; }
-          body div .testimonials .testimonial span img {
+          clear: both;
+          img {
             width: 60px;
             float: right;
             border-radius: 30px;
-            margin-left: 15px; }
-  body footer {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  footer {
     color: white;
     font-family: open sans;
     text-align: center;
     margin-bottom: 30px;
     float: left;
-    width: 100%; }
-
-/*# sourceMappingURL=ageverification.css.map */
+    width: 100%;
+  }
+}
