@@ -2,7 +2,7 @@
                   
     <!--Doughnut graph js file--> 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>      
-    <script src="../src/js/doughnut.js"></script>
+    
     <script src="../src/js/profileDoughnut.js"></script>
     <script src="../src/js/effectDoughnut.js"></script>
     <script src="../src/js/negativeDoughnut.js"></script>

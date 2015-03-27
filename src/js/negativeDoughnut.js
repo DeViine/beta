@@ -46,3 +46,4 @@ var options = {
 //Get the context of the canvas element we want to select
 var ctx = document.getElementById("negativeChart").getContext("2d");
 var negativeChart = new Chart(ctx).Doughnut(data, options);
+console.log(twoValNegative);

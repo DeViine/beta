@@ -1,3 +1,5 @@
+var firebaseUrl = "https://deviineadmin.firebaseIO.com/";  // Generate a Firebase location
+var firebaseRef = new Firebase(firebaseUrl);
 var oneValEffect = parseInt($("#redeffect").attr("data-value"), 10);
 var twoValEffect = parseInt($("#yelloweffect").attr("data-value"), 10);
 var threeValEffect = 100 - (oneValEffect + twoValEffect);
