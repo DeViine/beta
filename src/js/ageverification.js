@@ -35,8 +35,8 @@ $(document).ready(function() {
   }
 
   function code_check() {
-    var code = ["jv101beta", "db111beta"];
-    if(array.indexOf(code) < 0) {
+    //var code = 'dv237beta';
+    if($('input[name="betacode"]').val() == code) {
       $('.betacodeText').css('color', 'rgb(61, 216, 97)');
       return true;
     } else if($('input[name="betacode"]').val() != code) {
