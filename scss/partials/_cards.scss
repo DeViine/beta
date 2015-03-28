@@ -100,7 +100,8 @@
 
 .featured-dispensary-true,
 .featured-deal-true,
-.featured-strain-true {
+.featured-strain-true,
+.new-strain-true {
   position: absolute;
   top: 10%;
   left: -5.8%;
@@ -118,6 +119,11 @@
 }
 .featured-strain-true {
   background-image: url(../img/banners/strainOfTheWeek.png);
+}
+.new-strain-true {
+  top: 11.3%;
+  left: -3.4%;
+  background-image: url(../img/banners/new.png);
 }
 
 

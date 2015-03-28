@@ -1,7 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@font-face {
-  font-family: "Bebas Neue";
-  src: url(http://deviine.com/deviine/beta/fonts/bebas_neue/BebasNeue.ttf); }
 .dispensaryLogo,
 .businessLogo,
 .producerLogo {
@@ -94,6 +90,9 @@
 .dealGallery,
 .strainGallery {
   width: 100%; }
+
+.strainGalleryMobile {
+  display: none; }
 
 .dispensaryHours {
   background: #2c3034;
@@ -256,7 +255,8 @@
       line-height: 22px;
       font-weight: lighter;
       text-transform: uppercase;
-      padding: 0;
+      /*padding: 0;               THIS IS THE STYLING FOR HAVING USERNAME + LOCATION */
+      padding: 10px 0 0 0;
       margin: 0; }
     .navbar-right .accountInfo .location {
       color: #fcd31c;
@@ -333,9 +333,25 @@
         position: absolute;
         margin-top: -18px;
         left: -1000px;
-        -webkit-transition: .3s all; }
+        -webkit-transition: .3s all;
+        -moz-transition: .3s all;
+        -ms-transition: .3s all;
+        -o-transition: .3s all;
+        transition: .3s all; }
     #mainMenu > li a {
       color: #2c3034; }
+      #mainMenu > li a:active, #mainMenu > li a:focus, #mainMenu > li a:visited {
+        text-decoration: none; }
+      #mainMenu > li a img {
+        position: relative;
+        left: -62px;
+        -webkit-transition: .3s all;
+        -moz-transition: .3s all;
+        -ms-transition: .3s all;
+        -o-transition: .3s all;
+        transition: .3s all; }
+        #mainMenu > li a img:hover {
+          left: -50px; }
   #mainMenu .adminnav {
     color: rgba(44, 48, 52, 0.2); }
     #mainMenu .adminnav:hover {
@@ -550,7 +566,12 @@
     top: 5px;
     right: 10px; }
 
-  /*----signin.html end----*/ }
+  /*----signin.html end----*/
+  /*----footer start----*/
+  #footer h4 {
+    font-size: 14px; }
+
+  /*----footer end----*/ }
 @media screen and (max-width: 767px) {
   /*----home.html start----*/
   #indexSummary .howItWorks {
@@ -597,7 +618,7 @@
   .navbar-right .accountInfo {
     margin: -4px 0 0 0; }
     .navbar-right .accountInfo .username {
-      font-size: 11px; }
+      font-size: 13px; }
     .navbar-right .accountInfo .location {
       font-size: 9px; }
   .navbar-right .avatar {
@@ -640,7 +661,15 @@
   .dvCardList li {
     width: 40%; }
 
-  /*----cards.html end----*/ }
+  /*----cards.html end----*/
+  /*----items.html start----*/
+  .strainGallery {
+    display: none; }
+
+  .strainGalleryMobile {
+    display: inline; }
+
+  /*----items.html end----*/ }
 @media screen and (max-width: 550px) {
   /*----cards.html start----*/
   .featured-dispensary-true,
@@ -653,8 +682,10 @@
   /*----page.html start----*/
   .navbar-header {
     text-align: center; }
+    .navbar-header .logo > img {
+      float: left; }
     .navbar-header .menuMobile-toggler {
-      display: inline;
+      display: none;
       position: absolute;
       left: 4%;
       margin: 15px 0; }
@@ -674,7 +705,31 @@
       border-color: #fcd31c; }
 
   #mainMenu {
-    display: none; }
+    top: inherit;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: #2c3034;
+    padding: 5px 0; }
+    #mainMenu > li {
+      display: inline;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      width: 33%;
+      float: left; }
+      #mainMenu > li:nth-child(1), #mainMenu > li:nth-child(2), #mainMenu > li:nth-child(3) {
+        border: none; }
+      #mainMenu > li a {
+        color: white;
+        font-size: 20px; }
+      #mainMenu > li .typeform-share {
+        display: none; }
+      #mainMenu > li .disabledNav {
+        color: rgba(255, 255, 255, 0.2); }
+      #mainMenu > li .adminnav {
+        display: none; }
 
   #socialIcons {
     display: none; }
@@ -683,11 +738,17 @@
     display: none; }
 
   /*----page.html end----*/
-  /*----footer.html start----*/
-  #footer {
-    padding-bottom: 40px; }
+  #indexSummary > .howItWorks p strong {
+    display: inline; }
+  #indexSummary > .howItWorks:hover .comingSoon {
+    opacity: 0; }
 
-  /*----footer.html end----*/
+  /*----footer start----*/
+  #footer {
+    padding-bottom: 40px;
+    margin: 0; }
+
+  /*----footer end----*/
   /*----cards.html start----*/
   .cardWrapper .dispensaryLogo,
   .cardWrapper .dealImage,
@@ -696,6 +757,11 @@
     -moz-filter: none;
     -ms-filter: none;
     filter: none; }
+
+  /*----cards.html end----*/
+  /*----cards.html start----*/
+  .barChart li div {
+    font-size: 16px; }
 
   /*----cards.html end----*/ }
 #indexSummary > .howItWorks {
@@ -1056,7 +1122,8 @@
 
 .featured-dispensary-true,
 .featured-deal-true,
-.featured-strain-true {
+.featured-strain-true,
+.new-strain-true {
   position: absolute;
   top: 10%;
   left: -5.8%;
@@ -1075,6 +1142,11 @@
 .featured-strain-true {
   background-image: url(../img/banners/strainOfTheWeek.png); }
 
+.new-strain-true {
+  top: 11.3%;
+  left: -3.4%;
+  background-image: url(../img/banners/new.png); }
+
 /* Card End */
 .dvCardList {
   padding-left: 0;
@@ -1092,7 +1164,7 @@ ul.nav.nav-tabs {
   ul.nav.nav-tabs > li {
     padding: 0;
     float: left;
-    opacity: .4;
+    opacity: .2;
     border: none;
     margin: 0 2px 0 0; }
     ul.nav.nav-tabs > li:last-child {
@@ -1164,9 +1236,8 @@ ul.nav.nav-tabs {
       float: left; }
     .menu .menuItem .thcPotency,
     .menu .menuItem .cbdPotency {
-      margin: 30px 10px 0 0;
+      margin: 0px auto 0 auto;
       width: 27%;
-      float: right;
       text-align: center;
       font-family: "Bebas Neue", sans-serif;
       font-size: 20px;

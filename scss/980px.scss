@@ -3,8 +3,11 @@
   /*----page.html start----*/
   .navbar-header {
     text-align: center;
+    .logo > img {
+      float: left;
+    }
     .menuMobile-toggler {
-      display: inline;
+      display: none;
       position: absolute;
       left: 4%;
       margin: 15px 0;
@@ -29,7 +32,39 @@
     }
   }
   #mainMenu { 
-    display: none;
+    top: inherit;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: rgb(44,48,52);
+    padding: 5px 0;
+    > li {
+      display: inline;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      width: 33%;
+      float: left;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        border: none;
+      }
+      a {
+        color: white;
+        font-size: 20px;
+      }
+      .typeform-share {
+        display: none;
+      }
+      .disabledNav {
+        color: rgba(255,255,255,.2);
+      }
+      .adminnav {
+        display: none;
+      }
+    }
   }
   #socialIcons {
     display: none;
@@ -38,11 +73,24 @@
     display: none;
   }
   /*----page.html end----*/
-  /*----footer.html start----*/
+  #indexSummary > .howItWorks { 
+    p {
+      strong {
+        display: inline;
+      }
+    }
+    &:hover {
+      .comingSoon {
+        opacity: 0;
+      }
+    }
+  }
+  /*----footer start----*/
   #footer {
     padding-bottom: 40px; 
+    margin: 0;
   }
-  /*----footer.html end----*/
+  /*----footer end----*/
   /*----cards.html start----*/
   .cardWrapper {
     .dispensaryLogo,
@@ -55,5 +103,13 @@
     }
   }
   /*----cards.html end----*/
-
+  /*----cards.html start----*/
+  .barChart {
+    li {
+      div {
+        font-size: 16px;
+      }
+    }
+  }
+  /*----cards.html end----*/
 }

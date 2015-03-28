@@ -44,7 +44,7 @@
   .navbar-right .accountInfo {
     margin: -4px 0 0 0; }
     .navbar-right .accountInfo .username {
-      font-size: 11px; }
+      font-size: 13px; }
     .navbar-right .accountInfo .location {
       font-size: 9px; }
   .navbar-right .avatar {
@@ -70,6 +70,11 @@
   .cardWrapper {
     margin: 0 25% !important; }
 
+  .featured-dispensary-true,
+  .featured-deal-true,
+  .featured-strain-true {
+    left: -4%; }
+
   /*----cards.html end----*/
   /*----ratings.html start----*/
   .dispensaryCard .rating,
@@ -81,6 +86,22 @@
   /*----cards.html start----*/
   .dvCardList li {
     width: 40%; }
+
+  /*----cards.html end----*/
+  /*----items.html start----*/
+  .strainGallery {
+    display: none; }
+
+  .strainGalleryMobile {
+    display: inline; }
+
+  /*----items.html end----*/ }
+@media screen and (max-width: 550px) {
+  /*----cards.html start----*/
+  .featured-dispensary-true,
+  .featured-deal-true,
+  .featured-strain-true {
+    left: -5.5%; }
 
   /*----cards.html end----*/ }
 

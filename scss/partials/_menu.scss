@@ -8,7 +8,7 @@ ul.nav.nav-tabs {
   > li {
     padding: 0;
     float: left;
-    opacity: .4;
+    opacity: .2;
     border: none;
     margin: 0 2px 0 0;
     &:last-child {
@@ -74,7 +74,6 @@ ul.nav.nav-tabs {
   padding-bottom: 5%;
   float: left;
   background: $dvGray !important;
-
   .menuItem {
     margin: 5% 5% 0 5%;
     border-radius: 20px;
@@ -85,7 +84,6 @@ ul.nav.nav-tabs {
     background-color: white;
     color: $dvGray;
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
-
     .itemName {
       margin: 0 0 10px 0;
       border-bottom: thin solid rgba($dvGray, 0.15);
@@ -94,7 +92,6 @@ ul.nav.nav-tabs {
       float: left;
       font: normal $dvHeaderFont 35px;
     }
-
     .producerName {
       margin: 10px 0 0 0;
       padding: 0;
@@ -102,43 +99,36 @@ ul.nav.nav-tabs {
       font: 22px $dvHeaderFont;
       color: rgba($dvGray, 0.3);
     }
-
     .itemImage {
       margin-right: 10px;
       width: 30%;
       float: left;
     }
-
     .thcPotency,
     .cbdPotency {
-      margin: 30px 10px 0 0;
+      margin: 0px auto 0 auto;
       width: 27%;
-      float: right;
       text-align: center;
       font-family: $dvHeaderFont;
       font-size: 20px;
       color: rgba($dvGray, 0.3);
-
       span {
         font-size: 40px;
         color: $dvGray;
       }
     }
-
     .itemDescription {
       margin: 1em auto; // @author dsiddy
       clear: both;
       float: left;
       font-size: 12px;
     }
-
     .pricing {
       margin: 0;
       border-top: thin solid rgba($dvGray, 0.15);
       padding: 10px 0 0 0;
       width: 100%;
       clear: left;
-
       li {
         border-right: thin solid rgba($dvGray, 0.15);
         padding: 10px 0 5px 0;

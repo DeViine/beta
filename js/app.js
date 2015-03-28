@@ -126,4 +126,5 @@ angular.module('DeViine', ['DeViine.config', 'DeViine.services', 'DeViine.contro
       });
 
     $urlRouterProvider.otherwise('/');
+
   });

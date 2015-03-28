@@ -25,12 +25,22 @@
   .dvCardList li {
     width: 68%; }
 
+  .featured-dispensary-true,
+  .featured-deal-true,
+  .featured-strain-true {
+    left: -4.5%; }
+
   /*----cards.html end----*/
   /*----signin.html end----*/
   .close-modal {
     top: 5px;
     right: 10px; }
 
-  /*----signin.html end----*/ }
+  /*----signin.html end----*/
+  /*----footer start----*/
+  #footer h4 {
+    font-size: 14px; }
+
+  /*----footer end----*/ }
 
 /*# sourceMappingURL=470px.css.map */

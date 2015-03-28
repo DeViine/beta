@@ -1,6 +1,6 @@
-@import '_variables';
+@import 'variables';
 
-@import '_items';
+@import 'items';
 
 @import 'layout/navbar';
 @import 'layout/menuMobile';
@@ -10,7 +10,7 @@
 @import '767px';
 @import '980px';
 
-@import '_home';
+@import 'home';
 
 @import 'modals/login';
 

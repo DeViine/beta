@@ -2,8 +2,10 @@
   /*----page.html start----*/
   .navbar-header {
     text-align: center; }
+    .navbar-header .logo > img {
+      float: left; }
     .navbar-header .menuMobile-toggler {
-      display: inline;
+      display: none;
       position: absolute;
       left: 4%;
       margin: 15px 0; }
@@ -23,7 +25,31 @@
       border-color: #fcd31c; }
 
   #mainMenu {
-    display: none; }
+    top: inherit;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: #2c3034;
+    padding: 5px 0; }
+    #mainMenu > li {
+      display: inline;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      width: 33%;
+      float: left; }
+      #mainMenu > li:nth-child(1), #mainMenu > li:nth-child(2), #mainMenu > li:nth-child(3) {
+        border: none; }
+      #mainMenu > li a {
+        color: white;
+        font-size: 20px; }
+      #mainMenu > li .typeform-share {
+        display: none; }
+      #mainMenu > li .disabledNav {
+        color: rgba(255, 255, 255, 0.2); }
+      #mainMenu > li .adminnav {
+        display: none; }
 
   #socialIcons {
     display: none; }
@@ -32,11 +58,17 @@
     display: none; }
 
   /*----page.html end----*/
-  /*----footer.html start----*/
-  #footer {
-    padding-bottom: 40px; }
+  #indexSummary > .howItWorks p strong {
+    display: inline; }
+  #indexSummary > .howItWorks:hover .comingSoon {
+    opacity: 0; }
 
-  /*----footer.html end----*/
+  /*----footer start----*/
+  #footer {
+    padding-bottom: 40px;
+    margin: 0; }
+
+  /*----footer end----*/
   /*----cards.html start----*/
   .cardWrapper .dispensaryLogo,
   .cardWrapper .dealImage,
@@ -45,6 +77,11 @@
     -moz-filter: none;
     -ms-filter: none;
     filter: none; }
+
+  /*----cards.html end----*/
+  /*----cards.html start----*/
+  .barChart li div {
+    font-size: 16px; }
 
   /*----cards.html end----*/ }
 
