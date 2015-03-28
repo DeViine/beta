@@ -1,0 +1,31 @@
+@mixin mainMenuItem($color) {
+  border-left: thick solid $color;
+
+  > a:hover {
+    color: $color;
+  }
+}
+
+#mainMenu {
+  list-style-type: none;
+
+  padding-left: 0;
+  font-family: $dvHeaderFont;
+  font-size: 3rem;
+
+  > li {
+    padding-left: 10px;
+
+    &:nth-child(1) {
+      @include mainMenuItem($dvRed);
+    }
+
+    &:nth-child(2) {
+      @include mainMenuItem($dvYellow);
+    }
+
+    &:nth-child(3) {
+      @include mainMenuItem($dvGreen);
+    }
+  }
+}

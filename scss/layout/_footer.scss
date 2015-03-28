@@ -1,0 +1,93 @@
+#footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgb(44, 48, 52);
+  color: rgba(255, 255, 255, .3);
+  h4 {
+    font-family: $dvTextFont;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: $dvGreen;
+  }
+
+  a {
+    font-family: $dvTextFont;
+    font-size: 14px;
+    color: white;
+    &:hover {
+      color: $dvGreen;
+    }
+  }
+
+  input[type='email'] {
+    font-family: $dvTextFont;
+    font-size: 12px;
+    background-color: $dvWhite20;
+    color: white;
+    border-radius: 0;
+    border: 2px solid transparent;
+    height: 40px;
+    padding: 10px;
+    margin: 0;
+    float: left;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    &:hover,
+    &:active,
+    &:focus {
+      border: 2px solid $dvGreen;
+    }
+  }
+  input[type='email'] {
+    width: 300px;
+    &:hover,
+    &:active,
+    &:focus {
+      border-right: none;
+    }
+    &:visited,
+    &:focus {
+      background-color: $dvWhite20;
+    }
+  }
+
+  .btnfooter {
+    border-radius: 0;
+    background-color: $dvGreen;
+    color: white;
+    font-family: $dvHeaderFont;
+    font-size: 30px;
+    height: 40px;
+    margin-top: -.5px;
+    padding: .5% 5% .5% 5%;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      color: $dvGray;
+    }
+    &:active,
+    &:focus,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+  .typeform-share {
+    padding-top: 1.5%;
+    margin-bottom: 3%;
+  }
+
+  address {
+    font-size: 10px;
+    padding-top: 5%;
+    width: 100%;
+  }
+
+  .footerlogo {
+    padding-top: 20%;
+  }
+}
+
+

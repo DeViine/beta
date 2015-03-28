@@ -1,0 +1,5 @@
+h2.pageTitle Dispensaries
+//- dv-card-list(item-type='dispensaries', items='dispensaries')
+ul.dvCardList
+    li.col-md-3(ng-repeat='dispensary in dispensaries')
+        dv-card(item-type='dispensary', item-id='{{ dispensary.$id }}')

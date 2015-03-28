@@ -1,0 +1,59 @@
+
+@media screen and (max-width:980px) {
+  /*----page.html start----*/
+  .navbar-header {
+    text-align: center;
+    .menuMobile-toggler {
+      display: inline;
+      position: absolute;
+      left: 4%;
+      margin: 15px 0;
+      img {
+        width: 50px;
+        opacity: .2;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .navbar-right {
+    position: absolute;
+    right: 4%;
+    top: 0;
+    .username {
+      margin-top: 7.5px;
+    }
+    .avatar {
+      border-color: #fcd31c;
+    }
+  }
+  #mainMenu { 
+    display: none;
+  }
+  #socialIcons {
+    display: none;
+  }
+  .upToTop {
+    display: none;
+  }
+  /*----page.html end----*/
+  /*----footer.html start----*/
+  #footer {
+    padding-bottom: 40px; 
+  }
+  /*----footer.html end----*/
+  /*----cards.html start----*/
+  .cardWrapper {
+    .dispensaryLogo,
+    .dealImage,
+    .strainImage {
+      -webkit-filter: none;
+      -moz-filter: none;
+      -ms-filter: none;
+      filter: none;
+    }
+  }
+  /*----cards.html end----*/
+
+}

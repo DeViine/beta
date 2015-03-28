@@ -1,0 +1,51 @@
+
+@media screen and (max-width:470px) {
+  .navbar .logo > img { 
+    margin: -5px auto 0 auto;
+    width: 60px;
+  }
+  /*----home.html start----*/
+  #indexSummary {
+  	.howItWorks {
+  	  img {
+  	  	width: 30%;
+  	  }
+      h3 {
+        padding-top: 1%;
+      }
+  	  p {
+  	  	font-size: 9px;
+  	  	line-height: 12px;
+        width: 50%;
+  	  }
+  	}
+  }
+  /*----home.html end----*/
+  /*----ratings.html start----*/
+  .dispensaryCard,
+  .dealCard,
+  .strainCard {
+    .rating {
+      margin-top: 2%;
+    }
+  }  
+  /*----ratings.html end----*/
+  /*----cards.html start----*/
+  .dvCardList {
+    li {
+      width: 68%;
+    }
+  }
+  .featured-dispensary-true,
+  .featured-deal-true,
+  .featured-strain-true {
+    left: -4.5%;
+  }
+  /*----cards.html end----*/
+  /*----signin.html end----*/
+  .close-modal {
+    top: 5px;
+    right: 10px;
+  }
+  /*----signin.html end----*/
+}

@@ -1,0 +1,4 @@
+h2.pageTitle Strains
+ul.dvCardList
+    li.col-md-3(ng-repeat='strain in strains')
+        dv-card(item-type='strain', item-id='{{ strain.$id }}')

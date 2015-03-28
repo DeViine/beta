@@ -1,0 +1,33 @@
+.row#indexSummary
+    .col-md-4
+        img.img-responsive(src='img/dispensariesLg.png')
+        h3 Find Dispensaries
+        p Find recreational cannabis dispensaries in your area.  Explore up-to-date menus with prices for every dispensary listed on DeViine.  Browse through user reviews, images, store locations, store hours, and contact information to find the best dispensary for you.
+    .col-md-4
+        img.img-responsive(src='img/dealsLg.png')
+        h3 Discover Deals
+        p Discover the best deals in your area.  We work directly with businesses within the recreational cannabis industry to provide the best deals possible.  Find deals on strains, edibles, concentrates, glassware, rolling papers, and other accessories from businesses in your area.
+    .col-md-4
+        img.img-responsive(src='img/strainsLg.png')
+        h3 Explore Strains
+        p Explore our ever-expanding strain database to find the perfect strain for you.  All cannabis strains provide different highs, flavor profiles, and effects.  We work directly with licensed producers to provide the most comprehensive database possible.
+.row.indexSection
+    .col-md-6
+        h2 Featured Dispensaries
+        ul.dvCardList: li(ng-repeat='featuredDispensary in featuredDispensaries')
+            dv-card(item-type='dispensary', item-id='{{ featuredDispensary.$id }}')
+    .col-md-6
+        h2 Daily Deals
+        ul.dvCardList: li(ng-repeat='featuredDeal in featuredDeals')
+            dv-card(item-type='deal', item-id='{{ featuredDeal.$id }}')
+.row.indexSection
+    .col-md-6
+        h2 Strains of the Week
+        ul.dvCardList: li(ng-repeat='featuredStrain in featuredStrains')
+            dv-card(item-type='strain', item-id='{{ featuredStrain.$id }}')
+    //- @todo Implement voting.
+        .col-md-6
+            h2 Voting
+//- @todo Implement sponsors section.
+    .indexSection
+        h2 Sponsors

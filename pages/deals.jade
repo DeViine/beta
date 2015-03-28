@@ -1,0 +1,4 @@
+h2.pageTitle Deals
+ul.dvCardList
+    li.col-md-3(ng-repeat='deal in deals')
+        dv-card(ng-hide='dealExpired(deal.$id)', item-type='deal', item-id='{{ deal.$id }}')
