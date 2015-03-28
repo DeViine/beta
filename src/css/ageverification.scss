@@ -77,14 +77,12 @@ body {
         }
       }
     }
-    .month,
-    .day,
-    .year,
+    .bday,
     .betacode,
     .email {
-      padding: 13px 20px 5px 20px;
-      margin: 5px 15px 10px 15px;
-      width: 50px;
+      padding: 13px 10px 5px 10px;
+      margin: 5px 5px 10px 5px;
+      width: 100px;
       color: rgba(44,48,52,.4);
       text-align: center;
       font-family: bebas neue;
@@ -96,9 +94,9 @@ body {
     }
     .betacode,
     .email {
-      width: 300px;
+      width: 315px;
     }
-    .button {
+    .betabutton, .button, #enter {
       margin: 20px auto 0 auto;
       background: rgb(247,37,62);
       color: white;

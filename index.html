@@ -8,16 +8,16 @@
   <div>
     <img class="logo" src="http://162.243.153.215/deviine/beta/img/deviine_logo.png" alt="DeViine Logo">
     <h1>As a cannabis website, we're prohibited from advertising to minors.</h1>
-    <h2>PLEASE VERIFY YOUR AGE TO ENTER.</h2>
-    <input type="text" name="month" placeholder="MM" class="month">
-    <input type="text" name="day" placeholder="DD" class="day">
-    <input type="text" name="year" placeholder="YYYY" class="year">
+    <h2 class="ageText">PLEASE VERIFY YOUR AGE TO ENTER.</h2>
+    <input type="text" name="month" placeholder="MM" id="month" class="bday">
+    <input type="text" name="day" placeholder="DD" id="day" class="bday">
+    <input type="text" name="year" placeholder="YYYY" id="year" class="bday">
     <br><br>
     <h1>We are currently in our closed Beta period.</h1>
-    <h2>PLEASE ENTER YOUR BETA CODE.</h2>
+    <h2 class="betacodeText">PLEASE ENTER YOUR BETA CODE.</h2>
     <input type="text" name="betacode" placeholder="Beta code" class="betacode">
     <br>
-    <input type="submit" value="ENTER" class="button">
+    <input id="enter" class="button" name="enter" onclick="window.location='/beta';" disabled="disabled" type="submit" value="ENTER">
   </div>
   <div>
     <h1>Our closed BETA Testing is invite only.</h1>
@@ -26,17 +26,34 @@
   </div>
   <div>
     <h1>Sign up for our newsletter</h1>
-    <input type="text" name="email" value="email address" class="email">
+    <aside id="mc_embed_signup">
+        <form action="//deviine.us9.list-manage.com/subscribe/post?u=13dca9320d4233ffa9d1ed248&amp;id=c91d7fce2b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <aside id="mc_embed_signup_scroll">
+            <aside>
+              <input type="email" value="" placeholder="Email address" name="EMAIL" class="required email" id="mce-EMAIL"><br>
+              <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btnfooter button">
+            </aside>
+            <aside id="mce-responses" class="clear">
+              <aside class="response" id="mce-error-response" style="display:none"></aside>
+              <aside class="response" id="mce-success-response" style="display:none"></aside>
+            </aside>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <aside style="position: absolute; left: -5000px;">
+                <input type="text" name="b_13dca9320d4233ffa9d1ed248_c91d7fce2b" tabindex="-1" value="">
+              </aside>
+            </aside>
+        </form>
+      </aside>
+    <!-- <input type="text" name="email" value="email address" class="email">
     <br>
-    <input type="submit" value="SIGN UP" class="button">
+    <input type="submit" value="SIGN UP" class="button"> -->
   </div>
   <div>
     <h1>Show us some love on our social media pages.</h1>
-    <a href="http://facebook.com/DeViineLife" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/facebook.png" alt="Facebook"></a>
-    <a href="http://twitter.com/deviinelife" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/twitter.png" alt="Twitter"></a>
-    <a href="http://instagram.com/deviinelife" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/instagram.png" alt="Instagram"></a>
-    <a href="http://massroots.com/DeViine" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/massroots.png" alt="MassRoots"></a>
-    <a href="https://vine.co/u/1174942024756039680" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/vine.png" alt="Vine"></a>
+    <a target="_blank" href="http://facebook.com/DeViineLife" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/facebook.png" alt="Facebook"></a>
+    <a target="_blank" href="http://twitter.com/deviinelife" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/twitter.png" alt="Twitter"></a>
+    <a target="_blank" href="http://instagram.com/deviinelife" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/instagram.png" alt="Instagram"></a>
+    <a target="_blank" href="http://massroots.com/DeViine" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/massroots.png" alt="MassRoots"></a>
+    <a target="_blank" href="https://vine.co/u/1174942024756039680" class="socialicon"><img src="http://deviine.com/angular/img/icons/social/vine.png" alt="Vine"></a>
   </div>
   <div>
     <ul class="testimonials">

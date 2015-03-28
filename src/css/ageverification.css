@@ -67,29 +67,25 @@ body {
         body div .socialicon img:hover {
           border-color: #fcd31c;
           background: #fcd31c; }
-    body div .month,
-    body div .day,
-    body div .year,
+    body div .bday,
     body div .betacode,
     body div .email {
-      padding: 13px 20px 5px 20px;
-      margin: 5px 15px 10px 15px;
-      width: 50px;
+      padding: 13px 10px 5px 10px;
+      margin: 5px 5px 10px 5px;
+      width: 100px;
       color: rgba(44, 48, 52, 0.4);
       text-align: center;
       font-family: bebas neue;
       font-size: 30px;
       font-weight: bold; }
-      body div .month:focus,
-      body div .day:focus,
-      body div .year:focus,
+      body div .bday:focus,
       body div .betacode:focus,
       body div .email:focus {
         color: #2c3034; }
     body div .betacode,
     body div .email {
-      width: 300px; }
-    body div .button {
+      width: 315px; }
+    body div .betabutton, body div .button, body div #enter {
       margin: 20px auto 0 auto;
       background: #f7253e;
       color: white;
@@ -100,7 +96,7 @@ body {
       padding: 20px 30px 10px 30px;
       border: none;
       border-radius: 5px; }
-      body div .button:hover {
+      body div .betabutton:hover, body div .button:hover, body div #enter:hover {
         background: #3dd861;
         cursor: pointer; }
     body div .betabtn {

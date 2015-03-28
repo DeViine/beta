@@ -1,3 +1,5 @@
+//LINK THIS SCRIPT IN THE INDEX SO THAT AGEVERIFICATION.HTML IS OPENED IN MODAL ON PAGE LOAD
+
 // When date and beta code are verified, h2 should turn green.
 
 // When both data and beta code are verified, #enter should turn green and be clickable. 
@@ -5,6 +7,8 @@
 // @author dsiddy Disable the submit button initially.
 
 $(document).ready(function() {
+  //Open the ageverification.html modal on document.ready
+
   $('#enter').attr('disabled', 'disabled');
 
   function dob_check() {
@@ -31,12 +35,12 @@ $(document).ready(function() {
   }
 
   function code_check() {
-    var code = 'user1';
-    if($('input[name="betacode"]').val() == code) {
-      $('.betaCodeText').css('color', 'rgb(247,37,62)');
+    var code = ["jv101beta", "db111beta"];
+    if(array.indexOf(code) < 0) {
+      $('.betacodeText').css('color', 'rgb(61, 216, 97)');
       return true;
     } else if($('input[name="betacode"]').val() != code) {
-      $('.betaCodeText').css('color', 'rgb(61, 216, 97)');
+      $('.betacodeText').css('color', 'rgb(247,37,62)');
       return false;
     }
   }
@@ -55,10 +59,15 @@ $(document).ready(function() {
 
   (function() {
     $('.bday').change(dob_check);
-    $('.bday').change(validateForm);
+    $('.bday').keyup(validateForm);
 
-    $('.betacode').keyup(code_check);
+    $('.betacode').change(code_check);
     $('.betacode').keyup(validateForm);
   })();
+  //on submit == page exit
+  // function validateForm() {
+  //   if(validateForm()) {
+  //     }
+  // });
 });
-//on submit == page exit
+  
