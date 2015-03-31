@@ -8,12 +8,6 @@ angular.module('DeViine', ['DeViine.config', 'DeViine.services', 'DeViine.contro
     });
   }])
   .config(function($stateProvider, $urlRouterProvider) {
-    
-    $locationProvider
-      .html5Mode(false)
-      .hashPrefix('!');
-    
-    
     $stateProvider
       .state('root', {
         url: '',
@@ -105,17 +99,17 @@ angular.module('DeViine', ['DeViine.config', 'DeViine.services', 'DeViine.contro
       .state('root.strainDetails', {
         url: '/strains/:strainId',
         templateUrl: 'pages/details/strainDetails.html',
-        controller: 'strainDetailsCtrl',
+        controller: 'strainDetailsCtrl'
+      })
+      .state('root.manageStrains', {
+        url: '/manage/strains',
+        templateUrl: 'pages/manage/strains.html',
+        controller: 'strainsManageCtrl',
         resolve: {
           currentUser: ['$firebaseAuth', 'dvUrl', function($firebaseAuth, dvUrl) {
             return $firebaseAuth( new Firebase(dvUrl) ).$requireAuth();
           }]
         }
-      })
-      .state('root.manageStrains', {
-        url: '/manage/strains',
-        templateUrl: 'pages/manage/strains.html',
-        controller: 'strainsManageCtrl'
       })
       // static pages
       .state('root.terms', {
@@ -132,4 +126,5 @@ angular.module('DeViine', ['DeViine.config', 'DeViine.services', 'DeViine.contro
       });
 
     $urlRouterProvider.otherwise('/');
+
   });
