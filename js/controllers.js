@@ -330,6 +330,7 @@ angular.module('DeViine.controllers', [])
         if(! userId) {
           console.log('No User');
           // TODO: Launch login modal
+          alert ("Please sign in to submit a rating.");
         } else {
           console.log('Rating Sent');
           $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
