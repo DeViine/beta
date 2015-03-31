@@ -10,7 +10,7 @@ angular.module('DeViine', ['DeViine.config', 'DeViine.services', 'DeViine.contro
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     
     $locationProvider
-      .html5Mode(false)
+      .html5Mode(true)
       .hashPrefix('!');
     
     
