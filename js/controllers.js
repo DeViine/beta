@@ -335,7 +335,7 @@ angular.module('DeViine.controllers', [])
           console.log('Rating Sent');
           $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
           $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).$set(rating);
-        };
+        }
         
     };
 
