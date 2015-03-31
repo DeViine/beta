@@ -322,13 +322,20 @@ angular.module('DeViine.controllers', [])
 
     $scope.sendRating = function(divId) {
         var rating = document.getElementById(divId).value;
-        console.log("SUCCESS!");
 
         userId = usersService.getName(usersService.getCurrentUser())
         itemType = 'strains';
         itemId = $scope.$parent.$parent.strainDetails.$id;
-        $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
-        $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).$set(rating);
+        
+        if(! userId) {
+          console.log('No User');
+          // TODO: Launch login modal
+        } else {
+          console.log('Rating Sent');
+          $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
+          $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).$set(rating);
+        };
+        
     };
 
   }])
