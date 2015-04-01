@@ -2,40 +2,40 @@
 @media screen and (max-width:767px) {
   /*----home.html start----*/
   #indexSummary {
-  	.howItWorks {
-  	  padding: 20px 5%;
-  	  height: 100%;
-  	  &:nth-child(1),
-	    &:nth-child(2) {
-  	    border-bottom: 1px solid rgba(44,48,52,.2);
-  	  }
-  	  img {
-  	  	width: 22%;
-  	  	float: left;
-  	  	margin-right: 20px;
-  	  }
-  	  h3 {
-  	  	font-size: 18px;
-  	 	  margin: 0;
-  	 	  padding: 3% 0 0 0;
-  	  	text-align: left;
-  	  }
-  	  p {
-  	  	padding: 0;
-  	  	margin: 0;
-  	  	text-align: left;
-  	  	font-size: 10px;
-  	  	line-height: 14px;
+    .howItWorks {
+      padding: 20px 5%;
+      height: 100%;
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom: 1px solid rgba(44,48,52,.2);
+      }
+      img {
+        width: 22%;
+        float: left;
+        margin-right: 20px;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 0;
+        padding: 3% 0 0 0;
+        text-align: left;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 10px;
+        line-height: 14px;
         width: 62%;
-  	  }
+      }
       .arrowRight {
         display: inline;
         margin-left: 20px;
       }
-  	}
+    }
   }
   .featuredBanner {
-  	margin-left: 25%;
+    margin-left: 25%;
   }
   /*----home.html end----*/
   /*----page.html start----*/
@@ -47,12 +47,12 @@
     }
   }
   .navbar {
-  	padding: 0 4%;
+    padding: 0 4%;
     height: 60px;
   }
   .navbar .logo > img { 
-  	margin: -5px auto 0 auto;
-  	width: 65px;
+    margin: -5px auto 0 auto;
+    width: 65px;
   }
   .navbar-right {
     .accountInfo {
@@ -74,24 +74,24 @@
   /*----page.html end----*/
   /*----footer.html start----*/
   #footer {
-  	a {
-  	  font-size: 10px;
-  	}
-  	p {
-  	  font-size: 10px;
-  	}
-  	input[type='email'] {
-	  width: 100%;
-	}
-	address {
-	  padding-top: 6%;
-	  float: right;
-	}
+    a {
+      font-size: 10px;
+    }
+    p {
+      font-size: 10px;
+    }
+    input[type='email'] {
+    width: 100%;
+  }
+  address {
+    padding-top: 6%;
+    float: right;
+  }
   }
   /*----footer.html end----*/
   /*----cards.html start----*/
   .cardWrapper {
-  	margin: 0 25% !important;
+    margin: 0 25% !important;
   }
   .featured-dispensary-true,
   .featured-deal-true,
@@ -117,9 +117,6 @@
   }
   /*----cards.html end----*/
   /*----items.html start----*/
-  .info {
-    text-align: center;
-  }
   .strainGallery {
     display: none;
   }
