@@ -8,7 +8,7 @@
 .dispensaryName,
 .dealTitle,
 .strainName {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   text-transform: uppercase;
   font-size: 35px;
   font-weight: normal;
@@ -103,7 +103,7 @@
   .dispensaryHours tr.dvGreen {
     color: #3dd861; }
   .dispensaryHours td {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 26px;
     padding: 10px 20px 4px 20px;
@@ -112,7 +112,7 @@
     text-align: right; }
 
 .dealDetails h4 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   text-transform: uppercase;
   font-size: 22px;
   color: #2c3034;
@@ -128,7 +128,7 @@
   margin: 10px 0 20px 0; }
   .dealDetails .redemptionDetails div .redeemDeal {
     background: #f7253e;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 30px;
     color: white;
@@ -156,7 +156,7 @@
 .flavorProfile,
 .positiveEffects,
 .negativeEffects {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   color: #2c3034;
@@ -214,7 +214,7 @@
         background-color: #f7253e; }
     .barChart li div {
       color: white;
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 18px;
       text-align: center;
@@ -227,7 +227,7 @@
   margin: 0 auto;
   width: 27%;
   text-align: center;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   text-transform: uppercase;
   font-size: 40px;
   color: #2c3034; }
@@ -318,7 +318,7 @@
 #mainMenu {
   list-style-type: none;
   padding-left: 0;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   font-size: 30px;
   position: fixed;
   top: 100px; }
@@ -448,7 +448,7 @@
     width: 100%;
     overflow: hidden; }
     .navbar-header .menuMobile ul li {
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 25px;
       color: rgba(255, 255, 255, 0.2);
@@ -523,7 +523,7 @@
     border-radius: 0;
     background-color: #3dd861;
     color: white;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 30px;
     height: 40px;
@@ -837,7 +837,7 @@
   #indexSummary > .howItWorks:nth-child(3) > h3 {
     color: #3dd861; }
   #indexSummary > .howItWorks .comingSoon {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     opacity: 0; }
@@ -876,11 +876,11 @@
     border: none;
     padding: 0; }
     .modal-content .modal-header .modalTitle {
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 70px; }
     .modal-content .modal-header .modalSubtitle {
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 25px;
       color: white;
@@ -901,7 +901,7 @@
   .modal-content .modal-body {
     padding: 0; }
     .modal-content .modal-body p {
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 30px;
       color: white;
@@ -917,7 +917,7 @@
       border-radius: 10px; }
       .modal-content .modal-body .form-group button {
         background: transparent;
-        font-family: "Bebas Neue", sans-serif;
+        font-family: "Khand", sans-serif;
         text-transform: uppercase;
         font-size: 35px;
         padding: 10px 0 2px 0;
@@ -944,7 +944,7 @@
       margin: 0 auto; }
     .modal-content .modal-footer button {
       background: transparent;
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 35px;
       padding: 10px 0 2px 0;
@@ -1096,7 +1096,7 @@
   .cardWrapper .dispensaryName,
   .cardWrapper .dealTitle,
   .cardWrapper .strainName {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 1.6em;
     font-weight: normal;
@@ -1254,12 +1254,12 @@ ul.nav.nav-tabs {
       padding: 0;
       width: 100%;
       float: left;
-      font: normal "Bebas Neue", sans-serif 35px; }
+      font: normal "Khand", sans-serif 35px; }
     .menu .menuItem .producerName {
       margin: 10px 0 0 0;
       padding: 0;
       float: right;
-      font: 22px "Bebas Neue", sans-serif;
+      font: 22px "Khand", sans-serif;
       text-transform: uppercase;
       color: rgba(44, 48, 52, 0.3); }
     .menu .menuItem .itemImage {
@@ -1271,7 +1271,7 @@ ul.nav.nav-tabs {
       margin: 0px auto 0 auto;
       width: 27%;
       text-align: center;
-      font-family: "Bebas Neue", sans-serif;
+      font-family: "Khand", sans-serif;
       text-transform: uppercase;
       font-size: 20px;
       color: rgba(44, 48, 52, 0.3); }
@@ -1297,7 +1297,7 @@ ul.nav.nav-tabs {
         float: left;
         list-style: none;
         text-align: center;
-        font: normal 25px/22px "Bebas Neue", sans-serif;
+        font: normal 25px/22px "Khand", sans-serif;
         text-transform: uppercase;
         color: rgba(44, 48, 52, 0.2); }
         .menu .menuItem .pricing li .price {
@@ -1326,7 +1326,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   text-transform: uppercase; }
 
 h3 {
@@ -1345,7 +1345,7 @@ ul {
   margin-top: 0;
   border-bottom: 1px solid rgba(44, 48, 52, 0.2);
   text-align: center;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Khand", sans-serif;
   text-transform: uppercase;
   font-size: 40px; }
 
@@ -1358,7 +1358,7 @@ form {
   font-size: 12px;
   color: #2c3034; }
   form .btn-block {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     color: white;
