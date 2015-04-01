@@ -681,9 +681,6 @@
 
   /*----cards.html end----*/
   /*----items.html start----*/
-  .info {
-    text-align: center; }
-
   .strainGallery {
     display: none; }
 
@@ -788,7 +785,6 @@
 #indexSummary > .howItWorks {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
   color: #2c3034;
   font-size: 11px;
   line-height: 15px;
@@ -802,13 +798,11 @@
   #indexSummary > .howItWorks h3 {
     border: none;
     font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
     text-align: center; }
   #indexSummary > .howItWorks p {
     font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
     font-size: 11px;
     float: left; }
     #indexSummary > .howItWorks p strong {
@@ -896,7 +890,8 @@
       position: absolute;
       padding: 10px;
       top: 10px;
-      right: 15px; }
+      right: 15px;
+      cursor: pointer; }
     .modal-content .modal-header .close-modal:hover {
       color: #fcd31c; }
   .modal-content .modal-body {
@@ -960,11 +955,6 @@
       .modal-content .modal-footer p a {
         color: #fcd31c; }
 
-/**
- * Login modal
- *
- * @see http://codepen.io/dakotaberg123/pen/bNMdeq
- */
 .rating {
   width: 250px;
   height: 55px;
@@ -1122,6 +1112,11 @@
     margin: 0;
     padding: 0;
     overflow: hidden; }
+  .cardWrapper .dispensaryAddress.line2,
+  .cardWrapper .businessName.line2,
+  .cardWrapper .producedBy.line2 {
+    position: relative;
+    z-index: 3; }
   .cardWrapper .dispensaryAddress.line1,
   .cardWrapper .producedBy.line1 {
     height: 18px; }
@@ -1140,7 +1135,7 @@
     margin: 25% auto 0 auto;
     padding: 0;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     text-align: center; }
 
 .dispensaryCard .distanceAway {
