@@ -2,10 +2,10 @@
 <div class="row">
   <div class="col-md-6 col-sm-6 col-xs-12">
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-4">
+      <div class="col-md-3 col-sm-3 col-xs-4">
         <img ng-src="{{ strainDetails.logo }}" class="producerLogo"/>
       </div>
-      <div class="col-md-9 col-sm-12 col-xs-12">
+      <div class="col-md-9 col-sm-12 col-xs-12 info">
         <h2 class="strainName" id="{{ strainDetails.name }}">{{ strainDetails.name }}</h2>
         <h4 class="strainChemistry">{{ strainDetails.chemistry }}</h4>
         <h4 class="producedBy">Produced by</h4>
@@ -25,6 +25,7 @@
     <h3>Strain Profile</h3>
     <div class="row">
       <div class="col-md-4 col-sm-4 col-xs-4">
+        <h4 class="strainProfileTitle">FLAVOR PROFILE</h4>
         <ul class="barChart">
           <li style="height:{{ strainDetails.flavor1Percent }}px;"><div>{{ strainDetails.flavor1Percent }}%</div></li>
           <li style="height:{{ strainDetails.flavor2Percent }}px;"><div>{{ strainDetails.flavor2Percent }}%</div></li>
@@ -37,6 +38,7 @@
         </ul>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4">
+        <h4 class="strainProfileTitle">POSITIVE EFFECTS</h4>
         <ul class="barChart">
           <li style="height:{{ strainDetails.positive1Percent }}px;"><div>{{ strainDetails.positive1Percent }}%</div></li>
           <li style="height:{{ strainDetails.positive2Percent }}px;"><div>{{ strainDetails.positive2Percent }}%</div></li>
@@ -49,6 +51,7 @@
         </ul>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4">
+        <h4 class="strainProfileTitle">NEGATIVE EFFECTS</h4>
         <ul class="barChart">
           <li style="height:{{ strainDetails.negative1Percent }}px;"><div>{{ strainDetails.negative1Percent }}%</div></li>
           <li style="height:{{ strainDetails.negative2Percent }}px;"><div>{{ strainDetails.negative2Percent }}%</div></li>
@@ -61,25 +64,25 @@
         </ul>
       </div>
     </div>
-    <h3>Last Verified Potency</h3>
+<!--     <h3>Last Verified Potency</h3>
     <div class="row">
       <div class="col-md-6 col-sm-6 col-xs-6">
         <ul>
           <li class="thcPotency">{{ strainDetails.thc }}%<label for="thcPotency">THC</label></li>
           
-          <!-- Possible guage -->
-          <!-- <dv-gauge label="THC percentage" percentage="{{ strainDetails.thc }}" class="col-md-6"></dv-gauge> -->
+          Possible guage
+          <dv-gauge label="THC percentage" percentage="{{ strainDetails.thc }}" class="col-md-6"></dv-gauge>
         </ul>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-6">
         <ul>
           <li class="cbdPotency">{{ strainDetails.cbd }}%<label for="cbdPotency">CBD</label></li>
            
-          <!-- Possible guage -->
-          <!-- <dv-gauge label="CBD percentage" percentage="{{ strainDetails.cbd }}" class="col-md-6"></dv-gauge> -->
+          Possible guage
+          <dv-gauge label="CBD percentage" percentage="{{ strainDetails.cbd }}" class="col-md-6"></dv-gauge>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
     <img src="{{ strainDetails.image }}" class="img-responsive strainGallery"/>
@@ -90,7 +93,7 @@
       disqus-shortname="deviine"
       disqus-identifier="{{ strainDetails.name }}, {{ strainDetails.producer }}"
       disqus-title="{{ strainDetails.name }}, {{ strainDetails.producer }}"
-      disqus-url="http://deviine.com/beta/#/strains/{{ strainDetails.$id }}">
+      disqus-url="http://deviine.com/beta/#!/strains/{{ strainDetails.$id }}">
     </dir-disqus>
   </div>
 </div>
