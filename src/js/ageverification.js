@@ -35,7 +35,7 @@ $(document).ready(function() {
   }
 
   function code_check() {
-    //var code = 'dv237beta';
+    var code = '8374637153';
     if($('input[name="betacode"]').val() == code) {
       $('.betacodeText').css('color', 'rgb(61, 216, 97)');
       return true;
