@@ -58,6 +58,12 @@
     padding: 0;
     overflow: hidden;
   }
+  .dispensaryAddress.line2,
+  .businessName.line2,
+  .producedBy.line2 {
+    position: relative;
+    z-index: 3;
+  }
   .dispensaryAddress.line1,
   .producedBy.line1 {
     height: 18px;
@@ -79,7 +85,7 @@
     margin: 25% auto 0 auto;
     padding: 0;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
   }
 }
