@@ -46,6 +46,7 @@ h4,
 h5,
 h6 {
   font-family: $dvHeaderFont;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -68,6 +69,7 @@ ul {
   border-bottom: 1px solid $dvGray20;
   text-align: center;
   font-family: $dvHeaderFont;
+  text-transform: uppercase;
   font-size: 40px;
 }
 
@@ -82,6 +84,7 @@ form {
   color: $dvGray;
   .btn-block {
     font-family: $dvHeaderFont;
+    text-transform: uppercase;
     font-size: 20px;
     color: white;
     padding: 5px 0 0 0;

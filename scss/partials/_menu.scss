@@ -97,6 +97,7 @@ ul.nav.nav-tabs {
       padding: 0;
       float: right;
       font: 22px $dvHeaderFont;
+      text-transform: uppercase;
       color: rgba($dvGray, 0.3);
     }
     .itemImage {
@@ -110,6 +111,7 @@ ul.nav.nav-tabs {
       width: 27%;
       text-align: center;
       font-family: $dvHeaderFont;
+      text-transform: uppercase;
       font-size: 20px;
       color: rgba($dvGray, 0.3);
       span {
@@ -137,6 +139,7 @@ ul.nav.nav-tabs {
         list-style: none;
         text-align: center;
         font: normal 25px/22px $dvHeaderFont;
+        text-transform: uppercase;
         color: $dvGray20;
         .price {
           font-size: 28px;

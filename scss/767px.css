@@ -89,6 +89,9 @@
 
   /*----cards.html end----*/
   /*----items.html start----*/
+  .info {
+    text-align: center; }
+
   .strainGallery {
     display: none; }
 

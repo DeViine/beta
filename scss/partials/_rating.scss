@@ -11,6 +11,8 @@
       position: absolute;
       top: 0;
       left: 0;
+      -webkit-transition: move 2s linear infinite;
+      transition: move 2s linear infinite;
     }
     svg {
       pointer-events: none;

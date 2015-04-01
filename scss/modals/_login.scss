@@ -14,10 +14,12 @@
   	padding: 0;
 	  .modalTitle {
 	  	font-family: $dvHeaderFont;
+      text-transform: uppercase;
 	  	font-size: 70px;
 	  }
     .modalSubtitle {
       font-family: $dvHeaderFont;
+      text-transform: uppercase;
       font-size: 25px;
       color: white;
       margin-top: -20px;
@@ -42,6 +44,7 @@
   	padding: 0;
   	p {
   		font-family: $dvHeaderFont;
+      text-transform: uppercase;
   		font-size: 30px;
   		color: white;
   		margin-top: -20px;
@@ -58,6 +61,7 @@
         button {
           background: transparent;
           font-family: $dvHeaderFont;
+          text-transform: uppercase;
           font-size: 35px;
           padding: 10px 0 2px 0;
           border: 2px solid $dvWhite20;
@@ -94,6 +98,7 @@
 	  button {
 	  	background: transparent;
 	  	font-family: $dvHeaderFont;
+      text-transform: uppercase;
 	  	font-size: 35px;
 	  	padding: 10px 0 2px 0;
 	  	border: 2px solid $dvWhite20;
