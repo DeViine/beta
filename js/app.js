@@ -7,11 +7,11 @@ angular.module('DeViine', ['DeViine.config', 'DeViine.services', 'DeViine.contro
       }
     });
   }])
-  .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  .config(function($stateProvider, $urlRouterProvider) {
     
-    $locationProvider
-      .html5Mode(false)
-      .hashPrefix('!');
+    //$locationProvider
+      //.html5Mode(false)
+      //.hashPrefix('!');
     
     
     $stateProvider
