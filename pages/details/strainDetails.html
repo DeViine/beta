@@ -91,8 +91,8 @@
     <h3>Reviews</h3>
     <dir-disqus 
       disqus-shortname="deviine"
-      disqus-identifier="{{ strainDetails.name }}, {{ strainDetails.producer }}"
-      disqus-title="{{ strainDetails.name }}, {{ strainDetails.producer }}"
+      disqus-identifier="{{ strainDetails.$id }}"
+      disqus-title="{{ strainDetails.$id }}"
       disqus-url="http://deviine.com/beta/#!/strains/{{ strainDetails.$id }}">
     </dir-disqus>
   </div>
