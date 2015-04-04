@@ -47,6 +47,7 @@ angular.module('DeViine.controllers', [])
     $scope.login = function(service, credentials) {
       usersService.login(service, credentials)
         .then(function(currentUser) {
+          location.reload();
           $modalInstance.close(currentUser);
 
           $state.go('root.home');
