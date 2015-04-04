@@ -50,7 +50,7 @@
       color: white;
       margin-top: -20px;
     }
-    .form-group {
+    .btn-group {
         font-family: $dvTextFont;
         font-size: 20px;
         text-transform: uppercase;
@@ -59,7 +59,12 @@
         margin: 15px auto;
         box-shadow: none;
         border-radius: 10px;
-        button {
+        .widebtn {
+          width: 50%;
+        }
+        li {
+          width: 33%;
+          display: inline;
           background: transparent;
           font-family: $dvHeaderFont;
           text-transform: uppercase;
