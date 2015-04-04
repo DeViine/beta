@@ -902,7 +902,7 @@
       font-size: 30px;
       color: white;
       margin-top: -20px; }
-    .modal-content .modal-body .form-group {
+    .modal-content .modal-body .btn-group {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       text-transform: uppercase;
@@ -911,7 +911,11 @@
       margin: 15px auto;
       box-shadow: none;
       border-radius: 10px; }
-      .modal-content .modal-body .form-group button {
+      .modal-content .modal-body .btn-group .widebtn {
+        width: 50%; }
+      .modal-content .modal-body .btn-group li {
+        width: 33%;
+        display: inline;
         background: transparent;
         font-family: "Khand", sans-serif;
         text-transform: uppercase;
@@ -919,10 +923,10 @@
         padding: 10px 0 2px 0;
         border: 2px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px; }
-        .modal-content .modal-body .form-group button:hover, .modal-content .modal-body .form-group button:focus, .modal-content .modal-body .form-group button:active, .modal-content .modal-body .form-group button:visited {
+        .modal-content .modal-body .btn-group li:hover, .modal-content .modal-body .btn-group li:focus, .modal-content .modal-body .btn-group li:active, .modal-content .modal-body .btn-group li:visited {
           border-color: #fcd31c;
           color: #fcd31c; }
-        .modal-content .modal-body .form-group button img {
+        .modal-content .modal-body .btn-group li img {
           width: 40px; }
     .modal-content .modal-body .signUp,
     .modal-content .modal-body .signIn {
