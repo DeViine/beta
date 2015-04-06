@@ -74,6 +74,7 @@
   /*----page.html end----*/
   /*----footer.html start----*/
   #footer {
+    padding-bottom: 100px;
     a {
       font-size: 10px;
     }
@@ -97,6 +98,9 @@
   .featured-deal-true,
   .featured-strain-true {
     left: -4%;
+  }
+  .new-strain-true {
+    left: 21%;
   }
   /*----cards.html end----*/
   /*----ratings.html start----*/

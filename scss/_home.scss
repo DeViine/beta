@@ -6,7 +6,7 @@
   line-height: 15px;
   padding-top: 15px;
   height: 330px;
-  border-color: $dvGray20;
+  border-color: $dvGray5;
   &:hover {
     background: $dvGray3;
     .comingSoon {
@@ -54,7 +54,7 @@
 
   &:nth-child(1),
   &:nth-child(2) {
-    border-right: 1px solid $dvGray20;
+    border-right: 1px solid $dvGray5;
   }
 
   &:nth-child(1) > h3 {

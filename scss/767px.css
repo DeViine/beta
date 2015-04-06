@@ -55,15 +55,17 @@
 
   /*----page.html end----*/
   /*----footer.html start----*/
-  #footer a {
-    font-size: 10px; }
-  #footer p {
-    font-size: 10px; }
-  #footer input[type='email'] {
-    width: 100%; }
-  #footer address {
-    padding-top: 6%;
-    float: right; }
+  #footer {
+    padding-bottom: 100px; }
+    #footer a {
+      font-size: 10px; }
+    #footer p {
+      font-size: 10px; }
+    #footer input[type='email'] {
+      width: 100%; }
+    #footer address {
+      padding-top: 6%;
+      float: right; }
 
   /*----footer.html end----*/
   /*----cards.html start----*/
@@ -74,6 +76,9 @@
   .featured-deal-true,
   .featured-strain-true {
     left: -4%; }
+
+  .new-strain-true {
+    left: 21%; }
 
   /*----cards.html end----*/
   /*----ratings.html start----*/
@@ -89,9 +94,6 @@
 
   /*----cards.html end----*/
   /*----items.html start----*/
-  .info {
-    text-align: center; }
-
   .strainGallery {
     display: none; }
 

@@ -6,19 +6,19 @@
   }
   /*----home.html start----*/
   #indexSummary {
-  	.howItWorks {
-  	  img {
-  	  	width: 30%;
-  	  }
+    .howItWorks {
+      img {
+        width: 30%;
+      }
       h3 {
         padding-top: 1%;
       }
-  	  p {
-  	  	font-size: 9px;
-  	  	line-height: 12px;
+      p {
+        font-size: 9px;
+        line-height: 12px;
         width: 50%;
-  	  }
-  	}
+      }
+    }
   }
   /*----home.html end----*/
   /*----ratings.html start----*/
@@ -55,4 +55,24 @@
     }
   }
   /*----footer end----*/
+  /*----modal start----*/
+  .modal-content {
+    .modal-header {
+      .modalTitle {
+        font-size: 50px;
+      }
+      .modalSubtitle {
+        font-size: 20px;
+      }
+    }
+    .modal-footer {
+      p {
+        font-size: 12px;
+        span {
+          color: white;
+        }
+      }
+    }
+  }
+  /*----modal end----*/
 }

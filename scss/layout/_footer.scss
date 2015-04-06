@@ -1,7 +1,7 @@
 #footer {
   margin-top: 40px;
   padding: 20px;
-  background-color: rgb(44, 48, 52);
+  background-color: $dvGray;
   color: rgba(255, 255, 255, .3);
   h4 {
     font-family: $dvTextFont;
@@ -18,7 +18,6 @@
       color: $dvGreen;
     }
   }
-
   input[type='email'] {
     font-family: $dvTextFont;
     font-size: 12px;

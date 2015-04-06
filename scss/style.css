@@ -380,16 +380,24 @@
   position: fixed;
   top: 100px;
   right: 2%; }
+  #socialIcons h4 {
+    font-family: "Khand", sans-serif;
+    font-size: 16px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    color: rgba(44, 48, 52, 0.2);
+    border-bottom: 1px solid rgba(44, 48, 52, 0.05); }
   #socialIcons img {
     width: 35px;
-    margin: 5px 0;
+    margin: 5px 0 0 0;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease; }
     #socialIcons img:hover {
-      background: #3dd861; }
+      background: #fcd31c; }
 
 /*  End Right Social Icons  */
 /*  Start Up to Top  */
@@ -589,7 +597,18 @@
   #footer h4 {
     font-size: 14px; }
 
-  /*----footer end----*/ }
+  /*----footer end----*/
+  /*----modal start----*/
+  .modal-content .modal-header .modalTitle {
+    font-size: 50px; }
+  .modal-content .modal-header .modalSubtitle {
+    font-size: 20px; }
+  .modal-content .modal-footer p {
+    font-size: 12px; }
+    .modal-content .modal-footer p span {
+      color: white; }
+
+  /*----modal end----*/ }
 @media screen and (max-width: 767px) {
   /*----home.html start----*/
   #indexSummary .howItWorks {
@@ -647,15 +666,17 @@
 
   /*----page.html end----*/
   /*----footer.html start----*/
-  #footer a {
-    font-size: 10px; }
-  #footer p {
-    font-size: 10px; }
-  #footer input[type='email'] {
-    width: 100%; }
-  #footer address {
-    padding-top: 6%;
-    float: right; }
+  #footer {
+    padding-bottom: 100px; }
+    #footer a {
+      font-size: 10px; }
+    #footer p {
+      font-size: 10px; }
+    #footer input[type='email'] {
+      width: 100%; }
+    #footer address {
+      padding-top: 6%;
+      float: right; }
 
   /*----footer.html end----*/
   /*----cards.html start----*/
@@ -666,6 +687,9 @@
   .featured-deal-true,
   .featured-strain-true {
     left: -4%; }
+
+  .new-strain-true {
+    left: 21%; }
 
   /*----cards.html end----*/
   /*----ratings.html start----*/
@@ -790,7 +814,7 @@
   line-height: 15px;
   padding-top: 15px;
   height: 330px;
-  border-color: rgba(44, 48, 52, 0.2); }
+  border-color: rgba(44, 48, 52, 0.05); }
   #indexSummary > .howItWorks:hover {
     background: rgba(44, 48, 52, 0.03); }
     #indexSummary > .howItWorks:hover .comingSoon {
@@ -824,7 +848,7 @@
     width: 50%;
     margin: auto auto; }
   #indexSummary > .howItWorks:nth-child(1), #indexSummary > .howItWorks:nth-child(2) {
-    border-right: 1px solid rgba(44, 48, 52, 0.2); }
+    border-right: 1px solid rgba(44, 48, 52, 0.05); }
   #indexSummary > .howItWorks:nth-child(1) > h3 {
     color: #f7253e; }
   #indexSummary > .howItWorks:nth-child(2) > h3 {
@@ -1330,7 +1354,7 @@ h6 {
   text-transform: uppercase; }
 
 h3 {
-  border-bottom: 1px solid rgba(44, 48, 52, 0.2);
+  border-bottom: 1px solid rgba(44, 48, 52, 0.05);
   text-align: center;
   font-size: 30px; }
 
@@ -1343,7 +1367,7 @@ ul {
 
 .pageTitle {
   margin-top: 0;
-  border-bottom: 1px solid rgba(44, 48, 52, 0.2);
+  border-bottom: 1px solid rgba(44, 48, 52, 0.05);
   text-align: center;
   font-family: "Khand", sans-serif;
   text-transform: uppercase;
