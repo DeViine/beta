@@ -22,6 +22,10 @@
 
   /*----ratings.html end----*/
   /*----cards.html start----*/
+  .cardWrapper .distanceAway,
+  .cardWrapper .strainType {
+    margin: 30% auto 0 auto; }
+
   .dvCardList li {
     width: 68%; }
 
@@ -41,6 +45,17 @@
   #footer h4 {
     font-size: 14px; }
 
-  /*----footer end----*/ }
+  /*----footer end----*/
+  /*----modal start----*/
+  .modal-content .modal-header .modalTitle {
+    font-size: 50px; }
+  .modal-content .modal-header .modalSubtitle {
+    font-size: 20px; }
+  .modal-content .modal-footer p {
+    font-size: 12px; }
+    .modal-content .modal-footer p span {
+      color: white; }
+
+  /*----modal end----*/ }
 
 /*# sourceMappingURL=470px.css.map */

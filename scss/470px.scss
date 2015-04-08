@@ -31,6 +31,12 @@
   }  
   /*----ratings.html end----*/
   /*----cards.html start----*/
+  .cardWrapper {
+    .distanceAway,
+    .strainType {
+      margin: 30% auto 0 auto;
+    }
+  }
   .dvCardList {
     li {
       width: 68%;
