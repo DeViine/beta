@@ -97,6 +97,13 @@ body {
     body div .betacode,
     body div .email {
       width: 300px; }
+    body div input[type="submit"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px; }
     body div .button {
       margin: 20px auto 0 auto;
       background: #f7253e;

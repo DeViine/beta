@@ -108,6 +108,14 @@ body {
     .email {
       width: 300px;
     }
+    input[type="submit"] {
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+     border-radius: 0px; 
+    }
     .button {
       margin: 20px auto 0 auto;
       background: rgb(247,37,62);
