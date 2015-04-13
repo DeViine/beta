@@ -61,8 +61,8 @@
     text-transform: uppercase;
     font-size: 30px;
     height: 40px;
-    margin-top: -.5px;
-    padding: .5% 5% .5% 5%;
+    margin-top: 0;
+    padding: .5% 5%;
     border: none;
     box-shadow: none;
     &:hover {
@@ -74,9 +74,9 @@
       text-decoration: none;
     }
   }
-  .typeform-share {
-    padding-top: 1.5%;
-    margin-bottom: 3%;
+  .btnfooterlrg {
+    margin: 0 auto;
+    padding: 2% 5% 1% 5%;
   }
 
   address {

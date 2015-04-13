@@ -189,7 +189,7 @@ angular.module('DeViine.services', [])
        */
       // getNew is limiting to last 2.
       getNew: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(2) ).$asArray();
+        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('new').equalTo("true").limitToLast(2) ).$asArray();
       },
       /**
        * @param {String} itemType
@@ -205,7 +205,7 @@ angular.module('DeViine.services', [])
        * @returns {FirebaseArray}
        */
       getHighestRated: function(itemType) {
-        // var items = this.getAll(itemType);
+        // var items = this.getAll(itemType).getElementById("avgRating").sort(function(a,b){return b - a});
 
         // @todo Filter out all but the highest-rated items.
         // return items;
@@ -241,6 +241,21 @@ angular.module('DeViine.services', [])
           return (ratingsTotal / ratingsCount).toFixed(1);
         }
       },
+
+      obj.getUserRating = function(ratings) {
+        var userRating = 2;
+
+        // if(! userRating) {
+        //   console.log('User is true.');
+        //   ('.userRatingDisplay').css('display','inline');
+        // } else {
+        //   return 'No user rating';
+        //   console.log('No user rating.');
+        // }
+        console.log(userRating);
+        return userRating;
+      },
+
       /**
        * @param {Object} ratings
        * @returns {Number} ratingsCount

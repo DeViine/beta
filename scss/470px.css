@@ -1,5 +1,11 @@
 @media screen and (max-width: 470px) {
-  .navbar .logo > img {
+  /*----style.scss.html start----*/
+  body {
+    top: 70px;
+    width: 98%; }
+
+  /*----style.scss.html end----*/
+  .navbar .logo .deviineLogo {
     margin: -5px auto 0 auto;
     width: 60px; }
 
