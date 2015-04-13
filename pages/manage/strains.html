@@ -141,7 +141,13 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="strainImage" class="col-md-2 control-label">Image:</label>
+			<label for="strainCardImage" class="col-md-2 control-label">Card Image:</label>
+			<div class="col-md-10">
+				<input ng-model="strain.cardimage" name="strainCardImage" type="text" class="form-control"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="strainImage" class="col-md-2 control-label">Full Image:</label>
 			<div class="col-md-10">
 				<input ng-model="strain.image" name="strainImage" type="text" class="form-control"/>
 			</div>
@@ -172,6 +178,12 @@
 			<label for="strainDisabled" class="col-md-6 control-label" style="color:red;">Enter 'true' if disabled or enter '0' if not disabled:</label>
 			<div class="col-md-6">
 				<input ng-model="strain.disabled" name="strainDisabled" type="text" class="form-control" required/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="strainNew" class="col-md-6 control-label">Enter 'true' if new or enter '0' if not new:</label>
+			<div class="col-md-6">
+				<input ng-model="strain.new" name="strainNew" type="text" class="form-control" required/>
 			</div>
 		</div>
 	</fieldset>
