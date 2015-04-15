@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+window.onload = (function() {
 
 	// Image Zoom Starts Here
     $('.strainGallery').elevateZoom({
