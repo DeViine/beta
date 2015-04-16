@@ -82,14 +82,13 @@
 }
 
 .strainDescriptionSubHeader {
-  color: $dvGray20;
-  font-size: 26px;
-  margin: -16px 0 0 0;
+  margin: -6px 0 0 0;
 }
 .strainDescription {
   font-family: $dvTextFont;
   font-size: 12px;
-  margin: 0;
+  line-height: 18px;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 
