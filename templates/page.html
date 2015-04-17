@@ -1,28 +1,25 @@
 <a id="top"></a>
 <nav class="navbar navbar-inverse navbar-static-top">
 	<div class="navbar-header">
-<!-- 		<a href="#menuMobile" class="menuMobile-toggler">
-			<img src="img/icons/menuIcon.png" alt="Show Menu"/>
-		</a>
+		<img src="img/icons/menuIcon.png" class="menuMobile-toggler" id="menuMobile-toggler" alt="Show Menu"/>
+		<img src="img/icons/x.png" class="close-menuMobile" id="close-menuMobile" alt="Close Menu"/>
 		<div class="menuMobile" id="menuMobile">
 		  <ul>
 		  	<li class="menuMobile-subHeader">Pages</li>
-			<li ui-sref="root.home">Home</li>
+			<li ui-sref="root.home" class="mobileNavLink">Home</li>
 			<li ui-sref="" class="dispensaryNav">Dispensaries</li>
 			<li ui-sref="" class="dealNav">Deals</li>
-			<li ui-sref="root.strains" class="strainNav">Strains</li>
+			<li ui-sref="root.strains" class="strainNav mobileNavLink">Strains</li>
 			<li class="menuMobile-subHeader">Other</li>
-			<li ui-sref="root.privacy">Privacy Policy</li>
-			<li ui-sref="root.terms">Terms of Use</li>
-			<li ui-sref="root.manageDispensaries" ng-show="isAdmin(currentUser)" class="adminnav">Edit Dispensaries</li>
-			<li ui-sref="root.manageDeals" ng-show="isAdmin(currentUser)" class="adminnav">Edit Deals</li>
-			<li ui-sref="root.manageStrains" ng-show="isAdmin(currentUser)" class="adminnav">Edit Strains</li>
+			<li ui-sref="root.privacy" class="mobileNavLink">Privacy Policy</li>
+			<li ui-sref="root.terms" class="mobileNavLink">Terms of Use</li>
+			<li ui-sref="root.manageDispensaries" ng-show="isAdmin(currentUser)" class="adminnav mobileNavLink">Edit Dispensaries</li>
+			<li ui-sref="root.manageDeals" ng-show="isAdmin(currentUser)" class="adminnav mobileNavLink">Edit Deals</li>
+			<li ui-sref="root.manageStrains" ng-show="isAdmin(currentUser)" class="adminnav mobileNavLink">Edit Strains</li>
 		  </ul>
-		  <a href="#" class="close-menuMobile"></a>
-		</div> -->
+		</div>
 		<a ui-sref="root.home" class="logo">
 			<img src="img/logo.png" alt="DeViine Logo" class="deviineLogo"/>
-	<!-- 		<img src="img/beta_logo.png" alt="BETA Logo" class="betaLogo"/> -->
 		</a>
 		<div class="navbar-right">
 			<div ng-show="currentUser" class="navbar-text">

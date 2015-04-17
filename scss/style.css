@@ -77,13 +77,14 @@
       color: #2c3034; }
 
 .strainDescriptionSubHeader {
-  margin: -6px 0 0 0; }
+  color: rgba(44, 48, 52, 0.2);
+  font-size: 26px;
+  margin: -16px 0 0 0; }
 
 .strainDescription {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  line-height: 18px;
-  margin: 10px 0 0 0;
+  margin: 0;
   padding: 0; }
 
 .dispensaryGallery,
@@ -1017,7 +1018,7 @@
 .rating {
   width: 250px;
   height: 55px;
-  margin: 0 0 70px 0;
+  margin: 0;
   background: rgba(44, 48, 52, 0.05); }
   .rating .ratingBarWrap {
     position: relative;
@@ -1039,20 +1040,17 @@
       pointer-events: none; }
     .rating .ratingBarWrap input[type="radio"] {
       display: none; }
-    .rating .ratingBarWrap .ratings {
-      display: flex;
-      direction: rtl; }
-      .rating .ratingBarWrap .ratings .rate {
-        width: 20%;
-        height: 50px;
-        margin: 0;
-        float: left;
-        position: relative;
-        top: -56px;
-        z-index: 1;
-        cursor: pointer; }
-        .rating .ratingBarWrap .ratings .rate:hover, .rating .ratingBarWrap .ratings .rate:hover ~ .rate {
-          background: #2c3034; }
+    .rating .ratingBarWrap .rate {
+      width: 20%;
+      height: 50px;
+      margin: 0;
+      float: left;
+      position: relative;
+      top: -56px;
+      z-index: 1;
+      cursor: pointer; }
+      .rating .ratingBarWrap .rate:hover {
+        background: #2c3034; }
     .rating .ratingBarWrap div.ratingBar {
       width: 250px;
       padding-top: 50px;
@@ -1064,7 +1062,7 @@
     color: #2c3034;
     height: 0;
     position: relative;
-    top: -75px;
+    top: -55px;
     z-index: 3; }
 
 .dealCard .rating,

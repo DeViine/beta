@@ -137,19 +137,25 @@
 		<div class="form-group">
 			<label for="producerLogo" class="col-md-2 control-label">Logo:</label>
 			<div class="col-md-10">
-				<input ng-model="strain.logo" name="producerLogo" type="text" class="form-control"/>
+				<input ng-model="strain.logo" name="producerLogo" type="text" class="form-control" required/>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="strainCardImage" class="col-md-2 control-label">Card Image:</label>
 			<div class="col-md-10">
-				<input ng-model="strain.cardimage" name="strainCardImage" type="text" class="form-control"/>
+				<input ng-model="strain.cardimage" name="strainCardImage" type="text" class="form-control" required/>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="strainImage" class="col-md-2 control-label">Full Image:</label>
 			<div class="col-md-10">
-				<input ng-model="strain.image" name="strainImage" type="text" class="form-control"/>
+				<input ng-model="strain.image" name="strainImage" type="text" class="form-control" required/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="strainZoomImage" class="col-md-2 control-label">Zoom Image:</label>
+			<div class="col-md-10">
+				<input ng-model="strain.zoomimage" name="strainZoomImage" type="text" class="form-control" required/>
 			</div>
 		</div>
 	</fieldset>

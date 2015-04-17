@@ -1,16 +1,12 @@
-
 @media screen and (max-width:980px) {
   /*----page.html start----*/
   .navbar-header {
-    text-align: center;
-    .logo > img {
+    .logo .deviineLogo {
       float: left;
+      left: 80px;
     }
     .menuMobile-toggler {
-      display: none;
-      position: absolute;
-      left: 4%;
-      margin: 15px 0;
+      display: inline;
       img {
         width: 50px;
         opacity: .2;
@@ -32,6 +28,7 @@
     }
   }
   #mainMenu { 
+    display: none;
     top: inherit;
     bottom: -10px;
     left: 0;
