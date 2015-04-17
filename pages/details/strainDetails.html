@@ -15,11 +15,11 @@
     <dv-rating ratings="strainDetails.ratings" class="strainRating"></dv-rating>
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <h2 class="strainDescriptionSubHeader">Strain Description</h2>
+        <h3 class="strainDescriptionSubHeader">Strain Description</h3>
         <p class="strainDescription">{{ strainDetails.description }}</p>
       </div>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-6 col-sm-6 col-xs-12 strainGalleryWrap">
       <img src="{{ strainDetails.image }}" class="img-responsive strainGalleryMobile"/>
     </div>
     <h3>Strain Profile</h3>
@@ -85,7 +85,7 @@
     </div> -->
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
-    <img data-zoom-image="{{ strainDetails.zoomimage }}" src="{{ strainDetails.image }}" class="img-responsive strainGallery"/>
+    <img src="{{ strainDetails.image }}" data-zoom-image="{{ strainDetails.zoomimage }}" class="img-responsive strainGallery"/>
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
     <h3>Reviews</h3>
