@@ -533,9 +533,9 @@
     border-radius: 0;
     background-color: #3dd861;
     color: white;
-    font-family: "Khand", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 16px;
     height: 40px;
     margin-top: 0;
     padding: .5% 5%;
@@ -546,8 +546,7 @@
     #footer .btnfooter:active, #footer .btnfooter:focus, #footer .btnfooter:visited {
       text-decoration: none; }
   #footer .btnfooterlrg {
-    margin: 0 auto;
-    padding: 2% 5% 1% 5%; }
+    padding: 10px 5%; }
   #footer address {
     font-size: 10px;
     padding-top: 5%;
@@ -573,6 +572,17 @@
     width: 50%; }
 
   /*----home.html end----*/
+  /*----footer.html start----*/
+  #footer input[type='email'] {
+    width: 60%;
+    margin-left: 5%; }
+  #footer .btnfooter {
+    width: 30%;
+    margin-right: 5%; }
+  #footer .btnfooterlrg {
+    margin-right: 0; }
+
+  /*----footer.html end----*/
   /*----ratings.html start----*/
   .dispensaryCard .rating,
   .dealCard .rating,
@@ -655,7 +665,6 @@
   /*----home.html end----*/
   /*----footer.html start----*/
   #footer {
-    padding-bottom: 70px;
     margin: 30px auto 0 auto;
     text-align: center; }
     #footer h4 {
@@ -671,12 +680,10 @@
       margin-left: 15%; }
     #footer .btnfooter {
       width: 25%;
-      padding: .5% 0;
       margin-top: 0;
       margin-right: 15%; }
     #footer .btnfooterlrg {
-      margin-right: 0;
-      padding: 2% 5% 1% 5%; }
+      margin-right: 0; }
     #footer address {
       padding-top: 6%;
       float: right;
@@ -803,7 +810,6 @@
 
   /*----footer start----*/
   #footer {
-    padding-bottom: 40px;
     margin: 0; }
 
   /*----footer end----*/

@@ -22,6 +22,21 @@
   	}
   }
   /*----home.html end----*/
+  /*----footer.html start----*/
+  #footer {
+    input[type='email'] {
+      width: 60%;
+      margin-left: 5%;
+    }
+    .btnfooter {
+      width: 30%;
+      margin-right: 5%;
+    }
+    .btnfooterlrg {
+      margin-right: 0;
+    }
+  }
+  /*----footer.html end----*/
   /*----ratings.html start----*/
   .dispensaryCard,
   .dealCard,
