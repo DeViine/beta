@@ -7,76 +7,42 @@
   /*----style.scss.html end----*/
   /*----home.html start----*/
   #indexSummary {
-    .howItWorks {
-      padding: 20px 5%;
-      height: 100%;
-      &:nth-child(1),
-      &:nth-child(2) {
-        border-bottom: 1px solid rgba(44,48,52,.05);
-      }
-      img {
-        width: 22%;
-        float: left;
-        margin-right: 20px;
-      }
-      h3 {
-        font-size: 18px;
-        margin: 0;
-        padding: 3% 0 0 0;
-        text-align: left;
-      }
-      p {
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        font-size: 10px;
-        line-height: 14px;
+  	.howItWorks {
+  	  padding: 20px 5%;
+  	  height: 100%;
+  	  &:nth-child(1),
+	    &:nth-child(2) {
+  	    border-bottom: 1px solid rgba(44,48,52,.05);
+  	  }
+  	  img {
+  	  	width: 22%;
+  	  	float: left;
+  	  	margin-right: 20px;
+  	  }
+  	  h3 {
+  	  	font-size: 18px;
+  	 	  margin: 0;
+  	 	  padding: 3% 0 0 0;
+  	  	text-align: left;
+  	  }
+  	  p {
+  	  	padding: 0;
+  	  	margin: 0;
+  	  	text-align: left;
+  	  	font-size: 10px;
+  	  	line-height: 14px;
         width: 62%;
-      }
+  	  }
       .arrowRight {
         display: inline;
         margin-left: 20px;
       }
-    }
+  	}
   }
   .featuredBanner {
-    margin-left: 25%;
+  	margin-left: 25%;
   }
   /*----home.html end----*/
-  /*----page.html start----*/
-  .navbar-header {
-    .menuMobile-toggler {
-      img {
-        width: 30px;
-      }
-    }
-  }
-  .navbar {
-    padding: 0 4%;
-    height: 60px;
-  }
-  .navbar .logo .deviineLogo { 
-    margin: -5px auto 0 auto;
-    width: 65px;
-  }
-  .navbar-right {
-    .accountInfo {
-      margin: -4px 0 0 0;
-      .username {
-        font-size: 13px;
-      }
-      .location {
-        font-size: 9px;
-      }
-    }
-    .avatar {
-      width: 30px;
-      height: 30px;
-      border-color: #fcd31c;
-      margin-left: 5px;
-    }
-  }
-  /*----page.html end----*/
   /*----footer.html start----*/
   #footer {
     padding-bottom: 70px;
@@ -85,18 +51,18 @@
     h4 {
       text-align: center;
     }
-    a {
-      font-size: 10px;
+  	a {
+  	  font-size: 10px;
       margin: 0 auto;
       text-align: center;
-    }
-    p {
-      font-size: 10px;
-    }
-    input[type='email'] {
-      width: 45%;
+  	}
+  	p {
+  	  font-size: 10px;
+  	}
+  	input[type='email'] {
+  	  width: 45%;
       margin-left: 15%;
-    }
+  	}
     .btnfooter {
       width: 25%;
       padding: .5% 0;
@@ -107,16 +73,16 @@
       margin-right: 0;
       padding: 2% 5% 1% 5%;
     }
-    address {
-      padding-top: 6%;
-      float: right;
+  	address {
+  	  padding-top: 6%;
+  	  float: right;
       text-align: center;
-    }
+  	}
   }
   /*----footer.html end----*/
   /*----cards.html start----*/
   .cardWrapper {
-    margin: 0 25% !important;
+  	margin: 0 25% !important;
   }
   .featured-dispensary-true,
   .featured-deal-true,

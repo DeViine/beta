@@ -1,30 +1,54 @@
 @media screen and (max-width:980px) {
+  body {
+    top: 70px;
+    width: 99%;
+  }
   /*----page.html start----*/
-  .navbar-header {
-    .logo .deviineLogo {
-      float: left;
-      left: 80px;
-    }
-    .menuMobile-toggler {
-      display: inline;
-      img {
-        width: 50px;
-        opacity: .2;
-        &:hover {
-          opacity: 1;
+  .navbar {
+    padding: 0 4%;
+    height: 60px;
+    .navbar-header {
+      .menuMobile-toggler {
+        img {
+          width: 30px;
         }
       }
-    }
-  }
-  .navbar-right {
-    position: absolute;
-    right: 4%;
-    top: 0;
-    .username {
-      margin-top: 7.5px;
-    }
-    .avatar {
-      border-color: #fcd31c;
+      .logo .deviineLogo {
+        float: left;
+        left: 50px;
+        width: 65px;
+        padding: 15px 0;
+      }
+      .menuMobile-toggler {
+        display: inline;
+        img {
+          width: 50px;
+          opacity: .2;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      .navbar-right {
+        .accountInfo {
+          margin: -4px 0 0 0;
+          .username {
+            font-size: 13px;
+          }
+          .location {
+            font-size: 9px;
+          }
+        }
+        .navbar-text {
+          margin: 10px 0;
+          .avatar {
+            width: 40px;
+            height: 40px;
+            border-color: #fcd31c;
+            margin-left: 5px;
+          }
+        }
+      }
     }
   }
   #mainMenu { 
