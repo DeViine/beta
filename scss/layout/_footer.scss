@@ -52,14 +52,13 @@
       background-color: $dvWhite20;
     }
   }
-
   .btnfooter {
     border-radius: 0;
     background-color: $dvGreen;
     color: white;
-    font-family: $dvHeaderFont;
+    font-family: $dvTextFont;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 16px;
     height: 40px;
     margin-top: 0;
     padding: .5% 5%;
@@ -75,8 +74,7 @@
     }
   }
   .btnfooterlrg {
-    margin: 0 auto;
-    padding: 2% 5% 1% 5%;
+    padding: 10px 5%;
   }
 
   address {

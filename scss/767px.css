@@ -35,6 +35,31 @@
     margin-left: 25%; }
 
   /*----home.html end----*/
+  /*----page.html start----*/
+  .navbar-header .menuMobile-toggler img {
+    width: 30px; }
+
+  .navbar {
+    padding: 0 4%;
+    height: 60px; }
+
+  .navbar .logo .deviineLogo {
+    margin: -5px auto 0 auto;
+    width: 65px; }
+
+  .navbar-right .accountInfo {
+    margin: -4px 0 0 0; }
+    .navbar-right .accountInfo .username {
+      font-size: 13px; }
+    .navbar-right .accountInfo .location {
+      font-size: 9px; }
+  .navbar-right .avatar {
+    width: 30px;
+    height: 30px;
+    border-color: #fcd31c;
+    margin-left: 5px; }
+
+  /*----page.html end----*/
   /*----footer.html start----*/
   #footer {
     padding-bottom: 70px;

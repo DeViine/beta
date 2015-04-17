@@ -5,6 +5,10 @@
     width: 98%; }
 
   /*----style.scss.html end----*/
+  .navbar .logo .deviineLogo {
+    margin: -5px auto 0 auto;
+    width: 60px; }
+
   /*----home.html start----*/
   #indexSummary .howItWorks img {
     width: 30%; }
