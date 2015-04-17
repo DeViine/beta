@@ -1,19 +1,15 @@
 @media screen and (max-width: 980px) {
   /*----page.html start----*/
-  .navbar-header {
-    text-align: center; }
-    .navbar-header .logo > img {
-      float: left; }
-    .navbar-header .menuMobile-toggler {
-      display: none;
-      position: absolute;
-      left: 4%;
-      margin: 15px 0; }
-      .navbar-header .menuMobile-toggler img {
-        width: 50px;
-        opacity: .2; }
-        .navbar-header .menuMobile-toggler img:hover {
-          opacity: 1; }
+  .navbar-header .logo .deviineLogo {
+    float: left;
+    left: 80px; }
+  .navbar-header .menuMobile-toggler {
+    display: inline; }
+    .navbar-header .menuMobile-toggler img {
+      width: 50px;
+      opacity: .2; }
+      .navbar-header .menuMobile-toggler img:hover {
+        opacity: 1; }
 
   .navbar-right {
     position: absolute;
@@ -25,6 +21,7 @@
       border-color: #fcd31c; }
 
   #mainMenu {
+    display: none;
     top: inherit;
     bottom: -10px;
     left: 0;

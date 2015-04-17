@@ -1,7 +1,7 @@
 .rating {
   width: 250px;
   height: 55px;
-  margin: 0;
+  margin: 0 0 70px 0;
   background: $dvGray5;
   .ratingBarWrap {
     position: relative;
@@ -11,8 +11,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      -webkit-transition: move 2s linear infinite;
-      transition: move 2s linear infinite;
     }
     svg {
       pointer-events: none;
@@ -26,17 +24,21 @@
     input[type="radio"] {
       display: none;
     }
-    .rate {
-      width: 20%;
-      height: 50px;
-      margin: 0;
-      float: left;
-      position: relative;
-      top: -56px;
-      z-index: 1;
-      cursor: pointer;
-      &:hover {
-        background: $dvGray;
+    .ratings {
+      display: flex;
+      direction: rtl;
+      .rate {
+        width: 20%;
+        height: 50px;
+        margin: 0;
+        float: left;
+        position: relative;
+        top: -56px;
+        z-index: 1;
+        cursor: pointer;
+        &:hover, &:hover ~ .rate {
+          background: $dvGray;
+        }
       }
     }
     div.ratingBar {
@@ -45,15 +47,22 @@
       margin-top: 1px;
     }
   }
-  .ratingDisplay {
+  .ratingDisplay,
+  .userRatingDisplay {
     font-family: $dvTextFont;
     font-size: 14px;
     font-weight: normal;
     color: $dvGray;
     height: 0;
     position: relative;
-    top: -55px;
     z-index: 3;
+  }
+  .ratingDisplay {
+    top: -75px;
+  }
+  .userRatingDisplay {
+    top: -65px;
+    display: none; 
   }
 }
 
@@ -96,6 +105,9 @@
       }
     }
     .ratingDisplay {
+      display: none;
+    }
+    .userRatingDisplay {
       display: none;
     }
   }

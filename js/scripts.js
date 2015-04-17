@@ -1,5 +1,9 @@
 window.onload = (function() {
 
+	// Prevent Right Click on Strain Image Starts Here
+	$('.strainGallery').bind('contextmenu', function(e){ return false; }); 
+	// Prevent Right Click on Strain Image Ends Here
+
 	// Image Zoom Starts Here
     $('.strainGallery').elevateZoom({
       zoomType:"lens",
