@@ -77,14 +77,13 @@
       color: #2c3034; }
 
 .strainDescriptionSubHeader {
-  color: rgba(44, 48, 52, 0.2);
-  font-size: 26px;
-  margin: -16px 0 0 0; }
+  margin: -6px 0 0 0; }
 
 .strainDescription {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  margin: 0;
+  line-height: 18px;
+  margin: 10px 0 0 0;
   padding: 0; }
 
 .dispensaryGallery,
