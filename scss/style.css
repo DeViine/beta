@@ -249,7 +249,7 @@
 .navbar-header {
   float: none; }
 
-.navbar .logo > img {
+.navbar .logo .deviineLogo {
   width: 90px;
   padding: 20px 0;
   margin: 0 auto;
@@ -422,14 +422,23 @@
     transition: all .3s ease; }
 
 /*  End Up to Top  */
-.navbar-header .menuMobile-toggler {
-  display: none; }
+.navbar-header .menuMobile-toggler,
+.navbar-header #close-menuMobile {
+  display: none;
+  width: 30px;
+  opacity: .2;
+  margin: 15px 0;
+  position: absolute;
+  left: 4%; }
+  .navbar-header .menuMobile-toggler:hover,
+  .navbar-header #close-menuMobile:hover {
+    opacity: 1; }
 .navbar-header .menuMobile {
   position: fixed;
   top: 0;
-  left: -50%;
+  left: -75%;
   /* CHANGE .menuMobile LEFT:0; TO MAKE MENU SHOW UP */
-  width: 50%;
+  width: 75%;
   margin: 60px 0 0 0;
   height: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -439,14 +448,6 @@
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
-  .navbar-header .menuMobile:target {
-    left: 0; }
-  .navbar-header .menuMobile:target .close-menuMobile {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -50%;
-    right: 0; }
   .navbar-header .menuMobile ul {
     list-style: none;
     margin: 0;
@@ -559,10 +560,6 @@
     width: 98%; }
 
   /*----style.scss.html end----*/
-  .navbar .logo .deviineLogo {
-    margin: -5px auto 0 auto;
-    width: 60px; }
-
   /*----home.html start----*/
   #indexSummary .howItWorks img {
     width: 30%; }
@@ -665,31 +662,6 @@
     margin-left: 25%; }
 
   /*----home.html end----*/
-  /*----page.html start----*/
-  .navbar-header .menuMobile-toggler img {
-    width: 30px; }
-
-  .navbar {
-    padding: 0 4%;
-    height: 60px; }
-
-  .navbar .logo .deviineLogo {
-    margin: -5px auto 0 auto;
-    width: 65px; }
-
-  .navbar-right .accountInfo {
-    margin: -4px 0 0 0; }
-    .navbar-right .accountInfo .username {
-      font-size: 13px; }
-    .navbar-right .accountInfo .location {
-      font-size: 9px; }
-  .navbar-right .avatar {
-    width: 30px;
-    height: 30px;
-    border-color: #fcd31c;
-    margin-left: 5px; }
-
-  /*----page.html end----*/
   /*----footer.html start----*/
   #footer {
     margin: 30px auto 0 auto;
@@ -759,32 +731,44 @@
 
   /*----cards.html end----*/ }
 @media screen and (max-width: 980px) {
+  body {
+    top: 70px;
+    width: 99%; }
+
   /*----page.html start----*/
-  .navbar-header {
-    text-align: center; }
-    .navbar-header .logo > img {
-      float: left; }
-    .navbar-header .menuMobile-toggler {
-      display: none;
-      position: absolute;
-      left: 4%;
-      margin: 15px 0; }
-      .navbar-header .menuMobile-toggler img {
+  .navbar {
+    padding: 0 4%;
+    height: 60px; }
+    .navbar .navbar-header .menuMobile-toggler img {
+      width: 30px; }
+    .navbar .navbar-header .logo .deviineLogo {
+      float: left;
+      left: 50px;
+      width: 65px;
+      padding: 15px 0; }
+    .navbar .navbar-header .menuMobile-toggler {
+      display: inline; }
+      .navbar .navbar-header .menuMobile-toggler img {
         width: 50px;
         opacity: .2; }
-        .navbar-header .menuMobile-toggler img:hover {
+        .navbar .navbar-header .menuMobile-toggler img:hover {
           opacity: 1; }
-
-  .navbar-right {
-    position: absolute;
-    right: 4%;
-    top: 0; }
-    .navbar-right .username {
-      margin-top: 7.5px; }
-    .navbar-right .avatar {
-      border-color: #fcd31c; }
+    .navbar .navbar-header .navbar-right .accountInfo {
+      margin: -4px 0 0 0; }
+      .navbar .navbar-header .navbar-right .accountInfo .username {
+        font-size: 13px; }
+      .navbar .navbar-header .navbar-right .accountInfo .location {
+        font-size: 9px; }
+    .navbar .navbar-header .navbar-right .navbar-text {
+      margin: 10px 0; }
+      .navbar .navbar-header .navbar-right .navbar-text .avatar {
+        width: 40px;
+        height: 40px;
+        border-color: #fcd31c;
+        margin-left: 5px; }
 
   #mainMenu {
+    display: none;
     top: inherit;
     bottom: -10px;
     left: 0;
@@ -1023,7 +1007,7 @@
 .rating {
   width: 250px;
   height: 55px;
-  margin: 0;
+  margin: 0 0 70px 0;
   background: rgba(44, 48, 52, 0.05); }
   .rating .ratingBarWrap {
     position: relative;
@@ -1032,9 +1016,7 @@
     .rating .ratingBarWrap div.ratingBar {
       position: absolute;
       top: 0;
-      left: 0;
-      -webkit-transition: move 2s linear infinite;
-      transition: move 2s linear infinite; }
+      left: 0; }
     .rating .ratingBarWrap svg {
       pointer-events: none;
       position: relative;
@@ -1045,30 +1027,38 @@
       pointer-events: none; }
     .rating .ratingBarWrap input[type="radio"] {
       display: none; }
-    .rating .ratingBarWrap .rate {
-      width: 20%;
-      height: 50px;
-      margin: 0;
-      float: left;
-      position: relative;
-      top: -56px;
-      z-index: 1;
-      cursor: pointer; }
-      .rating .ratingBarWrap .rate:hover {
-        background: #2c3034; }
+    .rating .ratingBarWrap .ratings {
+      display: flex;
+      direction: rtl; }
+      .rating .ratingBarWrap .ratings .rate {
+        width: 20%;
+        height: 50px;
+        margin: 0;
+        float: left;
+        position: relative;
+        top: -56px;
+        z-index: 1;
+        cursor: pointer; }
+        .rating .ratingBarWrap .ratings .rate:hover, .rating .ratingBarWrap .ratings .rate:hover ~ .rate {
+          background: #2c3034; }
     .rating .ratingBarWrap div.ratingBar {
       width: 250px;
       padding-top: 50px;
       margin-top: 1px; }
-  .rating .ratingDisplay {
+  .rating .ratingDisplay,
+  .rating .userRatingDisplay {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #2c3034;
     height: 0;
     position: relative;
-    top: -55px;
     z-index: 3; }
+  .rating .ratingDisplay {
+    top: -75px; }
+  .rating .userRatingDisplay {
+    top: -65px;
+    display: none; }
 
 .dealCard .rating,
 .dispensaryCard .rating,
@@ -1110,6 +1100,10 @@
   .dealCard .rating .ratingDisplay,
   .dispensaryCard .rating .ratingDisplay,
   .strainCard .rating .ratingDisplay {
+    display: none; }
+  .dealCard .rating .userRatingDisplay,
+  .dispensaryCard .rating .userRatingDisplay,
+  .strainCard .rating .userRatingDisplay {
     display: none; }
 
 .dispensaryRating .ratingBar {
