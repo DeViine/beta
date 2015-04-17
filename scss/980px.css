@@ -1,42 +1,30 @@
 @media screen and (max-width: 980px) {
-  body {
-    top: 70px;
-    width: 99%; }
-
   /*----page.html start----*/
-  .navbar {
-    padding: 0 4%;
-    height: 60px; }
-    .navbar .navbar-header .menuMobile-toggler img {
-      width: 30px; }
-    .navbar .navbar-header .logo .deviineLogo {
-      float: left;
-      left: 50px;
-      width: 65px;
-      padding: 15px 0; }
-    .navbar .navbar-header .menuMobile-toggler {
-      display: inline; }
-      .navbar .navbar-header .menuMobile-toggler img {
+  .navbar-header {
+    text-align: center; }
+    .navbar-header .logo > img {
+      float: left; }
+    .navbar-header .menuMobile-toggler {
+      display: none;
+      position: absolute;
+      left: 4%;
+      margin: 15px 0; }
+      .navbar-header .menuMobile-toggler img {
         width: 50px;
         opacity: .2; }
-        .navbar .navbar-header .menuMobile-toggler img:hover {
+        .navbar-header .menuMobile-toggler img:hover {
           opacity: 1; }
-    .navbar .navbar-header .navbar-right .accountInfo {
-      margin: -4px 0 0 0; }
-      .navbar .navbar-header .navbar-right .accountInfo .username {
-        font-size: 13px; }
-      .navbar .navbar-header .navbar-right .accountInfo .location {
-        font-size: 9px; }
-    .navbar .navbar-header .navbar-right .navbar-text {
-      margin: 10px 0; }
-      .navbar .navbar-header .navbar-right .navbar-text .avatar {
-        width: 40px;
-        height: 40px;
-        border-color: #fcd31c;
-        margin-left: 5px; }
+
+  .navbar-right {
+    position: absolute;
+    right: 4%;
+    top: 0; }
+    .navbar-right .username {
+      margin-top: 7.5px; }
+    .navbar-right .avatar {
+      border-color: #fcd31c; }
 
   #mainMenu {
-    display: none;
     top: inherit;
     bottom: -10px;
     left: 0;
