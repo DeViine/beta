@@ -13,11 +13,15 @@
   float: none;
 }
 
-.navbar .logo > img {
-  width: 90px;
-  padding: 20px 0;
-  margin: 0 auto;
-  position: relative;
+.navbar {
+  .logo {
+    .deviineLogo {
+      width: 90px;
+      padding: 20px 0;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
 }
 
 .navbar-right {

@@ -250,7 +250,7 @@
 .navbar-header {
   float: none; }
 
-.navbar .logo > img {
+.navbar .logo .deviineLogo {
   width: 90px;
   padding: 20px 0;
   margin: 0 auto;
