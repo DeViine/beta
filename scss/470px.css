@@ -16,17 +16,6 @@
     width: 50%; }
 
   /*----home.html end----*/
-  /*----footer.html start----*/
-  #footer input[type='email'] {
-    width: 60%;
-    margin-left: 5%; }
-  #footer .btnfooter {
-    width: 30%;
-    margin-right: 5%; }
-  #footer .btnfooterlrg {
-    margin-right: 0; }
-
-  /*----footer.html end----*/
   /*----ratings.html start----*/
   .dispensaryCard .rating,
   .dealCard .rating,

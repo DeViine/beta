@@ -77,13 +77,14 @@
       color: #2c3034; }
 
 .strainDescriptionSubHeader {
-  margin: -6px 0 0 0; }
+  color: rgba(44, 48, 52, 0.2);
+  font-size: 26px;
+  margin: -16px 0 0 0; }
 
 .strainDescription {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  line-height: 18px;
-  margin: 10px 0 0 0;
+  margin: 0;
   padding: 0; }
 
 .dispensaryGallery,
@@ -532,9 +533,9 @@
     border-radius: 0;
     background-color: #3dd861;
     color: white;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Khand", sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 30px;
     height: 40px;
     margin-top: 0;
     padding: .5% 5%;
@@ -545,7 +546,8 @@
     #footer .btnfooter:active, #footer .btnfooter:focus, #footer .btnfooter:visited {
       text-decoration: none; }
   #footer .btnfooterlrg {
-    padding: 10px 5%; }
+    margin: 0 auto;
+    padding: 2% 5% 1% 5%; }
   #footer address {
     font-size: 10px;
     padding-top: 5%;
@@ -571,17 +573,6 @@
     width: 50%; }
 
   /*----home.html end----*/
-  /*----footer.html start----*/
-  #footer input[type='email'] {
-    width: 60%;
-    margin-left: 5%; }
-  #footer .btnfooter {
-    width: 30%;
-    margin-right: 5%; }
-  #footer .btnfooterlrg {
-    margin-right: 0; }
-
-  /*----footer.html end----*/
   /*----ratings.html start----*/
   .dispensaryCard .rating,
   .dealCard .rating,
@@ -664,6 +655,7 @@
   /*----home.html end----*/
   /*----footer.html start----*/
   #footer {
+    padding-bottom: 70px;
     margin: 30px auto 0 auto;
     text-align: center; }
     #footer h4 {
@@ -679,10 +671,12 @@
       margin-left: 15%; }
     #footer .btnfooter {
       width: 25%;
+      padding: .5% 0;
       margin-top: 0;
       margin-right: 15%; }
     #footer .btnfooterlrg {
-      margin-right: 0; }
+      margin-right: 0;
+      padding: 2% 5% 1% 5%; }
     #footer address {
       padding-top: 6%;
       float: right;
@@ -809,6 +803,7 @@
 
   /*----footer start----*/
   #footer {
+    padding-bottom: 40px;
     margin: 0; }
 
   /*----footer end----*/
