@@ -24,7 +24,8 @@ angular.module('DeViine.services', [])
           case 'facebook':
           case 'twitter':
           case 'google':
-            return dvAuth.$authWithOAuthRedirect(service);
+            return dvAuth.$authWithOAuthPopup(service);
+            // Detect chrome mobile and run return dvAuth.$authWithOAuthRedirect(service);
           break;
 
           case 'password':
@@ -32,8 +33,9 @@ angular.module('DeViine.services', [])
               email: credentials.email,
               password: credentials.password
             });
-            location.reload();
+          location.reload();
           break;
+
         }
       },
       logout: function() {
