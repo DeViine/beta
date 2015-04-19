@@ -78,33 +78,33 @@ angular.module('DeViine.directives', [])
   }])
 
   /** Elevate Zoom (Strains) */
-  // .directive('ngElevateZoom', function() {
-  //   return {
-  //     restrict: 'A',
-  //     link: function(scope, element, attrs) {
+  .directive('ngElevateZoom', function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
 
-  //       //Will watch for changes on the attribute
-  //       attrs.$observe('zoomImage',function(){
-  //         linkElevateZoom();
-  //       })
+        //Will watch for changes on the attribute
+        attrs.$observe('zoomImage',function(){
+          linkElevateZoom();
+        })
 
-  //       function linkElevateZoom(){
-  //         //Check if its not empty
-  //         if (!attrs.zoomImage) return;
-  //         element.attr('data-zoom-image',attrs.zoomImage);
-  //         $(element).elevateZoom({
-  //           zoomType:"lens",
-  //           lensShape : "round",
-  //           lensSize : 250
-  //         });
+        function linkElevateZoom(){
+          //Check if its not empty
+          if (!attrs.zoomImage) return;
+          element.attr('data-zoom-image',attrs.zoomImage);
+          $(element).elevateZoom({
+            zoomType:"lens",
+            lensShape : "round",
+            lensSize : 250
+          });
           
-  //       }
+        }
 
-  //       linkElevateZoom();
+        linkElevateZoom();
 
-  //     }
-  //   };
-  // })
+      }
+    };
+  })
 
   /** Disqus Reviews */
   .directive('dirDisqus', function($window) {
