@@ -24,7 +24,7 @@ angular.module('DeViine.services', [])
           case 'facebook':
           case 'twitter':
           case 'google':
-            return dvAuth.$authWithOAuthPopup(service);
+            return dvAuth.$authWithOAuthRedirect(service);
           break;
 
           case 'password':
@@ -244,8 +244,18 @@ angular.module('DeViine.services', [])
       },
 
       obj.getUserRating = function(ratings) {
-        var userRating = 2;
 
+        // Data snapshot???
+        // // Get a reference to our posts
+        // var ref = new Firebase("https://docs-examples.firebaseio.com/web/saving-data/fireblog/posts");
+        // // Attach an asynchronous callback to read the data at our posts reference
+        // ref.on("value", function(snapshot) {
+        //   console.log(snapshot.val());
+        // }, function (errorObject) {
+        //   console.log("The read failed: " + errorObject.code);
+        // });
+
+        // Display if true???
         // if(! userRating) {
         //   console.log('User is true.');
         //   ('.userRatingDisplay').css('display','inline');
@@ -253,8 +263,6 @@ angular.module('DeViine.services', [])
         //   return 'No user rating';
         //   console.log('No user rating.');
         // }
-        console.log(userRating);
-        return userRating;
       },
 
       /**

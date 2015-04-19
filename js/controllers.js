@@ -320,28 +320,14 @@ angular.module('DeViine.controllers', [])
   }])
 
   .controller('rateCtrl', ['$scope', '$firebase', 'dvUrl', 'usersService', function($scope, $firebase, dvUrl, usersService) {
-    
+
     $scope.sendRating = function(divId) {
         var rating = document.getElementById(divId).value;
 
         userId = usersService.getName(usersService.getCurrentUser())
         itemType = 'strains';
         itemId = $scope.$parent.$parent.strainDetails.$id;
-        userRating = $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) );
-        // if (typeof userRating !== 'undefined') {
-        //   var modal = $('.modal');
-        //   modal.fadeIn();
-        //   console.log("user rating exists");
-
-        // } else if (! userId) {
-        //   console.log('No User');
-        //   // TODO: Launch login modal
-        //   alert ("Please sign in to submit a rating.");
-        // } else {
-        //   console.log('Rating Sent');
-        //   $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
-        //   $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).$set(rating);
-        // }
+        
         if(! userId) {
           console.log('No User');
           // TODO: Launch login modal
@@ -350,10 +336,7 @@ angular.module('DeViine.controllers', [])
           console.log('Rating Sent');
           $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
           $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).$set(rating);
-        }
-        $('.close-modal').click(function() {
-         modal.fadeOut();
-        });
+        };
         
     };
 
