@@ -32,6 +32,7 @@ angular.module('DeViine.services', [])
               email: credentials.email,
               password: credentials.password
             });
+            location.reload();
           break;
         }
       },
