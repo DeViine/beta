@@ -27,9 +27,9 @@ angular.module('DeViine.services', [])
             
             // Detect chrome mobile and run return dvAuth.$authWithOAuthRedirect(service);
 
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            if( /Chrome/i.test(navigator.userAgent) ) {
               return dvAuth.$authWithOAuthRedirect(service);
-              $route.reload();
+              // route.reload();
             } else {
               return dvAuth.$authWithOAuthPopup(service);
             }
