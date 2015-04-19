@@ -24,8 +24,14 @@ angular.module('DeViine.services', [])
           case 'facebook':
           case 'twitter':
           case 'google':
-            return dvAuth.$authWithOAuthPopup(service);
+            
             // Detect chrome mobile and run return dvAuth.$authWithOAuthRedirect(service);
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+              return dvAuth.$authWithOAuthRedirect(service);
+            } else {
+              return dvAuth.$authWithOAuthPopup(service);
+            }
           break;
 
           case 'password':
