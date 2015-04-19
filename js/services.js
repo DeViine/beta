@@ -31,6 +31,7 @@ angular.module('DeViine.services', [])
               return dvAuth.$authWithOAuthRedirect(service);
             } else {
               return dvAuth.$authWithOAuthPopup(service);
+              location.reload();
             }
           break;
 
