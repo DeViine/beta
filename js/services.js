@@ -29,9 +29,9 @@ angular.module('DeViine.services', [])
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               return dvAuth.$authWithOAuthRedirect(service);
+              location.reload();
             } else {
               return dvAuth.$authWithOAuthPopup(service);
-              location.reload();
             }
           break;
 
