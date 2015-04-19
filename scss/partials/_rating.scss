@@ -41,6 +41,19 @@
         }
       }
     }
+    .mobileRatings {
+      display: none;
+      .rate {
+        width: 20%;
+        height: 50px;
+        margin: 0;
+        float: left;
+        position: relative;
+        top: -56px;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
     div.ratingBar {
       width: 250px;
       padding-top: 50px;

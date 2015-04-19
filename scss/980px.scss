@@ -132,4 +132,19 @@
     }
   }
   /*----cards.html end----*/
+  /*----rating.html start----*/
+  .rating {
+    .ratingBarWrap {
+      .ratings {
+        display: none;
+      }
+      .mobileRatings {
+        display: inherit;
+      }
+    }
+    .ratingDisplay {
+      top: -60px;
+    }
+  }
+  /*----rating.html start----*/
 }

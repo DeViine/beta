@@ -77,7 +77,6 @@
 
   /*----footer start----*/
   #footer {
-    padding-bottom: 40px;
     margin: 0; }
 
   /*----footer end----*/
@@ -95,6 +94,15 @@
   .barChart li div {
     font-size: 16px; }
 
-  /*----cards.html end----*/ }
+  /*----cards.html end----*/
+  /*----rating.html start----*/
+  .rating .ratingBarWrap .ratings {
+    display: none; }
+  .rating .ratingBarWrap .mobileRatings {
+    display: inherit; }
+  .rating .ratingDisplay {
+    top: -60px; }
+
+  /*----rating.html start----*/ }
 
 /*# sourceMappingURL=980px.css.map */

@@ -826,7 +826,16 @@
   .barChart li div {
     font-size: 16px; }
 
-  /*----cards.html end----*/ }
+  /*----cards.html end----*/
+  /*----rating.html start----*/
+  .rating .ratingBarWrap .ratings {
+    display: none; }
+  .rating .ratingBarWrap .mobileRatings {
+    display: inherit; }
+  .rating .ratingDisplay {
+    top: -60px; }
+
+  /*----rating.html start----*/ }
 #indexSummary > .howItWorks {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -1046,6 +1055,17 @@
         cursor: pointer; }
         .rating .ratingBarWrap .ratings .rate:hover, .rating .ratingBarWrap .ratings .rate:hover ~ .rate {
           background: #2c3034; }
+    .rating .ratingBarWrap .mobileRatings {
+      display: none; }
+      .rating .ratingBarWrap .mobileRatings .rate {
+        width: 20%;
+        height: 50px;
+        margin: 0;
+        float: left;
+        position: relative;
+        top: -56px;
+        z-index: 1;
+        cursor: pointer; }
     .rating .ratingBarWrap div.ratingBar {
       width: 250px;
       padding-top: 50px;
