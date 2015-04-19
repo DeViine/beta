@@ -29,7 +29,7 @@ angular.module('DeViine.services', [])
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               return dvAuth.$authWithOAuthRedirect(service);
-              location.reload();
+              route.reload();
             } else {
               return dvAuth.$authWithOAuthPopup(service);
             }
