@@ -807,6 +807,17 @@
   #indexSummary > .howItWorks:hover .comingSoon {
     opacity: 0; }
 
+  /*----home start----*/
+  .dispensariesIcon {
+    background-color: #f7253e; }
+
+  .dealsIcon {
+    background-color: #fcd31c; }
+
+  .strainsIcon {
+    background-color: #3dd861; }
+
+  /*----home end----*/
   /*----footer start----*/
   #footer {
     margin: 0; }
@@ -845,10 +856,20 @@
   padding-top: 15px;
   height: 330px;
   border-color: rgba(44, 48, 52, 0.05); }
-  #indexSummary > .howItWorks:hover {
-    background: rgba(44, 48, 52, 0.03); }
-    #indexSummary > .howItWorks:hover .comingSoon {
-      opacity: 1; }
+  #indexSummary > .howItWorks:hover .comingSoon {
+    opacity: 1; }
+  #indexSummary > .howItWorks:hover .dispensariesIcon {
+    background-color: #f7253e; }
+  #indexSummary > .howItWorks:hover .dealsIcon {
+    background-color: #fcd31c; }
+  #indexSummary > .howItWorks:hover .strainsIcon {
+    background-color: #3dd861; }
+  #indexSummary > .howItWorks .dispensariesIcon {
+    border: 2px solid #f7253e; }
+  #indexSummary > .howItWorks .dealsIcon {
+    border: 2px solid #fcd31c; }
+  #indexSummary > .howItWorks .strainsIcon {
+    border: 2px solid #3dd861; }
   #indexSummary > .howItWorks h3 {
     border: none;
     font-family: "Open Sans", sans-serif;
@@ -876,7 +897,9 @@
       border-left-color: #3dd861; }
   #indexSummary > .howItWorks > img {
     width: 50%;
-    margin: auto auto; }
+    margin: auto auto;
+    border-radius: 50%;
+    background: rgba(44, 48, 52, 0.2); }
   #indexSummary > .howItWorks:nth-child(1), #indexSummary > .howItWorks:nth-child(2) {
     border-right: 1px solid rgba(44, 48, 52, 0.05); }
   #indexSummary > .howItWorks:nth-child(1) > h3 {

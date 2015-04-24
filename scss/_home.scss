@@ -8,10 +8,27 @@
   height: 330px;
   border-color: $dvGray5;
   &:hover {
-    background: $dvGray3;
     .comingSoon {
       opacity: 1;
     }
+    .dispensariesIcon {
+      background-color: $dvRed;
+    }
+    .dealsIcon {
+      background-color: $dvYellow;
+    }
+    .strainsIcon {
+      background-color: $dvGreen;
+    }
+  }
+  .dispensariesIcon {
+    border: 2px solid $dvRed;
+  }
+  .dealsIcon {
+    border: 2px solid $dvYellow;
+  }
+  .strainsIcon {
+    border: 2px solid $dvGreen;
   }
   h3 {
     border: none;
@@ -50,6 +67,8 @@
   > img {
     width: 50%;
     margin: auto auto;
+    border-radius: 50%;
+    background: $dvGray20;
   }
 
   &:nth-child(1),
