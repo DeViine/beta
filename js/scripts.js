@@ -24,10 +24,10 @@ window.onload = (function() {
 
 	// Coming Soon Alert Starts Here
 	$(".howItWorksComingSoonDispensaries").click(function(){
-		alert("We're sorry, Dispensaries are not available yet. Try the strains section.");
+		alert("We're sorry, Dispensaries are not available yet. Check back often. For now, explore the Strains section.");
 	});
 	$(".howItWorksComingSoonDeals").click(function(){
-		alert("We're sorry, Deals are not available yet. Try the strains section.");
+		alert("We're sorry, Deals are not available yet. Check back often. For now, explore the Strains section.");
 	});
 	// Coming Soon Alert Ends Here
 
