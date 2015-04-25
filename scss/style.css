@@ -546,7 +546,7 @@
     #footer .btnfooter:active, #footer .btnfooter:focus, #footer .btnfooter:visited {
       text-decoration: none; }
   #footer .btnfooterlrg {
-    padding: 10px 5%; }
+    padding: 1.5% 5%; }
   #footer address {
     font-size: 10px;
     padding-top: 5%;
