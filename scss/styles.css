@@ -103,6 +103,7 @@ body {
       body div .email:focus {
         color: #2c3034; }
     body div .button {
+      -webkit-appearance: none;
       margin: 20px auto 20px auto;
       background: #f7253e;
       color: white;
@@ -118,6 +119,8 @@ body {
         background: #3dd861;
         cursor: pointer; }
     body div .betabtn {
+      -webkit-appearance: none;
+      border-radius: 5px;
       background: #fcd31c; }
     body div .testimonials {
       float: left;
