@@ -31,4 +31,22 @@ window.onload = (function() {
 	});
 	// Coming Soon Alert Ends Here
 
+	// Up To Top Starts Here
+    var offset = 250;
+    var duration = 300;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.upToTop').fadeIn(duration);
+        } else {
+            jQuery('.upToTop').fadeOut(duration);
+        }
+    });
+
+    jQuery('.upToTop').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+	// Up To Top Ends Here
+
 });
