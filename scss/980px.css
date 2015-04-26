@@ -76,10 +76,6 @@
     opacity: 0; }
 
   /*----home start----*/
-  #indexSummary > .howItWorks .dispensariesIcon {
-    background-color: #f7253e; }
-  #indexSummary > .howItWorks .dealsIcon {
-    background-color: #fcd31c; }
   #indexSummary > .howItWorks .strainsIcon {
     background-color: #3dd861; }
 

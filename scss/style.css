@@ -861,10 +861,6 @@
   border-color: rgba(44, 48, 52, 0.05); }
   #indexSummary > .howItWorks:hover .comingSoon {
     opacity: 1; }
-  #indexSummary > .howItWorks:hover .dispensariesIcon {
-    background-color: #f7253e; }
-  #indexSummary > .howItWorks:hover .dealsIcon {
-    background-color: #fcd31c; }
   #indexSummary > .howItWorks:hover .strainsIcon {
     background-color: #3dd861; }
   #indexSummary > .howItWorks .dispensariesIcon,
