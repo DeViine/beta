@@ -103,6 +103,10 @@
       padding: 0;
       height: 100%;
       list-style: none;
+      opacity: .4;
+      &:hover {
+        opacity: 1;
+      }
       li {
         display: inline;
         border-right: 10px solid white;

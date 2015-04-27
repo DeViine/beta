@@ -823,6 +823,9 @@
   #indexSummary > .howItWorks .strainsIcon {
     background-color: #3dd861; }
 
+  .sponsors div ul {
+    opacity: 1; }
+
   /*----home end----*/
   /*----footer start----*/
   #footer {
@@ -927,7 +930,10 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    list-style: none; }
+    list-style: none;
+    opacity: .4; }
+    .sponsors div ul:hover {
+      opacity: 1; }
     .sponsors div ul li {
       display: inline;
       border-right: 10px solid white;
