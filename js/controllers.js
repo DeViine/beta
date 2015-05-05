@@ -238,6 +238,7 @@ angular.module('DeViine.controllers', [])
       'Butter',
       'Cheese',
       'Chestnut',
+      'Cedar',
       'Coffee',
       'Diesel',
       'Flowery',

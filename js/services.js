@@ -207,7 +207,7 @@ angular.module('DeViine.services', [])
        */
       // getOther is currently limiting to last 2. 
       getOther: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(2) ).$asArray();
+        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(4) ).$asArray();
       },
       /**
        * @param {String} itemType
