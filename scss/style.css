@@ -104,6 +104,9 @@
 .strainGalleryMobile {
   display: none; }
 
+.zoomContainer {
+  top: 60px !important; }
+
 .dispensaryHours {
   background: #2c3034;
   width: 100%; }

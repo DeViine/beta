@@ -190,7 +190,7 @@ angular.module('DeViine.services', [])
         //     return a.value - b.value;
         // })
 
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray();
+        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray().$loaded();
         // var allItems = $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray();
         // allItems.$loaded().then(function() {
         //   return allItems.$value;
@@ -203,7 +203,7 @@ angular.module('DeViine.services', [])
       // getFeatured is currently limiting to first 2.
       // Should limit to the first 2 that have .featured = true.
       getFeatured: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray();
+        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray().$loaded();
         // var featuredItems = $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray();
         // featuredItems.$loaded().then(function() {
         //   return featuredItems.$value;
@@ -215,7 +215,7 @@ angular.module('DeViine.services', [])
        */
       // getNew is limiting to last 2.
       getNew: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('new').equalTo("true").limitToLast(2) ).$asArray();
+        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('new').equalTo("true").limitToLast(2) ).$asArray().$loaded();
       },
       /**
        * @param {String} itemType
@@ -223,7 +223,7 @@ angular.module('DeViine.services', [])
        */
       // getOther is currently limiting to last 2. 
       getOther: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(4) ).$asArray();
+        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(4) ).$asArray().$loaded();
       },
       /**
        * @param {String} itemType
