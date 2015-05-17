@@ -13,6 +13,7 @@
       </div>
     </div>
     <dv-rating ratings="strainDetails.ratings" class="strainRating"></dv-rating>
+    <p ng-show="strainDetails.ratings[currentName]" class="userRatingDisplay">You rated this strain a <strong id="userRating">{{ strainDetails.ratings[currentName] }}</strong>.</p>
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <h3 class="strainDescriptionSubHeader">Strain Description</h3>

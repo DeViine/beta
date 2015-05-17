@@ -76,6 +76,16 @@
     .contactInfo .businessPhone a:hover {
       color: #2c3034; }
 
+.userRatingDisplay {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #2c3034;
+  height: 0;
+  position: relative;
+  z-index: 3;
+  top: -45px; }
+
 .strainDescriptionSubHeader {
   margin: -6px 0 0 0; }
 
@@ -1103,20 +1113,15 @@
       width: 250px;
       padding-top: 50px;
       margin-top: 1px; }
-  .rating .ratingDisplay,
-  .rating .userRatingDisplay {
+  .rating .ratingDisplay {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #2c3034;
     height: 0;
     position: relative;
-    z-index: 3; }
-  .rating .ratingDisplay {
+    z-index: 3;
     top: -75px; }
-  .rating .userRatingDisplay {
-    top: -65px;
-    display: none; }
 
 .dealCard .rating,
 .dispensaryCard .rating,

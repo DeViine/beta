@@ -210,10 +210,41 @@ angular.module('DeViine.controllers', [])
         : $firebase( new Firebase(dvUrl + '/deals') ).$update(dealId, deal);
     };
   }])
-  .controller('strainsCtrl', ['$scope', 'itemsService', function($scope, itemsService) {
+  .controller('strainsCtrl', ['$scope', 'itemsService', 'ratingsService', function($scope, itemsService, ratingsService) {
+    $scope.getRatingsCount = ratingsService.getRatingsCount;
+    $scope.getAvgRating = ratingsService.getAvgRating;
+    // $scope.strains = [];
+    // $scope.featuredStrains = [];
+
+    // var strains = itemsService.getAll('strains');
+    // var featuredStrains = itemsService.getFeatured('strains');
+
+    // var strainsToSort = [];
+    // var featuredStrainsToSort = [];
+
+    // strains.forEach(function(strain) {
+    //   strainsToSort.push([strain, ratingsService.getAvgRating(strain.ratings)]);
+    // });
+
+    // featuredStrains.forEach(function(featuredStrain) {
+    //   featuredStrainsToSort.push([featuredStrain, ratingsService.getAvgRating(featuredStrain.ratings)]);
+    // });
+
+    // strainsToSort.sort(function(a, b) { return a[1] - b[1] });
+    // featuredStrainsToSort.sort(function(a, b) { return a[1] - b[1] });
+
+    // strainsToSort.forEach(function(strain) {
+    //   $scope.strains.push(strain[0]);
+    // });
+
+    // featuredStrainsToSort.forEach(function(featuredStrain) {
+    //   $scope.featuredStrains.push(featuredStrain[0]);
+    // });
+
     $scope.strains = itemsService.getAll('strains');
     $scope.featuredStrains = itemsService.getFeatured('strains');
     //$scope.strains = itemsService.getHighestRated('strains');
+
   }])
   .controller('strainDetailsCtrl', ['$scope', '$stateParams', 'itemsService', function($scope, $stateParams, itemsService) {
     $scope.strainDetails = itemsService.get('strains', $stateParams.strainId);

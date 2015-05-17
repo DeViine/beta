@@ -182,7 +182,19 @@ angular.module('DeViine.services', [])
        * @returns {FirebaseArray}
        */
       getAll: function(itemType) {
+        
+
+        // var $wrapper = $('.dvCardList');
+
+        // $wrapper.find('.allCard').sort(function (a, b) {
+        //     return a.value - b.value;
+        // })
+
         return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray();
+        // var allItems = $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray();
+        // allItems.$loaded().then(function() {
+        //   return allItems.$value;
+        // });
       },
       /**
        * @param {String} itemType
@@ -192,6 +204,10 @@ angular.module('DeViine.services', [])
       // Should limit to the first 2 that have .featured = true.
       getFeatured: function(itemType) {
         return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray();
+        // var featuredItems = $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray();
+        // featuredItems.$loaded().then(function() {
+        //   return featuredItems.$value;
+        // });
       },
       /**
        * @param {String} itemType
@@ -254,24 +270,7 @@ angular.module('DeViine.services', [])
 
       obj.getUserRating = function(ratings) {
 
-        // Data snapshot???
-        // // Get a reference to our posts
-        // var ref = new Firebase("https://docs-examples.firebaseio.com/web/saving-data/fireblog/posts");
-        // // Attach an asynchronous callback to read the data at our posts reference
-        // ref.on("value", function(snapshot) {
-        //   console.log(snapshot.val());
-        // }, function (errorObject) {
-        //   console.log("The read failed: " + errorObject.code);
-        // });
-
-        // Display if true???
-        // if(! userRating) {
-        //   console.log('User is true.');
-        //   ('.userRatingDisplay').css('display','inline');
-        // } else {
-        //   return 'No user rating';
-        //   console.log('No user rating.');
-        // }
+ 
       },
 
       /**
