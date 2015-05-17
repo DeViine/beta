@@ -89,6 +89,23 @@ angular.module('DeViine.controllers', [])
     });
 
   }])
+  .controller('dispensariesCtrl', ['$scope', 'itemsService', function($scope, itemsService) {
+    // @todo Order dispensaries by geographic proximity.
+    $scope.dispensaries = itemsService.getAll('dispensaries');
+  }])
+  .controller('dispensaryDetailsCtrl', ['$scope', '$filter', '$stateParams', 'itemsService',  function($scope, $filter, $stateParams, itemsService) {
+    $scope.today = $filter('date')(new Date(), 'EEEE');
+
+    $scope.dispensary = itemsService.get('dispensaries', $stateParams.dispensaryId);
+
+    // @todo Exclude the current dispensary from the results of itemsService.getFeatured().
+    $scope.featuredDispensaries = itemsService.getFeatured('dispensaries');
+    // @todo Exclude the current dispensary from the results of itemsService.getOther().
+    $scope.otherDispensaries = itemsService.getOther('dispensaries');
+
+
+    // $scope.rate = ratingsService.rate('dispensaries');
+  }])
   .controller('dispensariesManageCtrl', ['$scope', '$filter', '$firebase', 'dvUrl', function($scope, $filter, $firebase, dvUrl) {
     $firebase( new Firebase(dvUrl + '/dispensaries') ).$asObject().$loaded()
       .then(function(dispensaries) {
