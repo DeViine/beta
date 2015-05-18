@@ -1,5 +1,18 @@
 .dvCardList {
   min-height: 400px; }
+  .dvCardList h4 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 26px; }
+  .dvCardList h6 {
+    font-family: "Open Sans", sans-serif;
+    font-family: 14px;
+    text-align: center;
+    text-transform: none;
+    line-height: 16px; }
+    .dvCardList h6 a {
+      color: #3dd861;
+      font-weight: bold; }
 
 .dispensaryLogo,
 .businessLogo,
@@ -841,6 +854,10 @@
   /*----home start----*/
   #indexSummary > .howItWorks .strainsIcon {
     background-color: #3dd861; }
+  #indexSummary > .howItWorks .dealsIcon {
+    background-color: #FCD31C; }
+  #indexSummary > .howItWorks .dispensariesIcon {
+    background-color: #F7253E; }
 
   .sponsors div ul {
     opacity: 1; }
@@ -883,10 +900,12 @@
   line-height: 15px;
   padding-top: 15px;
   border-color: rgba(44, 48, 52, 0.05); }
-  #indexSummary > .howItWorks:hover .comingSoon {
-    opacity: 1; }
   #indexSummary > .howItWorks:hover .strainsIcon {
     background-color: #3dd861; }
+  #indexSummary > .howItWorks:hover .dealsIcon {
+    background-color: #fcd31c; }
+  #indexSummary > .howItWorks:hover .dispensariesIcon {
+    background-color: #f7253e; }
   #indexSummary > .howItWorks .dispensariesIcon,
   #indexSummary > .howItWorks .dealsIcon,
   #indexSummary > .howItWorks .strainsIcon {
@@ -933,13 +952,6 @@
     color: #fcd31c; }
   #indexSummary > .howItWorks:nth-child(3) > h3 {
     color: #f7253e; }
-  #indexSummary > .howItWorks .comingSoon {
-    font-family: "Khand", sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    opacity: 0; }
-  #indexSummary > .howItWorks .comingSoonIndexSummary {
-    display: none; }
 
 .sponsors {
   margin: 0;
