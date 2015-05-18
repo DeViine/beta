@@ -264,8 +264,9 @@
   float: none; }
 
 .navbar .logo .deviineLogo {
-  width: 120px;
-  padding: 0px 0;
+  float: left;
+  width: 90px;
+  padding: 20px 0 0 0;
   margin: 0 auto;
   position: relative; }
 
@@ -770,8 +771,8 @@
     .navbar .navbar-header .logo .deviineLogo {
       float: left;
       left: 50px;
-      width: 90px;
-      padding: 0px 0; }
+      width: 70px;
+      padding: 13px 0; }
     .navbar .navbar-header .menuMobile-toggler {
       display: inline; }
       .navbar .navbar-header .menuMobile-toggler img {
@@ -950,7 +951,6 @@
       opacity: 1; }
     .sponsors div ul li {
       display: inline;
-      border-right: 10px solid white;
       overflow: hidden; }
       .sponsors div ul li:last-child {
         border: none; }

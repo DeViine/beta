@@ -20,13 +20,13 @@
 		  </ul>
 		</div>
 		<a ui-sref="root.home" class="logo">
-			<img src="img/logo_beta.png" alt="DeViine Logo" class="deviineLogo"/>
+			<img src="img/logo_beta_transparent.png" alt="DeViine Logo" class="deviineLogo"/>
 		</a>
 		<div class="navbar-right">
 			<div ng-show="currentUser" class="navbar-text">
 				<img ng-click="showLoginModal()" ng-src="{{ currentAvatar }}" class="img-responsive pull-right avatar"/>
 				<div class="accountInfo">
-					<h1 class="pull-right username">{{ currentName }}</h1><br/>
+					<h1 class="pull-right username" title="{{ currentName }}">{{ currentName }}</h1><br/>
 					<h2 class="pull-right location">{{ currentCity }}</h2>
 				</div>
 			</div>
