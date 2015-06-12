@@ -18,12 +18,19 @@
   }
 }
 
+.dispensaryLogoWrap,
+.producerLogoWrap {
+  float: left;
+  clear: left;
+} 
 .dispensaryLogo,
 .businessLogo,
 .producerLogo {
   width: 100%;
   margin: 0;
   padding: 0;
+  float: left;
+  clear: left;
 }
 
 .dispensaryName,
@@ -128,14 +135,65 @@
 .dealGallery,
 .strainGallery {
   width: 100%;
+  position: relative;
+  z-index: -10;
 }
-.strainGalleryMobile {
+
+/* Strain Zoom Start */ 
+/*Some CSS*/
+
+#strainGalleryWrap { 
+  margin: auto; 
+  position: relative;
+  overflow: hidden;
+}
+#strainGalleryWrap:hover {
+  #strainGallery { 
+    -webkit-filter: grayscale(1); 
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s;
+  }
+}
+
+/*Lets create the magnifying glass*/
+#zoom {
+  width: 275px; 
+  height: 275px;
+  position: absolute;
+  border-radius: 100%;
+  
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 
+  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  
+  /*hide the glass by default*/
   display: none;
-}
-.zoomContainer {
-  top: 60px !important;
   cursor: none;
 }
+
+/*To solve overlap bug at the edges during magnification*/
+#strainGallery { display: block; }
+#strainGallery:hover {
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s;
+}
+/* Strain Zoom End */
+
+
+.strainGalleryMobile,
+.dispensaryGalleryMobile {
+  display: none;
+}
+.currentDeals {
+  display: none;
+}
+
 
 .dispensaryHours {
   background: $dvGray;
@@ -149,7 +207,7 @@
   td {
     font-family: $dvHeaderFont;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
     padding: 10px 20px 4px 20px;
     border-bottom: thin solid rgba(255, 255, 255, .1);
   }
@@ -240,48 +298,11 @@
   padding-bottom: 10px;
 }
 
-.barChart {
-  margin: 30px 0 0 0;
-  padding: 0;
-  height: 100px;
+.donut-chart { 
   width: 100%;
-  position: relative;
-  bottom: 0;
-  li {
-    width: 30%;
-    margin: 0 1.5%;
-    float: left;
-    position: relative;
-    bottom: 0;
-    &:nth-child(1) {
-      background-color: $dvGreen;
-      div {
-        background-color: $dvGreen;
-      }
-    }
-    &:nth-child(2) {
-      background-color: $dvYellow;
-      div {
-        background-color: $dvYellow;
-      }
-    }
-    &:nth-child(3) {
-      background-color: $dvRed;
-      div {
-        background-color: $dvRed;
-      }
-    }
-    div {
-      color: white;
-      font-family: $dvHeaderFont;
-      text-transform: uppercase;
-      font-size: 18px;
-      text-align: center;
-      margin-top: -30px;
-      padding-top: 10%;
-      border-bottom: 1px solid white;
-    }
-  }
+  height: 100%;
+  margin-bottom: 10px;
+  float: left;
 }
 
 .thcPotency,
@@ -300,5 +321,140 @@
     color: $dvGray20;
   }
 }
+
+.reviews {
+  .leaveReview {
+    padding: 0;
+    .avatarWrap {
+      float: left;
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -o-transition: .5s;
+      }
+      .reviewBanner {
+        float: left;
+        position: absolute;
+        z-index: 2;
+        font-size: 11px;
+        font-family: $dvTextFont;
+        font-weight: bold;
+        color: white;
+        padding: 5px 5px 5px 40px;
+        background: $dvGreen;
+        top: 0;
+        left: 10px;
+        .closeReviewBanner {
+          color: white;
+          text-decoration: none;
+          opacity: .5;
+          cursor: pointer;
+          margin-left: 5px;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    #reviewInput {
+      border: 2px solid $dvGray20;
+      font-family: $dvTextFont;
+      color: $dvGray;
+      padding: 40px 10px 10px 10px;
+      border-radius: 20px 20px 0 0;
+      margin-top: -40px;
+      float: right;
+      height: 100px;
+      width: 100%;
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: $dvGreen;
+      }
+    }
+    #submitReview {
+      font-family: $dvTextFont;
+      font-size: 14px;
+      text-align: center;
+      color: $dvGreen;
+      border: 2px solid $dvGreen;
+      background: none;
+      margin-top: 5px;
+      margin-left: 50px;
+      padding: 10px;
+      float: right;
+      width: 100%;
+      &:hover {
+        background: $dvGreen;
+        color: white;
+      }
+    }
+  }
+  .totalReviews {
+    font-family: $dvTextFont;
+    font-size: 14px;
+    text-align: center;
+  }
+  #reviewsDiv {
+    margin-top: 20px;
+    padding: 0;
+    h4 {
+      font-family: $dvTextFont;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin: 0;
+      color: $dvGray;
+      padding: 10px 0 0 0;
+      border-top: 1px solid $dvGray5;
+    }
+    h6 {
+      font-family: $dvTextFont;
+      font-size: 10px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: $dvGreen;
+      margin: 0px 0 3px 0;
+    }
+    p {
+      font-family: $dvTextFont;
+      font-size: 12px;
+      color: $dvGray;
+      margin: 0;
+      padding: 0 0 8px 60px;
+    }
+    div {
+      border-radius: 50%;
+      float: left;
+      margin: 10px 20px 10px 0;
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .pleaseSignIn {
+    padding-top: 20px;
+    text-align: center;
+    color: $dvGray;
+    position: relative;
+    z-index: 5;
+    a {
+      color: $dvGreen;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
 
 

@@ -20,12 +20,19 @@
       color: #3dd861;
       font-weight: bold; }
 
+.dispensaryLogoWrap,
+.producerLogoWrap {
+  float: left;
+  clear: left; }
+
 .dispensaryLogo,
 .businessLogo,
 .producerLogo {
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  float: left;
+  clear: left; }
 
 .dispensaryName,
 .dealTitle,
@@ -121,14 +128,55 @@
 .dispensaryGallery,
 .dealGallery,
 .strainGallery {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: -10; }
 
-.strainGalleryMobile {
+/* Strain Zoom Start */
+/*Some CSS*/
+#strainGalleryWrap {
+  margin: auto;
+  position: relative;
+  overflow: hidden; }
+
+#strainGalleryWrap:hover #strainGallery {
+  -webkit-filter: grayscale(1);
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s; }
+
+/*Lets create the magnifying glass*/
+#zoom {
+  width: 275px;
+  height: 275px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*hide the glass by default*/
+  display: none;
+  cursor: none; }
+
+/*To solve overlap bug at the edges during magnification*/
+#strainGallery {
+  display: block; }
+
+#strainGallery:hover {
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s; }
+
+/* Strain Zoom End */
+.strainGalleryMobile,
+.dispensaryGalleryMobile {
   display: none; }
 
-.zoomContainer {
-  top: 60px !important;
-  cursor: none; }
+.currentDeals {
+  display: none; }
 
 .dispensaryHours {
   background: #2c3034;
@@ -140,7 +188,7 @@
   .dispensaryHours td {
     font-family: "Bebas Neue", "Khand", sans-serif;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
     padding: 10px 20px 4px 20px;
     border-bottom: thin solid rgba(255, 255, 255, 0.1); }
   .dispensaryHours td:nth-child(2) {
@@ -222,40 +270,11 @@
   margin: 0;
   padding-bottom: 10px; }
 
-.barChart {
-  margin: 30px 0 0 0;
-  padding: 0;
-  height: 100px;
+.donut-chart {
   width: 100%;
-  position: relative;
-  bottom: 0; }
-  .barChart li {
-    width: 30%;
-    margin: 0 1.5%;
-    float: left;
-    position: relative;
-    bottom: 0; }
-    .barChart li:nth-child(1) {
-      background-color: #3dd861; }
-      .barChart li:nth-child(1) div {
-        background-color: #3dd861; }
-    .barChart li:nth-child(2) {
-      background-color: #fcd31c; }
-      .barChart li:nth-child(2) div {
-        background-color: #fcd31c; }
-    .barChart li:nth-child(3) {
-      background-color: #f7253e; }
-      .barChart li:nth-child(3) div {
-        background-color: #f7253e; }
-    .barChart li div {
-      color: white;
-      font-family: "Bebas Neue", "Khand", sans-serif;
-      text-transform: uppercase;
-      font-size: 18px;
-      text-align: center;
-      margin-top: -30px;
-      padding-top: 10%;
-      border-bottom: 1px solid white; }
+  height: 100%;
+  margin-bottom: 10px;
+  float: left; }
 
 .thcPotency,
 .cbdPotency {
@@ -272,6 +291,115 @@
     top: -30px;
     font-size: 20px;
     color: rgba(44, 48, 52, 0.2); }
+
+.reviews .leaveReview {
+  padding: 0; }
+  .reviews .leaveReview .avatarWrap {
+    float: left; }
+    .reviews .leaveReview .avatarWrap .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+      transition: .5s;
+      -webkit-transition: .5s;
+      -moz-transition: .5s;
+      -o-transition: .5s; }
+    .reviews .leaveReview .avatarWrap .reviewBanner {
+      float: left;
+      position: absolute;
+      z-index: 2;
+      font-size: 11px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      color: white;
+      padding: 5px 5px 5px 40px;
+      background: #3dd861;
+      top: 0;
+      left: 10px; }
+      .reviews .leaveReview .avatarWrap .reviewBanner .closeReviewBanner {
+        color: white;
+        text-decoration: none;
+        opacity: .5;
+        cursor: pointer;
+        margin-left: 5px; }
+        .reviews .leaveReview .avatarWrap .reviewBanner .closeReviewBanner:hover {
+          opacity: 1; }
+  .reviews .leaveReview #reviewInput {
+    border: 2px solid rgba(44, 48, 52, 0.2);
+    font-family: "Open Sans", sans-serif;
+    color: #2c3034;
+    padding: 40px 10px 10px 10px;
+    border-radius: 20px 20px 0 0;
+    margin-top: -40px;
+    float: right;
+    height: 100px;
+    width: 100%; }
+    .reviews .leaveReview #reviewInput:hover, .reviews .leaveReview #reviewInput:active, .reviews .leaveReview #reviewInput:focus {
+      border-color: #3dd861; }
+  .reviews .leaveReview #submitReview {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #3dd861;
+    border: 2px solid #3dd861;
+    background: none;
+    margin-top: 5px;
+    margin-left: 50px;
+    padding: 10px;
+    float: right;
+    width: 100%; }
+    .reviews .leaveReview #submitReview:hover {
+      background: #3dd861;
+      color: white; }
+.reviews .totalReviews {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center; }
+.reviews #reviewsDiv {
+  margin-top: 20px;
+  padding: 0; }
+  .reviews #reviewsDiv h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #2c3034;
+    padding: 10px 0 0 0;
+    border-top: 1px solid rgba(44, 48, 52, 0.05); }
+  .reviews #reviewsDiv h6 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #3dd861;
+    margin: 0px 0 3px 0; }
+  .reviews #reviewsDiv p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #2c3034;
+    margin: 0;
+    padding: 0 0 8px 60px; }
+  .reviews #reviewsDiv div {
+    border-radius: 50%;
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+.reviews .pleaseSignIn {
+  padding-top: 20px;
+  text-align: center;
+  color: #2c3034;
+  position: relative;
+  z-index: 5; }
+  .reviews .pleaseSignIn a {
+    color: #3dd861;
+    cursor: pointer; }
 
 /*  Start Header Bar  */
 .navbar {
@@ -306,8 +434,8 @@
       line-height: 22px;
       font-weight: lighter;
       text-transform: uppercase;
-      /*padding: 0;               THIS IS THE STYLING FOR HAVING USERNAME + LOCATION */
-      padding: 10px 0 0 0;
+      padding: 0;
+      /*padding: 10px 0 0 0; THIS IS THE STYLING FOR NO LOCATION */
       margin: 0; }
     .navbar-right .accountInfo .location {
       color: #fcd31c;
@@ -508,16 +636,20 @@
       cursor: pointer; }
       .navbar-header .menuMobile ul li:hover {
         color: white; }
-    .navbar-header .menuMobile ul .dispensaryNav span {
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px;
-      color: #f7253e;
-      margin-left: 10px; }
-    .navbar-header .menuMobile ul .dealNav span {
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px;
-      color: #fcd31c;
-      margin-left: 10px; }
+    .navbar-header .menuMobile ul .dispensaryNav {
+      color: #f7253e; }
+      .navbar-header .menuMobile ul .dispensaryNav span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: #f7253e;
+        margin-left: 10px; }
+    .navbar-header .menuMobile ul .dealNav {
+      color: #fcd31c; }
+      .navbar-header .menuMobile ul .dealNav span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: #fcd31c;
+        margin-left: 10px; }
     .navbar-header .menuMobile ul .strainNav {
       color: #3dd861; }
     .navbar-header .menuMobile ul .menuMobile-subHeader {
@@ -764,11 +896,14 @@
 
   /*----cards.html end----*/
   /*----items.html start----*/
-  .strainGallery {
+  #strainGallery,
+  .dispensaryGallery {
     display: none; }
 
-  .strainGalleryMobile {
-    display: inline; }
+  .strainGalleryMobile,
+  .dispensaryGalleryMobile {
+    display: inline;
+    margin-bottom: 20px; }
 
   /*----items.html end----*/ }
 @media screen and (max-width: 550px) {
@@ -806,7 +941,7 @@
       margin: -4px 0 0 0; }
       .navbar .navbar-header .navbar-right .accountInfo .username {
         font-size: 13px;
-        padding: 15px 0 0 0; }
+        padding: 5px 0 0 0; }
       .navbar .navbar-header .navbar-right .accountInfo .location {
         font-size: 9px; }
     .navbar .navbar-header .navbar-right .navbar-text {
@@ -1236,6 +1371,7 @@
   .cardWrapper .dispensaryName,
   .cardWrapper .dealTitle,
   .cardWrapper .strainName {
+    clear: both;
     font-family: "Bebas Neue", "Khand", sans-serif;
     text-transform: uppercase;
     font-size: 1.4em;
@@ -1254,6 +1390,7 @@
   .cardWrapper .dispensaryAddress,
   .cardWrapper .businessName,
   .cardWrapper .producedBy {
+    clear: both;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: .85em;
@@ -1270,7 +1407,8 @@
     z-index: 3; }
   .cardWrapper .dispensaryAddress.line1,
   .cardWrapper .producedBy.line1 {
-    height: 18px; }
+    height: 18px;
+    display: none; }
   .cardWrapper .dispensaryAddress.line2,
   .cardWrapper .producedBy.line2 {
     height: 26px; }
@@ -1307,27 +1445,24 @@
   left: -6.5%;
   pointer-events: none;
   width: 100%;
-  height: 100%;
-  background-repeat: no-repeat; }
+  height: 20%;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .featured-dispensary-true {
-  background-image: url(../img/banners/featured.png);
-  background-size: 50%; }
+  background-image: url(../img/banners/featured.png); }
 
 .featured-deal-true {
   left: -5.9%;
-  background-image: url(../img/banners/dailyDeal.png);
-  background-size: 50%; }
+  background-image: url(../img/banners/dailyDeal.png); }
 
 .featured-strain-true {
-  background-image: url(../img/banners/strainOfTheWeek.png);
-  background-size: 50%; }
+  background-image: url(../img/banners/strainOfTheWeek.png); }
 
 .new-strain-true {
   top: 11.3%;
   left: -4%;
-  background-image: url(../img/banners/new.png);
-  background-size: 50%; }
+  background-image: url(../img/banners/new.png); }
 
 /* Card End */
 .dvCardList {
@@ -1342,13 +1477,39 @@
  */
 ul.nav.nav-tabs {
   height: 100%;
-  border: none; }
+  border: none;
+  /*  // @todo These will have to be applied dynamically, using Angular.  It may require extending Angular UI's tab directive.
+    > li:nth-child(1) > a {
+      background-image: url('../img/tabs/indica.png');
+    }
+  
+    > li:nth-child(2) > a {
+      background-image: url('../img/tabs/sativa.png');
+    }
+  
+    > li:nth-child(3) > a {
+      background-image: url('../img/tabs/hybrid.png');
+    }
+  
+    > li:nth-child(4) > a {
+      background-image: url('../img/tabs/preroll.png');
+    }
+  
+    > li:nth-child(5) > a {
+      background-image: url('../img/tabs/edible.png');
+    }
+  
+    > li:nth-child(6) > a {
+      background-image: url('../img/tabs/other.png');
+    }
+  */ }
   ul.nav.nav-tabs > li {
     padding: 0;
     float: left;
     opacity: .2;
     border: none;
-    margin: 0 2px 0 0; }
+    border-radius: 10px 10px 0 0;
+    margin: 0; }
     ul.nav.nav-tabs > li:last-child {
       margin: 0; }
     ul.nav.nav-tabs > li:hover {
@@ -1370,18 +1531,8 @@ ul.nav.nav-tabs {
     ul.nav.nav-tabs > li > a:hover, ul.nav.nav-tabs > li > a:active, ul.nav.nav-tabs > li > a:visited, ul.nav.nav-tabs > li > a:focus {
       color: transparent;
       border: none; }
-  ul.nav.nav-tabs > li:nth-child(1) > a {
-    background-image: url("../img/tabs/indica.png"); }
-  ul.nav.nav-tabs > li:nth-child(2) > a {
-    background-image: url("../img/tabs/sativa.png"); }
-  ul.nav.nav-tabs > li:nth-child(3) > a {
-    background-image: url("../img/tabs/hybrid.png"); }
-  ul.nav.nav-tabs > li:nth-child(4) > a {
-    background-image: url("../img/tabs/preroll.png"); }
-  ul.nav.nav-tabs > li:nth-child(5) > a {
-    background-image: url("../img/tabs/edible.png"); }
-  ul.nav.nav-tabs > li:nth-child(6) > a {
-    background-image: url("../img/tabs/other.png"); }
+  ul.nav.nav-tabs > li > a {
+    background-image: inherit; }
 
 .menu {
   height: 100%;
@@ -1424,11 +1575,11 @@ ul.nav.nav-tabs {
       text-align: center;
       font-family: "Bebas Neue", "Khand", sans-serif;
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 16px;
       color: rgba(44, 48, 52, 0.3); }
       .menu .menuItem .thcPotency span,
       .menu .menuItem .cbdPotency span {
-        font-size: 40px;
+        font-size: 30px;
         color: #2c3034; }
     .menu .menuItem .itemDescription {
       margin: 1em auto;
@@ -1452,10 +1603,10 @@ ul.nav.nav-tabs {
         text-transform: uppercase;
         color: rgba(44, 48, 52, 0.2); }
         .menu .menuItem .pricing li .price {
-          font-size: 28px;
+          font-size: 24px;
           color: #2c3034; }
         .menu .menuItem .pricing li .unit {
-          font-size: 18px;
+          font-size: 16px;
           color: #2c3034; }
         .menu .menuItem .pricing li:last-child {
           border-right: none; }

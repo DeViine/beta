@@ -62,11 +62,17 @@
 		</ul>
 	</div>
 	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-		<h3>New Strains</h3>
+<!-- 		<h3>New Strains</h3>
 		<ul class="dvCardList">
 			<li ng-repeat="newStrain in newStrains" class="col-md-6 col-sm-6 col-xs-8 {{ strain.disabled }}">
 				<dv-card item-type="strain" item-id="{{ newStrain.$id }}"></dv-card>
 				<div class="new-strain-true"></div>
+			</li>
+		</ul> -->
+		<h3>Featured Dispensaries</h3>
+		<ul class="dvCardList">
+			<li ng-repeat="featuredDispensary in featuredDispensaries" class="col-md-6 col-sm-6 col-xs-8 {{ dispensary.disabled }}">
+				<dv-card item-type="dispensary" item-id="{{ featuredDispensary.$id }}"></dv-card>
 			</li>
 		</ul>
 	</div>
@@ -80,28 +86,28 @@
 					</a>
 				</li>
 				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
+					<a href="https://www.facebook.com/CGSpokane" target="_blank">
+						<img src="img/sponsors/cannabisandglass_logo.jpg" title="Cannabis and Glass" alt="Cannabis and Glass"/>
+					</a>
+				</li>
+				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
+					<a target="_blank">
+						<img src="img/logos/louisw_logo.png" title="Louis W" alt="Louis W"/>
+					</a>
+				</li>
+				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
 					<a href="https://www.facebook.com/DoctorWaterpipes" target="_blank">
 						<img src="img/sponsors/doctorwaterpipes_logo.jpg" title="Doctor Waterpipes" alt="Doctor Waterpipes"/>
 					</a>
 				</li>
 				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
-					<a>
-						<img src="img/placeholderBud.png"/>
+					<a href="http://www.farmerjs.com/" target="_blank">
+						<img src="img/logos/farmerjs_logo.png" title="Farmer Js" alt="Farmer Js"/>
 					</a>
 				</li>
 				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
-					<a>
-						<img src="img/placeholderBud.png"/>
-					</a>
-				</li>
-				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
-					<a>
-						<img src="img/placeholderBud.png"/>
-					</a>
-				</li>
-				<li class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
-					<a>
-						<img src="img/placeholderBud.png"/>
+					<a href="http://www.billifersbuds.com/" target="_blank">
+						<img src="img/logos/billifersbuds_logo.png" title="Billifers Buds" alt="Billifers Buds"/>
 					</a>
 				</li>
 			</ul>

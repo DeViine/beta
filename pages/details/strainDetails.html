@@ -1,11 +1,15 @@
-<h2 class="pageTitle">Strain</h2>
+<h2 class="pageTitle" title="strains">Strain</h2>
+<div class="pageId" title="{{ strainDetails.$id }}"></div>
 <div class="row">
   <div class="col-md-6 col-sm-6 col-xs-12">
     <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-4">
+      <div class="col-md-6 col-sm-6 col-xs-12 strainGalleryWrap">
+        <img src="{{ strainDetails.image }}" class="img-responsive strainGalleryMobile"/>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-4 producerLogoWrap">
         <img ng-src="{{ strainDetails.logo }}" class="producerLogo"/>
       </div>
-      <div class="col-md-9 col-sm-12 col-xs-12 info">
+      <div class="col-md-9 col-sm-9 col-xs-8 info">
         <h2 class="strainName" id="{{ strainDetails.name }}">{{ strainDetails.name }}</h2>
         <h4 class="strainChemistry">{{ strainDetails.chemistry }}</h4>
         <h4 class="producedBy">Produced by</h4>
@@ -20,48 +24,42 @@
         <p class="strainDescription">{{ strainDetails.description }}</p>
       </div>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12 strainGalleryWrap">
-      <img src="{{ strainDetails.image }}" class="img-responsive strainGalleryMobile"/>
-    </div>
     <h3>Strain Profile</h3>
     <div class="row">
-      <div class="col-md-4 col-sm-4 col-xs-4">
+      <div class="flavors col-md-4 col-sm-4 col-xs-4">
         <h4 class="strainProfileTitle">FLAVOR PROFILE</h4>
-        <ul class="barChart">
-          <li style="height:{{ strainDetails.flavor1Percent }}px;"><div>{{ strainDetails.flavor1Percent }}%</div></li>
-          <li style="height:{{ strainDetails.flavor2Percent }}px;"><div>{{ strainDetails.flavor2Percent }}%</div></li>
-          <li style="height:{{ strainDetails.flavor3Percent }}px;"><div>{{ strainDetails.flavor3Percent }}%</div></li>
-        </ul>
+        <div ng-donut id="graph1" class="donut-chart"
+          data-amounts="{{ strainDetails.flavor1Percent }},{{ strainDetails.flavor2Percent }},{{ strainDetails.flavor3Percent }}"
+          data-fills="#3dd861,#fcd31c,#f7253e">
+        </div>
         <ul class="flavorProfile">
-          <li class="flavor1">{{ strainDetails.flavor1 }}</li>
-          <li class="flavor2">{{ strainDetails.flavor2 }}</li>
-          <li class="flavor3">{{ strainDetails.flavor3 }}</li>
+          <li ng-show="strainDetails.flavor1" class="flavor1">{{ strainDetails.flavor1 }}</li>
+          <li ng-show="strainDetails.flavor2" class="flavor2">{{ strainDetails.flavor2 }}</li>
+          <li ng-show="strainDetails.flavor3" class="flavor3">{{ strainDetails.flavor3 }}</li>
         </ul>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-4">
+      <div class="positives col-md-4 col-sm-4 col-xs-4">
         <h4 class="strainProfileTitle">POSITIVE EFFECTS</h4>
-        <ul class="barChart">
-          <li style="height:{{ strainDetails.positive1Percent }}px;"><div>{{ strainDetails.positive1Percent }}%</div></li>
-          <li style="height:{{ strainDetails.positive2Percent }}px;"><div>{{ strainDetails.positive2Percent }}%</div></li>
-          <li style="height:{{ strainDetails.positive3Percent }}px;"><div>{{ strainDetails.positive3Percent }}%</div></li>
-        </ul>
+        <div ng-donut id="graph2" class="donut-chart" 
+          data-amounts="{{ strainDetails.positive1Percent }},{{ strainDetails.positive2Percent }},{{ strainDetails.positive3Percent }}"
+          data-fills="#3dd861,#fcd31c,#f7253e">
+        </div>
         <ul class="positiveEffects">
-          <li class="positive1">{{ strainDetails.positive1 }}</li>
-          <li class="positive2">{{ strainDetails.positive2 }}</li>
-          <li class="positive3">{{ strainDetails.positive3 }}</li>
+          <li ng-show="strainDetails.positive1" class="positive1">{{ strainDetails.positive1 }}</li>
+          <li ng-show="strainDetails.positive2" class="positive2">{{ strainDetails.positive2 }}</li>
+          <li ng-show="strainDetails.positive3" class="positive3">{{ strainDetails.positive3 }}</li>
         </ul>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-4">
+      <div class="negatives col-md-4 col-sm-4 col-xs-4">
         <h4 class="strainProfileTitle">NEGATIVE EFFECTS</h4>
-        <ul class="barChart">
-          <li style="height:{{ strainDetails.negative1Percent }}px;"><div>{{ strainDetails.negative1Percent }}%</div></li>
-          <li style="height:{{ strainDetails.negative2Percent }}px;"><div>{{ strainDetails.negative2Percent }}%</div></li>
-          <li style="height:{{ strainDetails.negative3Percent }}px;"><div>{{ strainDetails.negative3Percent }}%</div></li>
-        </ul>
+        <div ng-donut id="graph3" class="donut-chart" 
+          data-amounts="{{ strainDetails.negative1Percent }},{{ strainDetails.negative2Percent }},{{ strainDetails.negative3Percent }}"
+          data-fills="#3dd861,#fcd31c,#f7253e" data="{{ strainDetails.negative1Percent }}">
+        </div>
         <ul class="negativeEffects">
-          <li class="negative1">{{ strainDetails.negative1 }}</li>
-          <li class="negative2">{{ strainDetails.negative2 }}</li>
-          <li class="negative3">{{ strainDetails.negative3 }}</li>
+          <li ng-show="strainDetails.negative1" class="negative1">{{ strainDetails.negative1 }}</li>
+          <li ng-show="strainDetails.negative2" class="negative2">{{ strainDetails.negative2 }}</li>
+          <li ng-show="strainDetails.negative3" class="negative3">{{ strainDetails.negative3 }}</li>
         </ul>
       </div>
     </div>
@@ -85,27 +83,51 @@
       </div>
     </div> -->
   </div>
-  <div class="col-md-6 col-sm-6 col-xs-12">
-    <img ng-elevate-zoom ng-src="{{ strainDetails.image }}" zoom-image="{{ strainDetails.zoomimage }}" class="img-responsive strainGallery"/>
+  <div id="strainGalleryWrap" class="strainGalleryWrap col-md-6 col-sm-6 col-xs-12">
+    <img id="strainGallery" ng-strain-zoom ng-src="{{ strainDetails.zoomimage }}" zoom-image="{{ strainDetails.zoomimage }}" class="img-responsive strainGallery"/>
+    <div id="zoom" style="background-image:url('{{ strainDetails.zoomimage }}');"></div>
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
-    <h3>Reviews</h3>
-    <dir-disqus 
-      disqus-shortname="deviine"
-      disqus-identifier="{{ strainDetails.$id }}"
-      disqus-title="{{ strainDetails.$id }}"
-      disqus-url="http://deviine.com/beta/#!/strains/{{ strainDetails.$id }}">
-    </dir-disqus>
+    <h3>{{ getReviewsCount(reviews) }} Reviews</h3>
+    <section class="reviews" ng-reviews data="{{ strainDetails.name }}" ng-controller="reviewsCtrl">
+      <h4 class="pleaseSignIn">Please <a ng-click="showLoginModal()">sign in</a> to drop a review.</h4>
+      <div class="leaveReview col-md-12 col-sm-12 col-xs-12" ng-show="currentUser">
+        <div class="avatarWrap">
+          <img class="avatar" ng-src="{{ currentAvatar }}" title="{{ currentAvatar }}"/>
+          <h4 class="reviewBanner">Try this strain lately? <a class="closeReviewBanner"> X </a></h4>
+        </div>
+        <div class='name' title="{{ currentName }}"></div>
+        <textarea type='text' id='reviewInput' placeholder='Drop a review...'></textarea>
+        <input ng-click="sendReview" type='submit' id='submitReview' value='DROP IT LIKE IT&rsquo;S HOT' class="pull-right">
+      </div>
+      <div id='reviewsDiv' class="col-md-12 col-sm-12 col-xs-12">
+        
+        <!-- <ul>
+          <li ng-repeat="review in reviews">
+            <dv-review item-type="review" item-id="{{ strain.review.$id }}"></dv-review>
+          </li>
+        </ul> -->
+
+        <!-- <ul>
+          <li ng-repeat="review in reviews">
+            <img class=".reviewAvatar" ng-src="{{ review.avatar }}"/>
+            <h4 class=".reviewAuthor">{{ review.author }}</h4>
+            <h6 class=".reviewDate">{{ review.date }}</h6>
+            <p class=".reviewText">{{ review.text }}</p>
+          </li>
+        <ul> -->
+      </div>
+    </section>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
     <h3>More Strains</h3>
     <ul class="dvCardList">
-      <li ng-repeat="strain in featuredStrains" class="col-lg-2 col-md-3 col-sm-3 col-xs-8">
+      <li ng-repeat="strain in featuredStrains" class="col-lg-2 col-md-3 col-sm-3 col-xs-8 {{ strain.disabled }}">
         <dv-card item-type="strain" item-id="{{ strain.$id }}"></dv-card>
       </li>
-      <li ng-repeat="strain in otherStrains" class="col-lg-2 col-md-3 col-sm-3 col-xs-8">
+      <li ng-repeat="strain in otherStrains" class="col-lg-2 col-md-3 col-sm-3 col-xs-8 {{ strain.disabled }}">
         <dv-card item-type="strain" item-id="{{ strain.$id }}"></dv-card>
       </li>
     </ul>

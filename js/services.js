@@ -3,7 +3,7 @@
 
 angular.module('DeViine.services', [])
 
-  .factory('usersService', ['$firebaseAuth', '$firebase', 'dvUrl', function($firebaseAuth, $firebase, dvUrl) {
+  .factory('usersService', ['$firebaseAuth', '$firebaseObject', 'dvUrl', function($firebaseAuth, $firebaseObject, dvUrl) {
     var dvRef = new Firebase(dvUrl);
     var dvAuth = $firebaseAuth(dvRef);
     var currentUser = null;
@@ -66,14 +66,14 @@ angular.module('DeViine.services', [])
        * @param {String} userId
        */
       getProfile: function(userId) {
-        $firebase( new Firebase(dvUrl + '/users/' + userId + '/profile') );
+        $firebaseObject( new Firebase(dvUrl + '/users/' + userId + '/profile') );
       },
       /**
        * @param {Object} userId
        * @param {Object} profile
        */
       saveProfile: function(userId, profile) {
-        $firebase( new Firebase(dvRef + '/users/' + userId) ).$update('profile', profile);
+        ( new Firebase(dvRef + '/users/' + userId + '/profile') ).set(profile);
       },
       /**
        * @param {String} email
@@ -90,6 +90,7 @@ angular.module('DeViine.services', [])
        */
       isAdmin: function(user) {
         var adminIdList = [
+          'twitter:2199988411', // Dan Siddoway
           'simplelogin:1',
           'twitter:318556297',
           'twitter:dberg15',
@@ -101,7 +102,10 @@ angular.module('DeViine.services', [])
           'twitter:justinvinge',
           'simplelogin:4',
           'google:108704110120989212163',
-          'google:justinvinge'          
+          'google:justinvinge',
+          'simplelogin:5',
+          'google:116170903932314080577',
+          'google:nikosalinas'        
         ];
 
         return ( user && user.uid )
@@ -168,33 +172,21 @@ angular.module('DeViine.services', [])
       }
     };
   }])
-  .factory('itemsService', ['$firebase', 'dvUrl', function($firebase, dvUrl) {
+  .factory('itemsService', ['$firebaseObject', '$firebaseArray', 'dvUrl', function($firebaseObject, $firebaseArray, dvUrl) {
     return {
       /**
        * @param {String} itemType
        * @param {String} itemId
        */
       get: function(itemType, itemId) {
-        return $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId) ).$asObject();
+        return $firebaseObject( new Firebase(dvUrl + '/' + itemType + '/' + itemId) );
       },
       /**
        * @param {String} itemType
        * @returns {FirebaseArray}
        */
       getAll: function(itemType) {
-        
-
-        // var $wrapper = $('.dvCardList');
-
-        // $wrapper.find('.allCard').sort(function (a, b) {
-        //     return a.value - b.value;
-        // })
-
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray().$loaded();
-        // var allItems = $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$asArray();
-        // allItems.$loaded().then(function() {
-        //   return allItems.$value;
-        // });
+        return $firebaseArray( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("0") ).$loaded();
       },
       /**
        * @param {String} itemType
@@ -203,11 +195,7 @@ angular.module('DeViine.services', [])
       // getFeatured is currently limiting to first 2.
       // Should limit to the first 2 that have .featured = true.
       getFeatured: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray().$loaded();
-        // var featuredItems = $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$asArray();
-        // featuredItems.$loaded().then(function() {
-        //   return featuredItems.$value;
-        // });
+        return $firebaseArray( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('featured').equalTo("true").limitToFirst(2) ).$loaded();
       },
       /**
        * @param {String} itemType
@@ -215,7 +203,7 @@ angular.module('DeViine.services', [])
        */
       // getNew is limiting to last 2.
       getNew: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('new').equalTo("true").limitToLast(2) ).$asArray().$loaded();
+        return $firebaseArray( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('new').equalTo("true").limitToLast(2) ).$loaded();
       },
       /**
        * @param {String} itemType
@@ -223,7 +211,7 @@ angular.module('DeViine.services', [])
        */
       // getOther is currently limiting to last 2. 
       getOther: function(itemType) {
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(4) ).$asArray().$loaded();
+        return $firebaseArray( ( new Firebase(dvUrl + '/' + itemType) ).limitToLast(4) ).$loaded();
       },
       /**
        * @param {String} itemType
@@ -236,12 +224,16 @@ angular.module('DeViine.services', [])
         // @todo Filter out all but the highest-rated items.
         // return items;
 
-        return $firebase( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('rating') ).$asArray();
+        return $firebaseArray( ( new Firebase(dvUrl + '/' + itemType) ).orderByChild('rating') );
       }
+      // ,
+      // reviews: function (itemType, itemId) {
+      //   // return $firebaseArray( ( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/reviews') ) );
+      //   return $firebaseArray( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/reviews') );
+      // }
     };
   }])
-  // (Copied wholesale from the mobile app.)
-  .factory('ratingsService', function() {
+  .factory('ratingsService', ['dvUrl', function(dvUrl) {
     //removed return envelope
     var obj = {};
       
@@ -268,9 +260,8 @@ angular.module('DeViine.services', [])
         }
       },
 
-      obj.getUserRating = function(ratings) {
+      obj.getUserRating = function() {
 
- 
       },
 
       /**
@@ -284,12 +275,100 @@ angular.module('DeViine.services', [])
       }
       //removed return envelope
       return obj;
-  })
-  .factory('locationService', function() {
+  }])
+  .factory('reviewsService', ['$firebaseArray', 'dvUrl', function($firebaseArray, dvUrl) {
+    //removed return envelope
+
+    // var itemType = $('.pageTitle').attr('title');
+    // var itemId = $('.pageId').attr('title');
+
+    // return {
+    //   getReviews: function (itemType, itemId) {
+    //     return $firebaseArray( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/reviews') );
+    //   }
+    // };
+      /**
+       * @param {Object} reviews
+       * @returns {Number} reviewsCount
+       */
+      var obj = {};
+      obj.getReviewsCount = function() {
+        return reviews == null
+          ? 0
+          : Object.keys(reviews).length;
+      }
+      //removed return envelope
+      return obj;
+  }])
+  .factory('locationService', ['$http', '$q', 'dvUrl', '$firebaseObject', function($http, $q, dvUrl, $firebaseObject) {
     return {
-      // @todo Import this function from the mobile app.
+      /**
+       * @param {String} address
+       * @returns {google.maps.LatLng} coordinates
+       */
+      getCoordinatesFromAddress: function(address) {
+        $http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + address)
+          .then(function(data) {
+            var coords = data.results[0].geometry.location;
+
+            return new google.maps.LatLng(coords.lat, coords.lng);
+          });
+      },
       getCurrentCity: function() {
         return '';
+      },
+      /**
+       * @returns {google.maps.LatLng|null} coords
+       */
+      getCurrentLocation: function() {
+        if(typeof navigator !== 'undefined' && typeof navigator.geolocation !== 'undefined') {
+          navigator.geolocation.getCurrentPosition(function(location) {
+            var coords = location.coords;
+
+            return new google.maps.LatLng(coords.lat, coords.lng);
+          }, function(error) {
+            console.log(error);
+          });
+        } else {
+          console.log('Your browser does not support the HTML5 Geolocation API, so this demo will not work.')
+        }
+      },
+      /**
+       * Note that this requires that the dispensary have coordinates associated with it.  This shouldn't be a problem, though, as our saveDispensary function geocodes provided addresses automatically.
+       *
+       * @param {String} dispensaryId
+       * @returns {Promise}
+       */
+      getDistanceToDispensary: function(dispensaryId) {
+        var deferred = $q.defer();
+
+        setTimeout(function() {
+          // @todo Re-add browser check for geolocation.
+          navigator.geolocation.getCurrentPosition(function(location) {
+            // @todo Log positions, so that we know where folks are using our service.  (If logged in as a user, log locations under the user's Firebase record.)
+            var coords = location.coords;
+            var currentLocation = new google.maps.LatLng(coords.latitude, coords.longitude);
+
+            $firebaseObject(new Firebase(dvUrl + '/dispensaries/' + dispensaryId)).$loaded()
+              .then(function(dispensary) {
+                var distance = google.maps.geometry.spherical.computeDistanceBetween(currentLocation, new google.maps.LatLng(dispensary.geoX, dispensary.geoY));
+
+                distance
+                  ? deferred.resolve( (distance / 1609.34).toFixed(1) ) // convert meters to miles
+                  : deferred.reject('Could not compute distance to dispensary.');
+              })
+              .catch(function(error) {
+                deferred.reject('Could not compute distance to dispensary.');
+                console.log(error);
+              });
+          }, function(error) {
+            deferred.reject('Could not compute distance to dispensary.');
+            console.log(error);
+          });
+        }, 1000);
+
+        return deferred.promise;
       }
-    };
-  });
+    }
+  }])
+;

@@ -68,15 +68,45 @@ angular.module('DeViine.controllers', [])
       $modalInstance.dismiss();
     };
   }])
+  .controller('ratingChangeModalCtrl', ['$scope', '$state', '$modalInstance', 'usersService', function($scope, $state, $modalInstance, usersService) {
+
+
+    $scope.close = function() {
+      $modalInstance.dismiss();
+    };
+  }])
   .controller('homeCtrl', ['$scope', '$q', 'itemsService', 'ratingsService', function($scope, $q, itemsService, ratingsService) {
-    $scope.featuredDispensaries = itemsService.getFeatured('dispensaries');
+    // $scope.featuredDispensaries = itemsService.getFeatured('dispensaries');
 
-    $scope.featuredDeals = itemsService.getFeatured('deals');
+    // $scope.featuredDeals = itemsService.getFeatured('deals');
 
-    $scope.featuredStrains = itemsService.getFeatured('strains');
-    $scope.newStrains = itemsService.getNew('strains');
+    // $scope.featuredStrains = itemsService.getFeatured('strains');
+    // $scope.newStrains = itemsService.getNew('strains');
 
-    $q.all([itemsService.getNew('strains'), itemsService.getFeatured('strains')])
+    // $q.all(itemsService.getFeatured('strains'))
+    // .then(function(strainData) {
+    //   strainData.forEach(function(strains) {
+    //     strains.sort(function(a, b) {
+    //       return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+    //     });
+    //   });
+
+    //   $scope.featuredStrains = strainData[1];
+    // });
+
+    // $q.all(itemsService.getFeatured('dispensaries'))
+    //   .then(function(dispensaryData) {
+    //     dispensaryData.forEach(function(dispensaries) {
+    //       dispensaries.sort(function(a, b) {
+    //         return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+    //       });
+    //     });
+
+    //     $scope.featuredDispensaries = dispensaryData[1];
+    //   });
+
+
+    $q.all([itemsService.getOther('strains'), itemsService.getFeatured('strains')])
     .then(function(strainData) {
       strainData.forEach(function(strains) {
         strains.sort(function(a, b) {
@@ -84,88 +114,200 @@ angular.module('DeViine.controllers', [])
         });
       });
 
-      $scope.newStrains = strainData[0];
       $scope.featuredStrains = strainData[1];
     });
 
+    $q.all([itemsService.getAll('dispensaries'), itemsService.getFeatured('dispensaries')])
+    .then(function(dispensaryData) {
+      dispensaryData.forEach(function(dispensaries) {
+        dispensaries.sort(function(a, b) {
+          return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+        });
+      });
+
+      $scope.featuredDispensaries = dispensaryData[1];
+    });
+
+
   }])
-  .controller('dispensariesCtrl', ['$scope', 'itemsService', function($scope, itemsService) {
-    // @todo Order dispensaries by geographic proximity.
-    $scope.dispensaries = itemsService.getAll('dispensaries');
+  .controller('dispensariesCtrl', ['$scope', '$q', 'itemsService', 'ratingsService', function($scope, $q, itemsService, ratingsService) {
+    // Wait for both our dispensaries and our featured dispensaries to load.
+    // @todo Might we need to remove duplicate entries?
+    $q.all([itemsService.getAll('dispensaries'), itemsService.getFeatured('dispensaries')])
+      .then(function(dispensaryData) {
+        dispensaryData.forEach(function(dispensaries) {
+          dispensaries.sort(function(a, b) {
+            return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+          });
+        });
+
+        $scope.dispensaries = dispensaryData[0];
+        $scope.featuredDispensaries = dispensaryData[1];
+      });
   }])
-  .controller('dispensaryDetailsCtrl', ['$scope', '$filter', '$stateParams', 'itemsService',  function($scope, $filter, $stateParams, itemsService) {
+  .controller('dispensaryDetailsCtrl', ['$scope', '$q', '$filter', '$stateParams', 'itemsService', 'ratingsService', 'reviewsService', 'locationService', function($scope, $q, $filter, $stateParams, itemsService, ratingsService, reviewsService, locationService) {
+    
     $scope.today = $filter('date')(new Date(), 'EEEE');
 
     $scope.dispensary = itemsService.get('dispensaries', $stateParams.dispensaryId);
+    // // @todo Exclude the current dispensary from the results of itemsService.getFeatured().
+    // $scope.featureddispensaries = itemsService.getFeatured('dispensaries');
+    // // @todo Exclude the current dispensary from the results of itemsService.getOther().
+    // $scope.otherdispensaries = itemsService.getOther('dispensaries');
 
-    // @todo Exclude the current dispensary from the results of itemsService.getFeatured().
-    $scope.featuredDispensaries = itemsService.getFeatured('dispensaries');
-    // @todo Exclude the current dispensary from the results of itemsService.getOther().
-    $scope.otherDispensaries = itemsService.getOther('dispensaries');
+    locationService.getDistanceToDispensary($stateParams.dispensaryId)
+      .then(function(distance) {
+        $scope.distanceToDispensary = distance;
+      });
+
+    $q.all([itemsService.getOther('dispensaries'), itemsService.getFeatured('dispensaries')])
+    .then(function(dispensaryData) {
+      dispensaryData.forEach(function(dispensaries) {
+        dispensaries.sort(function(a, b) {
+          return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+        });
+      });
+
+      $scope.otherDispensaries = dispensaryData[0];
+      $scope.featuredDispensaries = dispensaryData[1];
+    });
 
 
-    // $scope.rate = ratingsService.rate('dispensaries');
   }])
-  .controller('dispensariesManageCtrl', ['$scope', '$filter', '$firebase', 'dvUrl', function($scope, $filter, $firebase, dvUrl) {
-    $firebase( new Firebase(dvUrl + '/dispensaries') ).$asObject().$loaded()
+  .controller('dispensariesManageCtrl', ['$scope', '$http', '$filter', '$firebaseObject', 'dvUrl', function($scope, $http, $filter, $firebaseObject, dvUrl) {
+    $scope.times = [];
+
+    // split the day into 15-minute blocks
+    for(var h = 0; h <= 23; h++) {
+      for(var m = 0; m <= 3; m++) {
+        var hour = (h % 12 == 0) ? '12' : (h % 12);
+        var minute = (m == 0) ? '00' : (m * 15);
+        var period = (h < 12) ? 'AM' : 'PM';
+
+        $scope.times.push( hour + ':' + minute + ' ' + period );
+      }
+    }
+
+    $scope.activeDispensaryId = ''; // look up an existing dispensary
+    $scope.dispensary = {}; // add a new dispensary
+
+    // add a new item
+    $scope.activeItemId = '';
+    $scope.itemType = '';
+    $scope.item = {};
+
+    // load dispensaries
+    // @todo Add a Firebase listener that re-loads the dispensary menu table whenever we add or edit a menu item.
+    $firebaseObject( new Firebase(dvUrl + '/dispensaries') ).$loaded()
       .then(function(dispensaries) {
         $scope.dispensaries = dispensaries;
-
-        // @todo Initialize 'dispensaryId' and 'dispensary' to the first available dispensary.
-        $scope.dispensaryId = '';
-        $scope.dispensary = dispensaries[''];
       });
 
     $scope.newDispensary = function() {
-      $scope.dispensaryId = '';
-      $scope.dispensary = {};
+      $scope.activeDispensaryId = '';
+      $scope.dispensary = {}; // clear the dispensary form
     };
 
     $scope.loadDispensary = function(dispensaryId) {
+      $scope.activeDispensaryId = dispensaryId;
       $scope.dispensary = $scope.dispensaries[dispensaryId];
 
-      /*
-        for(var day in $scope.dispensary['hours']) {
-          if( $scope.dispensary['hours'].hasOwnProperty(day) ) {
-            $scope.dispensary['hours'][day].open = new Date( $filter('date')($scope.dispensary['hours'][day].open, 'shortTime') );
-            $scope.dispensary['hours'][day].close = new Date( $filter('date')($scope.dispensary['hours'][day].close, 'shortTime') );
-          }
-        }
-      */
+      $scope.newItem();
     };
 
-    // @todo Don't forget to save the dispensary's coordinates to '/locations/<id>'.
+    // @todo Consider saving the dispensary's coordinates to '/locations/<dispensaryId>'.
     $scope.saveDispensary = function(dispensaryId, dispensary) {
-      for(var day in dispensary['hours']) {
-        if( dispensary['hours'].hasOwnProperty(day) ) {
-          dispensary['hours'][day].open = $filter('date')(dispensary['hours'][day].open, 'shortTime');
-          dispensary['hours'][day].close = $filter('date')(dispensary['hours'][day].close, 'shortTime');
-        }
+      /*
+        Removes the '$$hashKey' key from the 'dispensary' object, making the latter acceptable to Firebase.
+        @see http://stackoverflow.com/a/23656919
+       */
+      dispensary = JSON.parse( angular.toJson(dispensary) );
+
+      /*
+        Use a short-circuit operator to re-assign the dispensary ID variable if we're dealing with an existing dispensary.
+        (Note that this is only necessary because we specify dispensary IDs manually (via a text input).  Were this not the case, this part of the function would look more like what we have in saveItem(), below, where we automatically generate IDs.  Foor for thought.
+       */
+      dispensaryId = $scope.activeDispensaryId || dispensaryId;
+
+      // Return an error if not given a dispensary ID.
+      if( !( dispensaryId ) ) {
+        console.log('saveDispensary: No dispensary ID provided.');
+
+        return;
       }
 
-      dispensary.$id
-        ? $firebase( new Firebase(dvUrl + '/dispensaries/' + dispensary.$id) ).$update(dispensary)
-        // @todo Assign an ID to each new dispensary.
-        : $firebase( new Firebase(dvUrl + '/dispensaries/') ).$update(dispensaryId, dispensary);
+      /*
+        Ensure that we geocode dispensary addresses.
+        @todo Check for an address update, in which case we need to geocode the new address.
+       */
+      if( !( dispensary.geoX && dispensary.geoY ) ) {
+        var dispensaryAddress = dispensary.location.street + ', ' + dispensary.location.city + ', ' + dispensary.location.state + ' ' + dispensary.location.zip;
+
+        $http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + dispensaryAddress)
+          .success(function(data) {
+            var coords = data.results[0].geometry.location;
+
+            dispensary.geoX = coords.lat;
+            dispensary.geoY = coords.lng;
+
+            ( new Firebase(dvUrl + '/dispensaries/' + dispensaryId) ).set(dispensary);
+          })
+          .error(function(error) {
+            console.log('saveDispensary: Error when attempting to geocode dispensary address: '+ error);
+          });
+      } else {
+        ( new Firebase(dvUrl + '/dispensaries/' + dispensaryId) ).set(dispensary);
+      }
     };
 
-
-
-
-
-    $scope.saveMenu = function(dispensaryId, deal) {
-      dispensary.$id
-        ? $firebase( new Firebase(dvUrl + '/dispensaries/' + dispensary.$id) ).$update(dispensary)
-        : $firebase( new Firebase(dvUrl + '/dispensaries') ).$update(dispensaryId, dispensary);
+    $scope.newItem = function() {
+      $scope.activeItemId = '';
+      $scope.itemType = '';
+      $scope.item = {}; // clear the item form
     };
 
+    $scope.loadItem = function(itemType, itemId) {
+      // If we haven't loaded a dispensary, return an error.
+      if( !( $scope.activeDispensaryId ) ) {
+        console.log('loadItem: Please specify a dispensary, so we know whose menu to update.');
 
+        return;
+      }
 
+      $scope.activeItemId = itemId;
+      $scope.itemType = itemType;
 
+      ( new Firebase(dvUrl + '/dispensaries/' + $scope.activeDispensaryId + '/menu/' + itemType + '/' + itemId) ).once('value', function(item) {
+        $scope.item = item.val();
+      });
+    };
 
+    $scope.saveItem = function(itemType, item) {
+      // If we haven't loaded a dispensary, return an error.
+      if( !( $scope.activeDispensaryId ) ) {
+        console.log('loadItem: Please specify a dispensary, so we know whose menu to update.');
 
+        return;
+      }
+
+      item = JSON.parse( angular.toJson(item) );
+
+      if($scope.activeItemId) {
+        ( new Firebase(dvUrl + '/dispensaries/' + $scope.activeDispensaryId + '/menu/' + itemType + '/' + $scope.activeItemId) ).set(item);
+      } else {
+        ( new Firebase(dvUrl + '/dispensaries/' + $scope.activeDispensaryId + '/menu/' + itemType) ).push(item);
+      }
+    };
+
+    //$scope.addPriceField = function() {
+    //  var priceField = jQuery('.priceField');
+    //  var priceFieldCopy = priceField.clone()[0];
+    //
+    //  // @todo Fix this, as it also copies any values entered into the inputs.
+    //  priceField.parent().append(priceFieldCopy);
+    //};
   }])
-  .controller('dealsCtrl', ['$scope', '$firebase', 'dvUrl', 'itemsService', function($scope, $firebase, dvUrl, itemsService) {
+  .controller('dealsCtrl', ['$scope', '$firebaseObject', 'dvUrl', 'itemsService', function($scope, $firebaseObject, dvUrl, itemsService) {
     /**
      * @param {Date} endDate
      * @returns {Boolean} hasExpired
@@ -181,7 +323,7 @@ angular.module('DeViine.controllers', [])
      * @returns {Boolean} dealExpired
      */
     $scope.dealExpired = function(dealId) {
-      $firebase( new Firebase(dvUrl + '/deals/' + dealId + '/endDate') ).$asObject.$loaded()
+      $firebaseObject( new Firebase(dvUrl + '/deals/' + dealId + '/endDate') ).$loaded()
         .then(function(dealEndDate) {
           return hasExpired( new Date(dealEndDate) );
         });
@@ -198,8 +340,8 @@ angular.module('DeViine.controllers', [])
     // @todo Exclude the current deal from the results of itemsService.getFeatured().    
     $scope.otherDeals = itemsService.getOther('deals');
   }])
-  .controller('dealsManageCtrl', ['$scope', '$firebase', 'dvUrl', function($scope, $firebase, dvUrl) {
-    $firebase( new Firebase(dvUrl + '/deals') ).$asObject().$loaded()
+  .controller('dealsManageCtrl', ['$scope', '$firebaseObject', 'dvUrl', function($scope, $firebaseObject, dvUrl) {
+    $firebaseObject( new Firebase(dvUrl + '/deals') ).$loaded()
       .then(function(deals) {
         $scope.deals = deals;
         // @todo Initialize 'deal' to the first available deal.
@@ -217,49 +359,93 @@ angular.module('DeViine.controllers', [])
 
     // @todo Implement saveDeal() method.  Look up the dispensary by ID, add it to the 'deal' object, then push the deal to Firebase under '/deals' and '/dispensaries/<id>/deals'.
     $scope.saveDeal = function(dealId, deal) {
-      deal.$id
-        ? $firebase( new Firebase(dvUrl + '/deals/' + deal.$id) ).$update(deal)
-        // @todo Assign an ID to each new deal.
-        : $firebase( new Firebase(dvUrl + '/deals') ).$update(dealId, deal);
+      ( new Firebase(dvUrl + '/deals/' + dealId) ).set(deal);
     };
   }])
   .controller('strainsCtrl', ['$scope', '$q', 'itemsService', 'ratingsService', function($scope, $q, itemsService, ratingsService) {
+    
+     // $scope.strainDetails = itemsService.getAll('strains', $stateParams.strainId);
+     // $scope.featuredStrains = itemsService.getFeatured('strains', $stateParams.strainId);
     // Wait for both our strains and our featured strains to load.
     // @todo Might we need to remove duplicate entries?
-    $q.all([itemsService.getAll('strains'), itemsService.getFeatured('strains')])
-      .then(function(strainData) {
-        strainData.forEach(function(strains) {
-          strains.sort(function(a, b) {
-            return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
-          });
-        });
+    // $q.all([itemsService.getAll('strains'), itemsService.getFeatured('strains')])
+    //   .then(function(strainData) {
+    //     strainData.forEach(function(strains) {
+    //       strains.sort(function(a, b) {
+    //         return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+    //       });
+    //     });
 
-        $scope.strains = strainData[0];
-        $scope.featuredStrains = strainData[1];
+    //     $scope.strains = strainData[0];
+    //     $scope.featuredStrains = strainData[1];
+    //   });
+
+    $q.all([itemsService.getOther('strains'), itemsService.getFeatured('strains')])
+    .then(function(strainData) {
+      strainData.forEach(function(strains) {
+        strains.sort(function(a, b) {
+          return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+        });
       });
+
+      $scope.otherStrains = strainData[0];
+      $scope.featuredStrains = strainData[1];
+    });
+
+    $q.all([itemsService.getOther('strains'), itemsService.getAll('strains')])
+    .then(function(strainData) {
+      strainData.forEach(function(strains) {
+        strains.sort(function(a, b) {
+          return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
+        });
+      });
+
+      $scope.otherStrains = strainData[0];
+      $scope.strains = strainData[1];
+    });
+
   }])
-  .controller('strainDetailsCtrl', ['$scope', '$q', '$stateParams', 'itemsService', 'ratingsService', function($scope, $q, $stateParams, itemsService, ratingsService) {
+  .controller('strainDetailsCtrl', ['$scope', '$q', '$stateParams', 'itemsService', 'ratingsService', 'reviewsService', function($scope, $q, $stateParams, itemsService, ratingsService, reviewsService) {
     $scope.strainDetails = itemsService.get('strains', $stateParams.strainId);
     // // @todo Exclude the current strain from the results of itemsService.getFeatured().
     // $scope.featuredStrains = itemsService.getFeatured('strains');
     // // @todo Exclude the current strain from the results of itemsService.getOther().
     // $scope.otherStrains = itemsService.getOther('strains');
 
-      $q.all([itemsService.getOther('strains'), itemsService.getFeatured('strains')])
-      .then(function(strainData) {
-        strainData.forEach(function(strains) {
-          strains.sort(function(a, b) {
-            return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
-          });
+    $q.all([itemsService.getOther('strains'), itemsService.getFeatured('strains')])
+    .then(function(strainData) {
+      strainData.forEach(function(strains) {
+        strains.sort(function(a, b) {
+          return ratingsService.getAvgRating(b.ratings) - ratingsService.getAvgRating(a.ratings);
         });
-
-        $scope.otherStrains = strainData[0];
-        $scope.featuredStrains = strainData[1];
       });
 
+      $scope.otherStrains = strainData[0];
+      $scope.featuredStrains = strainData[1];
+    });
+
+
+    $scope.showRatingChangeModal = function() {
+      var ratingChangeModalInstance = $modal.open({
+        size: 'md',
+        templateUrl: 'partials/modals/ratingChange.html',
+        controller: 'ratingChangeModalCtrl'
+      });
+
+      ratingChangeModalInstance.result
+        .then(function(currentUser) {
+          $scope.currentUser = currentUser;
+          usersService.setCurrentUser(currentUser);
+        });
+    };
+
+    // $q.all([itemsService.reviews('reviews')]);
+
+    // $scope.reviews = itemsService.reviews('reviews');
+
   }])
-  .controller('strainsManageCtrl', ['$scope', '$firebase', 'dvUrl', function($scope, $firebase, dvUrl) {
-    $firebase( new Firebase(dvUrl + '/strains') ).$asObject().$loaded()
+  .controller('strainsManageCtrl', ['$scope', '$firebaseObject', 'dvUrl', function($scope, $firebaseObject, dvUrl) {
+    $firebaseObject( new Firebase(dvUrl + '/strains') ).$loaded()
       .then(function(strains) {
         $scope.strains = strains;
         // @todo Initialize 'strain' to the first available strain.
@@ -276,7 +462,7 @@ angular.module('DeViine.controllers', [])
       'Cedar',
       'Coffee',
       'Diesel',
-      'Flowery',
+      'Floral',
       'Fruity',
       'Grape',
       'Grapefruit',
@@ -285,14 +471,15 @@ angular.module('DeViine.controllers', [])
       'Lemon',
       'Lime',
       'Mango',
+      'Maple',
       'Menthol',
       'Mint',
       'Orange',
       'Peach',
       'Pear',
       'Pepper',
-      'Pine',
       'Plum',
+      'Pine',
       'Pineapple',
       'Rose',
       'Sage',
@@ -328,6 +515,7 @@ angular.module('DeViine.controllers', [])
       'Dry Mouth',
       'Headache',
       'Paranoid',
+      'Red Eyes',
       'Sleepy',
       'Talkative'
     ];
@@ -348,33 +536,48 @@ angular.module('DeViine.controllers', [])
     };
 
     $scope.saveStrain = function(strainId, strain) {
-      strain.$id
-        ? $firebase( new Firebase(dvUrl + '/strains/' + strain.$id) ).$update(strain)
-        // @todo Assign an ID to each new strain.
-        : $firebase( new Firebase(dvUrl + '/strains') ).$update(strainId, strain);
+      ( new Firebase(dvUrl + '/strains/' + strainId) ).set(strain);
     };
   }])
 
-  .controller('rateCtrl', ['$scope', '$firebase', 'dvUrl', 'usersService', function($scope, $firebase, dvUrl, usersService) {
+  .controller('rateCtrl', ['$scope', 'dvUrl', 'usersService', 'itemsService', function($scope, dvUrl, usersService, itemsService) {
 
     $scope.sendRating = function(divId) {
         var rating = document.getElementById(divId).value;
-
-        userId = usersService.getName(usersService.getCurrentUser())
-        itemType = 'strains';
-        itemId = $scope.$parent.$parent.strainDetails.$id;
+        itemType = $('.pageTitle').attr('title');
+        userId = $('.username').attr('title');
+        itemId = $('.pageId').attr('title');
         
         if(! userId) {
           console.log('No User');
-          // TODO: Launch login modal
-          alert ("Please sign in to submit a rating.");
-        } else {
-          console.log('Rating Sent');
-          $firebase( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).$set(rating);
-          $firebase( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).$set(rating);
+          // $showLoginModal(); //TODO - LAUNCH LOGIN MODAL
+          alert("Please sign in to submit a rating.");
+        } 
+        // else if (! userRating) {
+        //   alert("No User Rating Exists");
+        //   $showRatingChangeModal();// TODO - LAUNCH RATING CHANGE MODAL
+        // }
+         else {
+          alert('Rating Sent');
+          ( new Firebase(dvUrl + '/users/' + userId + '/ratings/' + itemType + '/' + itemId) ).set(rating);
+          ( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/ratings/' + userId) ).set(rating);
         };
         
     };
+
+  }])
+
+  .controller('reviewsCtrl', ['$scope', '$firebaseArray', 'dvUrl', 'reviewsService',  function($scope, $firebaseArray, dvUrl, reviewsService) {
+  // .controller('reviewsCtrl', ['$scope', 'reviewsService', function($scope, reviewsService) {   
+
+    // var itemType = $('.pageTitle').attr('title');
+    // var itemId = $('.pageId').attr('title');
+
+    // $scope.reviews = function (itemType, itemId) {
+    //   return $firebaseArray( new Firebase(dvUrl + '/' + itemType + '/' + itemId + '/reviews') );
+    // };
+
+    // $scope.reviews = reviewsService.getReviews('reviews');
 
   }])
 ;
